@@ -6,10 +6,10 @@ description: Square helps millions of sellers run their business- from secure cr
   up today!
 image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
 x-kinRank: "9"
-x-alexaRank: "2436"
+x-alexaRank: "2433"
 tags: Locations
-created: "2018-06-20"
-modified: "2018-06-20"
+created: "2018-06-25"
+modified: "2018-06-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
@@ -18,7 +18,7 @@ apis:
   x-api-slug: square-connect-api
   description: Provides details for a business's locations, including their IDs.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/me/locations
   tags: Provides,Detailsa,Businesss,Locations,,Including,Their,IDs
   properties:
@@ -32,7 +32,7 @@ apis:
     bank accounts. This endpoint does not provide full bank account numbers, and there
     is no way to obtain a full bank account number with the Connect API.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/bank-accounts
   tags: Provides,Non-confidential,Details,Of,Locations,Associated,Bank,Accounts,,This,Endpoint,Does,Not,Provide,Full,Bank,Account,Numbers,,There,Is,No,Way,To,Obtain,Full,Bank,Account,Number,Connect
   properties:
@@ -46,7 +46,7 @@ apis:
   description: Provides the details for all of a location's cash drawer shifts during
     a date range. The date range you specify cannot exceed 90 days.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/cash-drawer-shifts
   tags: Provides,Details,Of,Locations,Cash,Drawer,Shifts,During,Date,Range,,Date,Range,You,Specify,Cannot,Exceed,90,Days
   properties:
@@ -56,7 +56,7 @@ apis:
   x-api-slug: square-connect-api
   description: Lists all of a location's item categories.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/categories
   tags: Lists,,Of,Locations,Item,Categories
   properties:
@@ -68,7 +68,7 @@ apis:
   x-api-slug: square-connect-api
   description: Lists all of a location's discounts.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/discounts
   tags: Lists,,Of,Locations,Discounts
   properties:
@@ -80,7 +80,7 @@ apis:
   x-api-slug: square-connect-api
   description: Lists all of a location's fees (taxes).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/fees
   tags: Lists,,Of,Locations,Fees,(taxes)
   properties:
@@ -92,7 +92,7 @@ apis:
   x-api-slug: square-connect-api
   description: Provides summary information for all of a location's items.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/items
   tags: Provides,Summary,Information,Of,Locations,Items
   properties:
@@ -102,7 +102,7 @@ apis:
   x-api-slug: square-connect-api
   description: Lists all of a location's modifier lists.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/modifier-lists
   tags: Lists,,Of,Locations,Modifier,Lists
   properties:
@@ -112,7 +112,7 @@ apis:
   x-api-slug: square-connect-api
   description: Lists all of a location's Favorites pages in Square Register.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v1/{location_id}/pages
   tags: Lists,,Of,Locations,Favorites,Pages,In,Square,Register
   properties:
@@ -129,7 +129,7 @@ apis:
     The `id` field of the [`Location`](#type-location) objects returned by this
     endpoint correspond to that `location_id` parameter.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com////v2/locations
   tags: ListLocations
   properties:
@@ -141,13 +141,15 @@ apis:
     card processing to point of sale solutions. Get paid faster with Square and sign
     up today!
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://squareup.com
+  humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Locations
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/openapi.md
 x-common:
+- type: x-website
+  url: http://square.com
 - type: x-base
   url: https://connect.squareup.com
 - type: x-crunchbase
@@ -176,6 +178,8 @@ x-common:
   url: takedowns@squareup.com
 - type: x-github
   url: https://github.com/square
+- type: x-linkedin
+  url: https://www.linkedin.com/company/square--/
 - type: x-twitter
   url: https://twitter.com/Square
 - type: x-website
