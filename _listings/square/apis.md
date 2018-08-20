@@ -8,133 +8,230 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-squar
 x-kinRank: "9"
 x-alexaRank: "2433"
 tags: Locations
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-19"
+modified: "2018-08-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Square Connect API Provides details for a business's locations, including
-    their IDs.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Provides details for a business's locations, including their IDs.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/me/locations
-  tags: Provides,Detailsa,Businesss,Locations,,Including,Their,IDs
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
-- name: Square Connect API Provides non-confidential details for all of a location's
-    associated bank accounts. This endpoint does not provide full bank account numbers,
-    and there is no way to obtain a full bank account number with the Connect API.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Provides non-confidential details for all of a location's associated
-    bank accounts. This endpoint does not provide full bank account numbers, and there
-    is no way to obtain a full bank account number with the Connect API.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/bank-accounts
-  tags: Provides,Non-confidential,Details,Of,Locations,Associated,Bank,Accounts,,This,Endpoint,Does,Not,Provide,Full,Bank,Account,Numbers,,There,Is,No,Way,To,Obtain,Full,Bank,Account,Number,Connect
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
-- name: Square Connect API Provides the details for all of a location's cash drawer
-    shifts during a date range. The date range you specify cannot exceed 90 days.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Provides the details for all of a location's cash drawer shifts during
-    a date range. The date range you specify cannot exceed 90 days.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/cash-drawer-shifts
-  tags: Provides,Details,Of,Locations,Cash,Drawer,Shifts,During,Date,Range,,Date,Range,You,Specify,Cannot,Exceed,90,Days
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
   - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
+  - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
-- name: Square Connect API Lists all of a location's item categories.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Lists all of a location's item categories.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/categories
-  tags: Lists,,Of,Locations,Item,Categories
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-openapi.md
-- name: Square Connect API Lists all of a location's discounts.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Lists all of a location's discounts.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/discounts
-  tags: Lists,,Of,Locations,Discounts
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-openapi.md
-- name: Square Connect API Lists all of a location's fees (taxes).
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Lists all of a location's fees (taxes).
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/fees
-  tags: Lists,,Of,Locations,Fees,(taxes)
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-openapi.md
-- name: Square Connect API Provides summary information for all of a location's items.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Provides summary information for all of a location's items.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/items
-  tags: Provides,Summary,Information,Of,Locations,Items
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iditems-get-openapi.md
-- name: Square Connect API Lists all of a location's modifier lists.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Lists all of a location's modifier lists.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/modifier-lists
-  tags: Lists,,Of,Locations,Modifier,Lists
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
   - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iditems-get-openapi.md
+  - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idmodifierlists-get-openapi.md
-- name: Square Connect API Lists all of a location's Favorites pages in Square Register.
+- name: Square Connect API
   x-api-slug: square-connect-api
-  description: Lists all of a location's Favorites pages in Square Register.
+  description: client-library-for-accessing-the-square-connect-apis
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
   humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v1/{location_id}/pages
-  tags: Lists,,Of,Locations,Favorites,Pages,In,Square,Register
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data API, Service API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idbankaccounts-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idcategories-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iddiscounts-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idfees-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-iditems-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idmodifierlists-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idpages-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1location-idpages-get-openapi.md
-- name: Square Connect API ListLocations
-  x-api-slug: square-connect-api
-  description: |-
-    Provides the details for all of a business's locations.
-
-    Most other Connect API endpoints have a required `location_id` path parameter.
-    The `id` field of the [`Location`](#type-location) objects returned by this
-    endpoint correspond to that `location_id` parameter.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
-  humanURL: http://square.com
-  baseURL: https://connect.squareup.com////v2/locations
-  tags: ListLocations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v2locations-get-openapi.md
 - name: Square Connect API
   x-api-slug: square-connect-api
   description: Square helps millions of sellers run their business- from secure credit
@@ -150,6 +247,8 @@ apis:
 x-common:
 - type: x-website
   url: http://square.com
+- type: x-api-stack
+  url: http://square.stack.network
 - type: x-base
   url: https://connect.squareup.com
 - type: x-crunchbase

@@ -25,36 +25,33 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-19"
+modified: "2018-08-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-route-53/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Route 53 API Get Geo Location
+- name: AWS Route 53 API
   x-api-slug: aws-route-53-api
-  description: 'Retrieves a single geo location. Send a GET request to the/2013-04-01/geolocation
-    resource with one of these options: continentcode |countrycode | countrycode and
-    subdivisioncode.'
+  description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/geolocation?continentcode=ContinentCode&amp;countrycode=CountryCode&amp;subdivisioncode=SubdivisionCode
-  tags: Locations
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data API, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-route-53/20130401geolocationcontinentcodecontinentcodeampcountrycodecountrycodeampsubdivisioncodesubdivisioncode-get-openapi.md
-- name: AWS Route 53 API List Geo Locations
+- name: AWS Route 53 API
   x-api-slug: aws-route-53-api
-  description: Retrieves a list of supported geo locations. Send a GET request to
-    the/2013-04-01/geolocations resource. The response to this request includes aGeoLocationDetailsList
-    element for each location that Amazon Route 53 supports.Countries are listed first,
-    and continents are listed last. If Amazon Route 53 supportssubdivisions for a
-    country (for example, states or provinces), the subdivisions for thatcountry are
-    listed in alphabetical order immediately after the corresponding country.
+  description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/geolocations&amp;maxitems=MaxItems?startcontinentcode=StartContinentCode&amp;startcountrycode=StartCountryCode&amp;startsubdivisioncode=StartSubdivisionCode
-  tags: Locations
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data API, Service API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-route-53/20130401geolocationcontinentcodecontinentcodeampcountrycodecountrycodeampsubdivisioncodesubdivisioncode-get-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-route-53/20130401geolocationsampmaxitemsmaxitemsstartcontinentcodestartcontinentcodeampstartcountrycodestartcountrycodeampstartsubdivisioncodestartsubdivisioncode-get-openapi.md
 - name: AWS Route 53 API
@@ -87,6 +84,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-route-53/openapi.md
 x-common:
+- type: x-api-stack
+  url: http://aws.route.53.stack.network
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
 - type: x-faq

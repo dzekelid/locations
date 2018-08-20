@@ -7,18 +7,19 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1297-blaze
 x-kinRank: "8"
 x-alexaRank: "69236"
 tags: Locations
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-19"
+modified: "2018-08-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Blazemeter Get User Locations
+- name: Blazemeter
   x-api-slug: blazemeter
-  description: Get user locations.
+  description: live-api-documentation
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1297-blazemeter.jpg
   humanURL: http://blazemeter.com/
-  baseURL: https://a.blazemeter.com//api/v4//user/locations
-  tags: Monitoring,User,Locations
+  baseURL: https://a.blazemeter.com//api/v4
+  tags: Testing, Testing, Performance, Stack Network, SaaS, Technology, Enterprise,
+    API Service Provider, API Provider, Profiles, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/userlocations-get-openapi.md
@@ -34,6 +35,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/openapi.md
 x-common:
+- type: x-api-stack
+  url: http://blazemeter.stack.network
 - type: x-blog
   url: http://blazemeter.com/blog
 - type: x-blog-rss

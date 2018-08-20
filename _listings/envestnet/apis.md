@@ -7,18 +7,19 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodle
 x-kinRank: "8"
 x-alexaRank: "84912"
 tags: Locations
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-19"
+modified: "2018-08-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Crunch Base Get Locations
+- name: Crunch Base
   x-api-slug: crunch-base
-  description: Get Locations
+  description: the-crunchbase-api-is-a-relatively-straightforward-rest-service-that-allows-developers-to-access-data-in-the-business-graph-
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg
   humanURL: http://www.yodlee.com/
-  baseURL: https://api.crunchbase.com//v/3//locations
-  tags: Locations
+  baseURL: https://api.crunchbase.com//v/3
+  tags: Aggregation, Finance, Finance, Financial Data, SaaS, Technology, Enterprise,
+    Profiles, General Data API, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/locations-get-postman.md
@@ -36,6 +37,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/openapi.md
 x-common:
+- type: x-api-stack
+  url: http://envestnet.stack.network
 - type: x-base
   url: https://rest.developer.yodlee.com/services/srest/
 - type: x-blog

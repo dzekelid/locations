@@ -9,75 +9,79 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28707-clim
 x-kinRank: "9"
 x-alexaRank: "617213"
 tags: Locations
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-19"
+modified: "2018-08-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/apis.md
 specificationVersion: "0.14"
 apis:
-- name: ClimaCell Get Locations
+- name: ClimaCell
   x-api-slug: climacell
-  description: |-
-    ### List all Locations
-    Pages through the list of the Locations for your user account. You can specify the maximum number of results to be retuned, and from which result to start.
+  description: the-climacell-rest-api-provides-access-to-high-resolution-weather-data-for-locations-across-the-u-s--with-global-data-coming-soon--it-uses-https-and-requires-an-access-token-key--the-api-requests-carry-query-parameters-and-the-responses-return-results-in-json-format-
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28707-climacell.jpg
   humanURL: https://www.climacell.co
-  baseURL: https://api2.climacell.co//v2//locations
-  tags: Weather,Locations
+  baseURL: https://api2.climacell.co//v2
+  tags: Weather, API Provider, Profiles, General Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-get-openapi.md
-- name: ClimaCell Post Locations
+- name: ClimaCell
   x-api-slug: climacell
-  description: |-
-    ### Create a Location
-
-    Creates a new Location in your organization, and name it. The name of the location is used in the notifications for triggered alerts at the location.
-    ###
-    The system attaches a unique ID to each location you create. This ID is used to refer to the location and manage it in the following ```locations``` API calls.
+  description: the-climacell-rest-api-provides-access-to-high-resolution-weather-data-for-locations-across-the-u-s--with-global-data-coming-soon--it-uses-https-and-requires-an-access-token-key--the-api-requests-carry-query-parameters-and-the-responses-return-results-in-json-format-
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28707-climacell.jpg
   humanURL: https://www.climacell.co
-  baseURL: https://api2.climacell.co//v2//locations
-  tags: Weather,Locations
+  baseURL: https://api2.climacell.co//v2
+  tags: Weather, API Provider, Profiles, General Data API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-get-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-post-openapi.md
-- name: ClimaCell Get Locations Location
+- name: ClimaCell
   x-api-slug: climacell
-  description: |-
-    ### Retrieve a Location
-
-    Get a single location back with its information by specifying its ```location_id```.
+  description: the-climacell-rest-api-provides-access-to-high-resolution-weather-data-for-locations-across-the-u-s--with-global-data-coming-soon--it-uses-https-and-requires-an-access-token-key--the-api-requests-carry-query-parameters-and-the-responses-return-results-in-json-format-
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28707-climacell.jpg
   humanURL: https://www.climacell.co
-  baseURL: https://api2.climacell.co//v2//locations/{location_id}
-  tags: Weather,Locations,Location
+  baseURL: https://api2.climacell.co//v2
+  tags: Weather, API Provider, Profiles, General Data API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-post-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locationslocation-id-get-openapi.md
-- name: ClimaCell Put Locations Location
+- name: ClimaCell
   x-api-slug: climacell
-  description: |-
-    ### Update a Location
-
-    Updates the details of a Location designated by its ```location_id```.
+  description: the-climacell-rest-api-provides-access-to-high-resolution-weather-data-for-locations-across-the-u-s--with-global-data-coming-soon--it-uses-https-and-requires-an-access-token-key--the-api-requests-carry-query-parameters-and-the-responses-return-results-in-json-format-
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28707-climacell.jpg
   humanURL: https://www.climacell.co
-  baseURL: https://api2.climacell.co//v2//locations/{location_id}
-  tags: Weather,Locations,Location
+  baseURL: https://api2.climacell.co//v2
+  tags: Weather, API Provider, Profiles, General Data API
   properties:
   - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-post-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locationslocation-id-get-openapi.md
+  - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locationslocation-id-put-openapi.md
-- name: ClimaCell Delete Locations Location
+- name: ClimaCell
   x-api-slug: climacell
-  description: |-
-    ### Delete a Location
-
-    Removes a location with the ```location_id``` from the system. If the location was part of any alert, the alert is removed.
+  description: the-climacell-rest-api-provides-access-to-high-resolution-weather-data-for-locations-across-the-u-s--with-global-data-coming-soon--it-uses-https-and-requires-an-access-token-key--the-api-requests-carry-query-parameters-and-the-responses-return-results-in-json-format-
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28707-climacell.jpg
   humanURL: https://www.climacell.co
-  baseURL: https://api2.climacell.co//v2//locations/{location_id}
-  tags: Weather,Locations,Location
+  baseURL: https://api2.climacell.co//v2
+  tags: Weather, API Provider, Profiles, General Data API
   properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locations-post-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locationslocation-id-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locationslocation-id-put-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/locationslocation-id-delete-openapi.md
 - name: ClimaCell
@@ -94,6 +98,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/openapi.md
 x-common:
+- type: x-api-stack
+  url: http://climacell.stack.network
 - type: x-blog
   url: https://www.climacell.co/blog/
 - type: x-crunchbase

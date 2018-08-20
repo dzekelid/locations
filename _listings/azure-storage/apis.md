@@ -7,19 +7,19 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-19"
+modified: "2018-08-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Azure Storage API List Locations
+- name: Azure Storage API
   x-api-slug: azure-storage-api
-  description: Returns a list of locations to which you can ship the disks associated
-    with an import or export job. A location is a Microsoft data center region.
+  description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-storage.png
   humanURL: https://azure.microsoft.com/en-us/services/storage/
-  baseURL: ://management.azure.com////providers/Microsoft.ImportExport/locations
-  tags: Locations
+  baseURL: ://management.azure.com//
+  tags: Storage, Microsoft, Stack Network, API Service Provider, API Provider, Profiles,
+    Relative Data API, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/providersmicrosoft-importexportlocations-get-openapi.md
@@ -35,6 +35,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/openapi.md
 x-common:
+- type: x-api-stack
+  url: http://azure.storage.stack.network
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/storage/
 - type: x-pricing
