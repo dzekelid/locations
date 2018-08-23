@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-
 x-kinRank: "7"
 x-alexaRank: "3933231"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apis.md
 specificationVersion: "0.14"
 apis:
@@ -47,6 +47,99 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/openapi.md
 - name: NxtPort T-mining Secure Container Release API
   x-api-slug: nxtport-tmining-secure-container-release-api
+  description: this-api-allows-carriers-forwarders-and-transport-companies-to-securely-release-full-import-containers-on-a-terminal-and-to-transfer-this-release-to-the-other-parties-in-the-chain-up-to-the-truck-driver-or-the-bargerail-operator-
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
+  humanURL: https://www.nxtport.eu
+  baseURL: https://api.nxtport.eu//blockchain
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+- name: NxtPort T-mining Secure Container Release API
+  x-api-slug: nxtport-tmining-secure-container-release-api
+  description: this-api-allows-carriers-forwarders-and-transport-companies-to-securely-release-full-import-containers-on-a-terminal-and-to-transfer-this-release-to-the-other-parties-in-the-chain-up-to-the-truck-driver-or-the-bargerail-operator-
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
+  humanURL: https://www.nxtport.eu
+  baseURL: https://api.nxtport.eu//blockchain
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+- name: NxtPort T-mining Secure Container Release API
+  x-api-slug: nxtport-tmining-secure-container-release-api
+  description: this-api-allows-carriers-forwarders-and-transport-companies-to-securely-release-full-import-containers-on-a-terminal-and-to-transfer-this-release-to-the-other-parties-in-the-chain-up-to-the-truck-driver-or-the-bargerail-operator-
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
+  humanURL: https://www.nxtport.eu
+  baseURL: https://api.nxtport.eu//blockchain
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-post-openapi.md
+- name: NxtPort T-mining Secure Container Release API
+  x-api-slug: nxtport-tmining-secure-container-release-api
+  description: this-api-allows-carriers-forwarders-and-transport-companies-to-securely-release-full-import-containers-on-a-terminal-and-to-transfer-this-release-to-the-other-parties-in-the-chain-up-to-the-truck-driver-or-the-bargerail-operator-
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
+  humanURL: https://www.nxtport.eu
+  baseURL: https://api.nxtport.eu//blockchain
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-post-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+- name: NxtPort T-mining Secure Container Release API
+  x-api-slug: nxtport-tmining-secure-container-release-api
+  description: this-api-allows-carriers-forwarders-and-transport-companies-to-securely-release-full-import-containers-on-a-terminal-and-to-transfer-this-release-to-the-other-parties-in-the-chain-up-to-the-truck-driver-or-the-bargerail-operator-
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
+  humanURL: https://www.nxtport.eu
+  baseURL: https://api.nxtport.eu//blockchain
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-post-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apiv1locations-post-openapi.md
+- name: NxtPort T-mining Secure Container Release API
+  x-api-slug: nxtport-tmining-secure-container-release-api
   description: NxtPort opens the gates to the Port of the future. This project is
     a milestone in the digitalization of logistics and cargo.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
@@ -62,8 +155,8 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
   humanURL: https://www.nxtport.eu
   baseURL: https://api.nxtport.eu//unlocodes/v1
-  tags: New, Technology, SaaS, Enterprise, Shipping, Data, General Data API, Relative
-    Data API, Service API
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/locations-get-postman.md
@@ -75,8 +168,8 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
   humanURL: https://www.nxtport.eu
   baseURL: https://api.nxtport.eu//unlocodes/v1
-  tags: New, Technology, SaaS, Enterprise, Shipping, Data, General Data API, Relative
-    Data API, Service API
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/locations-get-postman.md
@@ -92,8 +185,8 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
   humanURL: https://www.nxtport.eu
   baseURL: https://api.nxtport.eu//unlocodes/v1
-  tags: New, Technology, SaaS, Enterprise, Shipping, Data, General Data API, Relative
-    Data API, Service API
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/locations-get-postman.md
@@ -163,6 +256,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://npr.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://nxtport.stack.network
 - type: x-email

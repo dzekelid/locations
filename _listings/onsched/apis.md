@@ -12,8 +12,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: ""
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/onsched/apis.md
 specificationVersion: "0.14"
 apis:
@@ -23,7 +23,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/onsched-logo.png
   humanURL: http://www.onsched.com
   baseURL: https://api.onsched.com//
-  tags: API Provider, Bookings, Profiles, Schedules, Relative Data API, Service API
+  tags: API Provider, Bookings, Profiles, Schedules, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/onsched/consumerv1locations-get-postman.md
@@ -35,7 +35,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/onsched-logo.png
   humanURL: http://www.onsched.com
   baseURL: https://api.onsched.com//
-  tags: API Provider, Bookings, Profiles, Schedules, Relative Data API, Service API
+  tags: API Provider, Bookings, Profiles, Schedules, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/onsched/consumerv1locations-get-postman.md
@@ -62,6 +62,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/onsched/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://onenote.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://onsched.stack.network
 - type: x-documentation

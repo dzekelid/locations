@@ -9,8 +9,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here
 x-kinRank: "7"
 x-alexaRank: "3011"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/apis.md
 specificationVersion: "0.14"
 apis:
@@ -33,8 +33,8 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here-maps.jpg
   humanURL: https://developer.here.com
   baseURL: https://customlocation.cit.api.here.com//v1/search
-  tags: Mapping, Technology, Mobile, internet, API Provider, Profiles, General Data
-    API, Relative Data API
+  tags: Technology, Mobile, internet, API Provider, Profiles, General Data, Relative
+    Data, Maps
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/bbox-get-postman.md
@@ -46,8 +46,8 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here-maps.jpg
   humanURL: https://developer.here.com
   baseURL: https://customlocation.cit.api.here.com//v1/search
-  tags: Mapping, Technology, Mobile, internet, API Provider, Profiles, General Data
-    API, Relative Data API
+  tags: Technology, Mobile, internet, API Provider, Profiles, General Data, Relative
+    Data, Maps
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/bbox-get-postman.md
@@ -63,8 +63,8 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here-maps.jpg
   humanURL: https://developer.here.com
   baseURL: https://customlocation.cit.api.here.com//v1/search
-  tags: Mapping, Technology, Mobile, internet, API Provider, Profiles, General Data
-    API, Relative Data API
+  tags: Technology, Mobile, internet, API Provider, Profiles, General Data, Relative
+    Data, Maps
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/bbox-get-postman.md
@@ -84,8 +84,8 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here-maps.jpg
   humanURL: https://developer.here.com
   baseURL: https://customlocation.cit.api.here.com//v1/search
-  tags: Mapping, Technology, Mobile, internet, API Provider, Profiles, General Data
-    API, Relative Data API
+  tags: Technology, Mobile, internet, API Provider, Profiles, General Data, Relative
+    Data, Maps
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/bbox-get-postman.md
@@ -181,6 +181,36 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/openapi.md
+- name: HERE Public Transit API
+  x-api-slug: here-public-transit-api
+  description: examples-for-public-transit-nlp-2-1-6-or-higher
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here-maps.jpg
+  humanURL: https://developer.here.com
+  baseURL: https://cit.transit.api.here.com//
+  tags: Technology, Mobile, internet, API Provider, Profiles, General Data, Relative
+    Data, Maps
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/metarouterrestboardservicev1multiboardby-geocoord-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/metarouterrestboardservicev1multiboardby-geocoord-json-get-openapi.md
+- name: HERE Public Transit API
+  x-api-slug: here-public-transit-api
+  description: examples-for-public-transit-nlp-2-1-6-or-higher
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here-maps.jpg
+  humanURL: https://developer.here.com
+  baseURL: https://cit.transit.api.here.com//
+  tags: Technology, Mobile, internet, API Provider, Profiles, General Data, Relative
+    Data, Maps
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/metarouterrestboardservicev1multiboardby-geocoord-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/metarouterrestboardservicev1multiboardby-geocoord-json-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/metarouterrestboardservicev1multiboardby-geocoord-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/metarouterrestboardservicev1multiboardby-geocoord-json-get-openapi.md
 - name: HERE Public Transit API
   x-api-slug: here-public-transit-api
   description: HERE Technologies enables people, enterprises and cities around the
@@ -279,6 +309,8 @@ x-common:
   url: https://github.com/heremaps
 - type: x-postman-collection
   url: https://github.com/heremaps/postman-collections
+- type: x-api-gallery
+  url: http://healthcare.gov.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://here.stack.network
 - type: x-blog

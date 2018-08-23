@@ -29,4 +29,22 @@ paths:
           description: OK
       tags:
       - Locations
+  /providers/Microsoft.ImportExport/locations/{locationName}:
+    get:
+      summary: Get Location
+      description: Gets a location to which you can ship the disks associated with
+        an import or export job. A location is an Azure region.
+      operationId: GetLocation
+      x-api-path-slug: providersmicrosoft-importexportlocationslocationname-get
+      parameters:
+      - in: path
+        name: locationName
+        description: The name of the location
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Location
 ---

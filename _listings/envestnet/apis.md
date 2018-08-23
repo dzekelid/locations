@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodle
 x-kinRank: "8"
 x-alexaRank: "84912"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/apis.md
 specificationVersion: "0.14"
 apis:
@@ -19,7 +19,7 @@ apis:
   humanURL: http://www.yodlee.com/
   baseURL: https://api.crunchbase.com//v/3
   tags: Aggregation, Finance, Finance, Financial Data, SaaS, Technology, Enterprise,
-    Profiles, General Data API, Service API
+    Profiles, General Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/locations-get-postman.md
@@ -37,6 +37,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://entertainment.express.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://envestnet.stack.network
 - type: x-base

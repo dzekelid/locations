@@ -9,8 +9,8 @@ image: ""
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-geographical-names/apis.md
 specificationVersion: "0.14"
 apis:
@@ -41,6 +41,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-geographical-names/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://bbc.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://bc.geographical.names.stack.network
 - type: x-website

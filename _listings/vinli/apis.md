@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-
 x-kinRank: "7"
 x-alexaRank: "2170360"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/apis.md
 specificationVersion: "0.14"
 apis:
@@ -19,7 +19,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-vin-li.jpg
   humanURL: http://vinli.com
   baseURL: https://events.vin.li//api/v1
-  tags: Mobile, Technology, Automobiles, Service API, Relative Data API
+  tags: Mobile, Technology, Automobiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/devices62976d30b6dc40f18422ccc367572101locations-get-postman.md
@@ -44,6 +44,8 @@ x-common:
   url: https://github.com/vinli
 - type: x-website
   url: http://vinli.com
+- type: x-api-gallery
+  url: http://viddler.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://vinli.stack.network
 - type: x-blog

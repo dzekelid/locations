@@ -80,6 +80,48 @@ paths:
       - Weather
       - Locations
       - Location
+    put:
+      summary: Put Locations Location
+      description: |-
+        ### Update a Location
+
+        Updates the details of a Location designated by its ```location_id```.
+      operationId: -update-a-locationupdates-the-details-of-a-location-designated-by-its-location-id
+      x-api-path-slug: locationslocation-id-put
+      parameters:
+      - in: body
+        name: location
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: location_id
+        description: UUID of the Location
+      responses:
+        200:
+          description: OK
+      tags:
+      - Weather
+      - Locations
+      - Location
+    delete:
+      summary: Delete Locations Location
+      description: |-
+        ### Delete a Location
+
+        Removes a location with the ```location_id``` from the system. If the location was part of any alert, the alert is removed.
+      operationId: -delete-a-locationremoves-a-location-with-the-location-id-from-the-system-if-the-location-was-part-o
+      x-api-path-slug: locationslocation-id-delete
+      parameters:
+      - in: path
+        name: location_id
+        description: UUID of the Location
+      responses:
+        200:
+          description: OK
+      tags:
+      - Weather
+      - Locations
+      - Location
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

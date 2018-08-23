@@ -18,8 +18,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/apis.md
 specificationVersion: "0.14"
 apis:
@@ -30,8 +30,46 @@ apis:
   humanURL: https://aws.amazon.com/directconnect/
   baseURL: :///
   tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
-    API Provider, Profiles, Relative Data API, Service API, Networks
+    API Provider, Profiles, Relative Data, Service API, Networks
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-openapi.md
+- name: AWS Direct Connect API
+  x-api-slug: aws-direct-connect-api
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AWSDirectConnect.png
+  humanURL: https://aws.amazon.com/directconnect/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-openapi.md
+- name: AWS Direct Connect API
+  x-api-slug: aws-direct-connect-api
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AWSDirectConnect.png
+  humanURL: https://aws.amazon.com/directconnect/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-openapi.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/actiondescribelocations-get-postman.md
   - type: x-openapi-spec
@@ -60,6 +98,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://aws.device.farm.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://aws.direct.connect.stack.network
 - type: x-change-log

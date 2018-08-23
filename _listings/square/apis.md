@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-squar
 x-kinRank: "9"
 x-alexaRank: "2433"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
@@ -20,7 +20,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -31,7 +32,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -46,7 +48,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -63,7 +66,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -84,7 +88,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -109,7 +114,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -138,7 +144,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -169,7 +176,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -202,7 +210,8 @@ apis:
   humanURL: http://square.com
   baseURL: https://connect.squareup.com//
   tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
-    Technology, internet, Payments, Relative Data API, Service API
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    StreamRank
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/v1melocations-get-openapi.md
@@ -247,6 +256,8 @@ apis:
 x-common:
 - type: x-website
   url: http://square.com
+- type: x-api-gallery
+  url: http://spreaker.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://square.stack.network
 - type: x-base

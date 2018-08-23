@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26209-rta-
 x-kinRank: "7"
 x-alexaRank: "558301"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/transitfeeds/apis.md
 specificationVersion: "0.14"
 apis:
@@ -18,7 +18,7 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26209-rta-service-alerts.jpg
   humanURL: https://transitfeeds.com
   baseURL: https://api.transitfeeds.com//v1
-  tags: Transit, General Data API, Service API
+  tags: Transit, General Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/transitfeeds/getlocations-get-postman.md
@@ -36,6 +36,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/transitfeeds/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://transavia.api.gallery.streamdata.io
 - type: x-twitter
   url: https://twitter.com/TransitFeeds
 - type: x-website

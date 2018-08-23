@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-19"
-modified: "2018-08-19"
+created: "2018-08-23"
+modified: "2018-08-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/apis.md
 specificationVersion: "0.14"
 apis:
@@ -19,10 +19,38 @@ apis:
   humanURL: https://azure.microsoft.com/en-us/services/storage/
   baseURL: ://management.azure.com//
   tags: Storage, Microsoft, Stack Network, API Service Provider, API Provider, Profiles,
-    Relative Data API, Service API
+    Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/providersmicrosoft-importexportlocations-get-openapi.md
+- name: Azure Storage API
+  x-api-slug: azure-storage-api
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-storage.png
+  humanURL: https://azure.microsoft.com/en-us/services/storage/
+  baseURL: ://management.azure.com//
+  tags: Storage, Microsoft, Stack Network, API Service Provider, API Provider, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/providersmicrosoft-importexportlocations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/providersmicrosoft-importexportlocationslocationname-get-openapi.md
+- name: Azure Storage API
+  x-api-slug: azure-storage-api
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-storage.png
+  humanURL: https://azure.microsoft.com/en-us/services/storage/
+  baseURL: ://management.azure.com//
+  tags: Storage, Microsoft, Stack Network, API Service Provider, API Provider, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/providersmicrosoft-importexportlocations-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/providersmicrosoft-importexportlocationslocationname-get-openapi.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/providersmicrosoft-importexportlocationslocationname-get-openapi.md
 - name: Azure Storage API
   x-api-slug: azure-storage-api
   description: Azure Storage offers non-relational data storage including Blob Storage,
@@ -35,6 +63,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://azure.sql.database.api.gallery.streamdata.io
 - type: x-api-stack
   url: http://azure.storage.stack.network
 - type: x-documentation
