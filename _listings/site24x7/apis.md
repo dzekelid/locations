@@ -8,50 +8,14 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24
 x-kinRank: "7"
 x-alexaRank: "42122"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Business Hours API
-  x-api-slug: business-hours-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Current Status API
-  x-api-slug: current-status-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Email Template API
-  x-api-slug: email-template-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Location Profile API
-  x-api-slug: location-profile-api
-  description: the-location-profile-api-
+- name: Location Profile API - Retrieve Location Profile
+  x-api-slug: location-profilesprofile-id-get
+  description: Retrieve configuration of a location profile.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
   humanURL: https://www.site24x7.com/
   baseURL: ://www.site24x7.com./
@@ -61,9 +25,21 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-openapi.md
-- name: Location Profile API
-  x-api-slug: location-profile-api
-  description: the-location-profile-api-
+- name: Location Profile API - Delete Location Profile
+  x-api-slug: location-profilesprofile-id-delete
+  description: Delete an existing location profile.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
+  humanURL: https://www.site24x7.com/
+  baseURL: ://www.site24x7.com./
+  tags: Monitoring, SaaS, Technology, Relative Data, Service API, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-openapi.md
+- name: Location Profile API - Retrieve Location Profile
+  x-api-slug: location-profilesprofile-id-get
+  description: Retrieve configuration of a location profile.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
   humanURL: https://www.site24x7.com/
   baseURL: ://www.site24x7.com./
@@ -73,13 +49,21 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-openapi.md
+- name: Location Profile API - Delete Location Profile
+  x-api-slug: location-profilesprofile-id-delete
+  description: Delete an existing location profile.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
+  humanURL: https://www.site24x7.com/
+  baseURL: ://www.site24x7.com./
+  tags: Monitoring, SaaS, Technology, Relative Data, Service API, Networks
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-openapi.md
-- name: Location Profile API
-  x-api-slug: location-profile-api
-  description: the-location-profile-api-
+- name: Location Profile API - Retrieve Location Profile
+  x-api-slug: location-profilesprofile-id-get
+  description: Retrieve configuration of a location profile.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
   humanURL: https://www.site24x7.com/
   baseURL: ://www.site24x7.com./
@@ -89,194 +73,18 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-openapi.md
-- name: Location Profile API
-  x-api-slug: location-profile-api
-  description: the-location-profile-api-
+- name: Location Profile API - Delete Location Profile
+  x-api-slug: location-profilesprofile-id-delete
+  description: Delete an existing location profile.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
   humanURL: https://www.site24x7.com/
   baseURL: ://www.site24x7.com./
   tags: Monitoring, SaaS, Technology, Relative Data, Service API, Networks
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-openapi.md
-  - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/location-profilesprofile-id-delete-openapi.md
-- name: Location Profile API
-  x-api-slug: location-profile-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Maintenance API
-  x-api-slug: maintenance-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Monitor Group API
-  x-api-slug: monitor-group-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Notification Profile API
-  x-api-slug: notification-profile-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Operation Dashboard API
-  x-api-slug: operation-dashboard-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Report API
-  x-api-slug: report-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Scheduled Report API
-  x-api-slug: scheduled-report-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: SLA Setting API
-  x-api-slug: sla-setting-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Status Dashboard API
-  x-api-slug: status-dashboard-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Threshold Profile API
-  x-api-slug: threshold-profile-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: Update Button API
-  x-api-slug: update-button-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: User API
-  x-api-slug: user-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
-- name: User Group API
-  x-api-slug: user-group-api
-  description: Site24x7 offers both free & paid website monitoring services. Monitor
-    websites remotely and receive instant email/sms alerts if your website becomes
-    unavailable. View uptime & performance graphs of your website monitors.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg
-  humanURL: https://www.site24x7.com/
-  baseURL: ://www.site24x7.com./
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md
 x-common:
 - type: x-website
   url: https://www.site24x7.com/

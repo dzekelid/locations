@@ -9,14 +9,14 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Shopify
-  x-api-slug: shopify
-  description: todo-add-description
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
   humanURL: https://www.shopify.com/
   baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
@@ -26,9 +26,21 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
-- name: Shopify
-  x-api-slug: shopify
-  description: todo-add-description
+- name: Shopify API - Get a list of all locations for a shop
+  x-api-slug: adminlocations-json-get
+  description: Get a list of all locations for a shop.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
+  humanURL: https://www.shopify.com/
+  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-openapi.md
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
   humanURL: https://www.shopify.com/
   baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
@@ -38,13 +50,21 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
+- name: Shopify API - Get a list of all locations for a shop
+  x-api-slug: adminlocations-json-get
+  description: Get a list of all locations for a shop.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
+  humanURL: https://www.shopify.com/
+  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-openapi.md
-- name: Shopify
-  x-api-slug: shopify
-  description: todo-add-description
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
   humanURL: https://www.shopify.com/
   baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
@@ -54,17 +74,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
-- name: Shopify
-  x-api-slug: shopify
-  description: todo-add-description
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
   humanURL: https://www.shopify.com/
   baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
@@ -74,31 +86,78 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-openapi.md
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
+  humanURL: https://www.shopify.com/
+  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
+  humanURL: https://www.shopify.com/
+  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
+  humanURL: https://www.shopify.com/
+  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
+- name: Shopify API - Get a single location
+  x-api-slug: adminlocations8790723-json-get
+  description: Get a single location.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
+  humanURL: https://www.shopify.com/
+  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations8790723-json-get-openapi.md
+- name: Shopify API - Get a list of all locations for a shop
+  x-api-slug: adminlocations-json-get
+  description: Get a list of all locations for a shop.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
+  humanURL: https://www.shopify.com/
+  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-openapi.md
-- name: Shopify
-  x-api-slug: shopify
-  description: Shopify is a commerce platform that allows anyone to easily sell online
-    at a retail location and everywhere in between. It offers a professional online
-    storefront, a payment solution to accept credit cards, and the Shopify POS application
-    to power retail sales.
+- name: Shopify API - Get a list of all locations for a shop
+  x-api-slug: adminlocations-json-get
+  description: Get a list of all locations for a shop.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
   humanURL: https://www.shopify.com/
   baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
-  tags: Locations
+  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/adminlocations-json-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://ship.station.api.gallery.streamdata.io

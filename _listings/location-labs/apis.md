@@ -7,23 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/516-locati
 x-kinRank: "7"
 x-alexaRank: "244478"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/location-labs/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Location Labs
-  x-api-slug: location-labs
-  description: Location Labs by @avast_antivirus. Global pioneer, mobile security
-    for humans. Cracked the code on mobile monetization, 1 million+ monthly paying
-    subscribers.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/516-location-labs.jpg
-  humanURL: http://www.locationlabs.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/location-labs/openapi.md
+apis: []
 x-common:
 - type: x-blog
   url: http://blog.locationlabs.com/

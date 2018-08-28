@@ -11,14 +11,14 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Cloud Key Management Service API
-  x-api-slug: google-cloud-key-management-service-api
-  description: manages-encryption-for-your-cloud-services-the-same-way-you-do-onpremise--you-can-generate-use-rotate-and-destroy-aes256-encryption-keys-
+- name: Google Cloud Key Management Service (KMS) - Get Locations
+  x-api-slug: v1namelocations-get
+  description: Lists information about the supported locations for this service.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
   humanURL: https://cloud.google.com/kms/
   baseURL: ://cloudkms.googleapis.com//
@@ -27,9 +27,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namelocations-get-openapi.md
-- name: Google Cloud Key Management Service API
-  x-api-slug: google-cloud-key-management-service-api
-  description: manages-encryption-for-your-cloud-services-the-same-way-you-do-onpremise--you-can-generate-use-rotate-and-destroy-aes256-encryption-keys-
+- name: Google Cloud Key Management Service (KMS) - Decrypt Data
+  x-api-slug: v1namedecrypt-post
+  description: Decrypt data that was protected by Encrypt.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
+  humanURL: https://cloud.google.com/kms/
+  baseURL: ://cloudkms.googleapis.com//
+  tags: Authentication, Management, Google APIs, Stack Network, Security, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
+- name: Google Cloud Key Management Service (KMS) - Get Locations
+  x-api-slug: v1namelocations-get
+  description: Lists information about the supported locations for this service.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
   humanURL: https://cloud.google.com/kms/
   baseURL: ://cloudkms.googleapis.com//
@@ -38,11 +49,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namelocations-get-openapi.md
+- name: Google Cloud Key Management Service (KMS) - Decrypt Data
+  x-api-slug: v1namedecrypt-post
+  description: Decrypt data that was protected by Encrypt.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
+  humanURL: https://cloud.google.com/kms/
+  baseURL: ://cloudkms.googleapis.com//
+  tags: Authentication, Management, Google APIs, Stack Network, Security, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
-- name: Google Cloud Key Management Service API
-  x-api-slug: google-cloud-key-management-service-api
-  description: manages-encryption-for-your-cloud-services-the-same-way-you-do-onpremise--you-can-generate-use-rotate-and-destroy-aes256-encryption-keys-
+- name: Google Cloud Key Management Service (KMS) - Get Locations
+  x-api-slug: v1namelocations-get
+  description: Lists information about the supported locations for this service.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
   humanURL: https://cloud.google.com/kms/
   baseURL: ://cloudkms.googleapis.com//
@@ -51,13 +71,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namelocations-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namelocations-get-openapi.md
-- name: Google Cloud Key Management Service API
-  x-api-slug: google-cloud-key-management-service-api
-  description: manages-encryption-for-your-cloud-services-the-same-way-you-do-onpremise--you-can-generate-use-rotate-and-destroy-aes256-encryption-keys-
+- name: Google Cloud Key Management Service (KMS) - Get Locations
+  x-api-slug: v1namelocations-get
+  description: Lists information about the supported locations for this service.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
   humanURL: https://cloud.google.com/kms/
   baseURL: ://cloudkms.googleapis.com//
@@ -66,27 +82,50 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namelocations-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namelocations-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
-- name: Google Cloud Key Management Service API
-  x-api-slug: google-cloud-key-management-service-api
-  description: Cloud KMS is a cloud-hosted key management service that lets you manage
-    encryption for your cloud services the same way you do on-premises. You can generate,
-    use, rotate and destroy AES256 encryption keys. Cloud KMS is integrated with IAM
-    and Cloud Audit Logging so that you can manage permissions on individual keys,
-    and monitor how these are used. Use Cloud KMS to protect secrets and other sensitive
-    data which you need to store in Google Cloud Platform.
+- name: Google Cloud Key Management Service (KMS) - Get Locations
+  x-api-slug: v1namelocations-get
+  description: Lists information about the supported locations for this service.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
   humanURL: https://cloud.google.com/kms/
   baseURL: ://cloudkms.googleapis.com//
-  tags: Locations
+  tags: Authentication, Management, Google APIs, Stack Network, Security, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namelocations-get-openapi.md
+- name: Google Cloud Key Management Service (KMS) - Decrypt Data
+  x-api-slug: v1namedecrypt-post
+  description: Decrypt data that was protected by Encrypt.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
+  humanURL: https://cloud.google.com/kms/
+  baseURL: ://cloudkms.googleapis.com//
+  tags: Authentication, Management, Google APIs, Stack Network, Security, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
+- name: Google Cloud Key Management Service (KMS) - Decrypt Data
+  x-api-slug: v1namedecrypt-post
+  description: Decrypt data that was protected by Encrypt.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
+  humanURL: https://cloud.google.com/kms/
+  baseURL: ://cloudkms.googleapis.com//
+  tags: Authentication, Management, Google APIs, Stack Network, Security, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
+- name: Google Cloud Key Management Service (KMS) - Decrypt Data
+  x-api-slug: v1namedecrypt-post
+  description: Decrypt data that was protected by Encrypt.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png
+  humanURL: https://cloud.google.com/kms/
+  baseURL: ://cloudkms.googleapis.com//
+  tags: Authentication, Management, Google APIs, Stack Network, Security, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/v1namedecrypt-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://google.cloud.identity.access.management.api.gallery.streamdata.io

@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/9098-geoco
 x-kinRank: "8"
 x-alexaRank: "684712"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/geocodio/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Geocodio
-  x-api-slug: geocodio
-  description: Hassle-free geocoding. Convert addresses into latitude/longitude via
-    API or spreadsheet upload. Add Congressional districts, timezones, and more.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/9098-geocodio.jpg
-  humanURL: http://geocod.io/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/geocodio/openapi.md
+apis: []
 x-common:
 - type: x-base
   url: https://api.geocod.io/

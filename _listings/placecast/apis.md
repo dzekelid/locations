@@ -8,23 +8,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/459-placec
 x-kinRank: "8"
 x-alexaRank: "5300044"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placecast/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Placecast
-  x-api-slug: placecast
-  description: Discover the difference of carrier-validation in your programmatic
-    mobile advertising. Ericsson Emodos Ad Stack lets advertisers use existing demand
-    platforms and reach audiences in an efficient, privacy-compliant manner.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/459-placecast.jpg
-  humanURL: http://placecast.net
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placecast/openapi.md
+apis: []
 x-common:
 - type: x-blog
   url: http://blog.placecast.net/

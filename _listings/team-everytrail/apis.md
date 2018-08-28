@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/778-team-e
 x-kinRank: "7"
 x-alexaRank: "8751"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/team-everytrail/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Team EveryTrail
-  x-api-slug: team-everytrail
-  description: Search 50,000 trails with detailed reviews, photos and maps curated
-    by millions of hikers, campers, and nature lovers like you.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/778-team-everytrail.jpg
-  humanURL: http://www.everytrail.com
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/team-everytrail/openapi.md
+apis: []
 x-common:
 - type: x-base
   url: http://www.everytrail.com/api/

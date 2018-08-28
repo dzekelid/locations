@@ -14,14 +14,14 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-elastic-beanstalk/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Elastic Beanstalk API
-  x-api-slug: aws-elastic-beanstalk-api
-  description: ""
+- name: AWS Elastic Beanstalk API - Create Storage Location
+  x-api-slug: actioncreatestoragelocation-get
+  description: Creates the Amazon S3 storage location for the account.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
   humanURL: https://aws.amazon.com/elasticbeanstalk/
   baseURL: :///
@@ -31,9 +31,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-elastic-beanstalk/actioncreatestoragelocation-get-openapi.md
-- name: AWS Elastic Beanstalk API
-  x-api-slug: aws-elastic-beanstalk-api
-  description: ""
+- name: AWS Elastic Beanstalk API - Create Storage Location
+  x-api-slug: actioncreatestoragelocation-get
+  description: Creates the Amazon S3 storage location for the account.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
   humanURL: https://aws.amazon.com/elasticbeanstalk/
   baseURL: :///
@@ -43,26 +43,6 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-elastic-beanstalk/actioncreatestoragelocation-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-elastic-beanstalk/actioncreatestoragelocation-get-openapi.md
-- name: AWS Elastic Beanstalk API
-  x-api-slug: aws-elastic-beanstalk-api
-  description: AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling
-    web applications and services developed with Java,.NET, PHP, Node.js, Python,
-    Ruby, Go, andDockeron familiar servers such as Apache, Nginx, Passenger, andIIS.You
-    can simply upload your code and Elastic Beanstalk automatically handles the deployment,
-    from capacity provisioning, load balancing, auto-scaling to application health
-    monitoring. At the same time, you retain full control over the AWS resources powering
-    your application and can access the underlying resources at any time.There is
-    no additional charge for Elastic Beanstalk - you pay only for the AWS resources
-    needed to store and run your applications.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png
-  humanURL: https://aws.amazon.com/elasticbeanstalk/
-  baseURL: :///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-elastic-beanstalk/openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.ec2.systems.manager.api.gallery.streamdata.io

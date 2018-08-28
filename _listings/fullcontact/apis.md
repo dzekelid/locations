@@ -7,14 +7,16 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/205-fullco
 x-kinRank: "9"
 x-alexaRank: "49636"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/apis.md
 specificationVersion: "0.14"
 apis:
-- name: FullContact
-  x-api-slug: fullcontact
-  description: the-api-for-managing-fullcontact-locations
+- name: FullContact Location API - Location Normalization
+  x-api-slug: addresslocationnormalizer-json-get
+  description: The Location Normalization method takes semi-structured location data
+    via the place parameter, provided as a string, and returns structured location
+    data in either JSON or XML format.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/205-fullcontact.jpg
   humanURL: http://fullcontact.com
   baseURL: https://api.fullcontact.com//
@@ -25,9 +27,11 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/addresslocationnormalizer-json-get-openapi.md
-- name: FullContact
-  x-api-slug: fullcontact
-  description: the-api-for-managing-fullcontact-locations
+- name: FullContact Location API - Location Normalization
+  x-api-slug: addresslocationnormalizer-json-get
+  description: The Location Normalization method takes semi-structured location data
+    via the place parameter, provided as a string, and returns structured location
+    data in either JSON or XML format.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/205-fullcontact.jpg
   humanURL: http://fullcontact.com
   baseURL: https://api.fullcontact.com//
@@ -38,11 +42,11 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/addresslocationnormalizer-json-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/addresslocationnormalizer-json-get-openapi.md
-- name: FullContact
-  x-api-slug: fullcontact
-  description: the-api-for-managing-fullcontact-locations
+- name: FullContact Location API - Location Normalization
+  x-api-slug: addresslocationnormalizer-json-get
+  description: The Location Normalization method takes semi-structured location data
+    via the place parameter, provided as a string, and returns structured location
+    data in either JSON or XML format.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/205-fullcontact.jpg
   humanURL: http://fullcontact.com
   baseURL: https://api.fullcontact.com//
@@ -53,21 +57,6 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/addresslocationnormalizer-json-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/addresslocationnormalizer-json-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/addresslocationnormalizer-json-get-openapi.md
-- name: FullContact
-  x-api-slug: fullcontact
-  description: Build a clearer picture of your customers in minutes with our data-focused
-    APIs. Manage your personal or teams contacts with our contact apps.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/205-fullcontact.jpg
-  humanURL: http://fullcontact.com
-  baseURL: https://api.fullcontact.com//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/openapi.md
 x-common:
 - type: x-api-gallery
   url: http://freesound.api.gallery.streamdata.io

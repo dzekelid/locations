@@ -9,14 +9,14 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Glass APIs
-  x-api-slug: google-glass-apis
-  description: interacts-with-glass-users-via-the-timeline-
+- name: Google Mirror - Get Locations
+  x-api-slug: locations-get
+  description: Retrieves a list of locations for the user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
     Shot 2017-03-16 at 11.10.43 PM.png
   humanURL: https://developers.google.com/glass/
@@ -26,9 +26,21 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locations-get-openapi.md
-- name: Google Glass APIs
-  x-api-slug: google-glass-apis
-  description: interacts-with-glass-users-via-the-timeline-
+- name: Google Mirror - Get Location
+  x-api-slug: locationsid-get
+  description: Gets a single location by ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
+    Shot 2017-03-16 at 11.10.43 PM.png
+  humanURL: https://developers.google.com/glass/
+  baseURL: ://www.googleapis.com//mirror/v1
+  tags: Wearables, Glasses, Google APIs, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
+- name: Google Mirror - Get Locations
+  x-api-slug: locations-get
+  description: Retrieves a list of locations for the user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
     Shot 2017-03-16 at 11.10.43 PM.png
   humanURL: https://developers.google.com/glass/
@@ -38,11 +50,57 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locations-get-openapi.md
+- name: Google Mirror - Get Location
+  x-api-slug: locationsid-get
+  description: Gets a single location by ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
+    Shot 2017-03-16 at 11.10.43 PM.png
+  humanURL: https://developers.google.com/glass/
+  baseURL: ://www.googleapis.com//mirror/v1
+  tags: Wearables, Glasses, Google APIs, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
-- name: Google Glass APIs
-  x-api-slug: google-glass-apis
-  description: interacts-with-glass-users-via-the-timeline-
+- name: Google Mirror - Get Location
+  x-api-slug: locationsid-get
+  description: Gets a single location by ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
+    Shot 2017-03-16 at 11.10.43 PM.png
+  humanURL: https://developers.google.com/glass/
+  baseURL: ://www.googleapis.com//mirror/v1
+  tags: Wearables, Glasses, Google APIs, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
+- name: Google Mirror - Get Location
+  x-api-slug: locationsid-get
+  description: Gets a single location by ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
+    Shot 2017-03-16 at 11.10.43 PM.png
+  humanURL: https://developers.google.com/glass/
+  baseURL: ://www.googleapis.com//mirror/v1
+  tags: Wearables, Glasses, Google APIs, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
+- name: Google Mirror - Get Location
+  x-api-slug: locationsid-get
+  description: Gets a single location by ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
+    Shot 2017-03-16 at 11.10.43 PM.png
+  humanURL: https://developers.google.com/glass/
+  baseURL: ://www.googleapis.com//mirror/v1
+  tags: Wearables, Glasses, Google APIs, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
+- name: Google Mirror - Get Locations
+  x-api-slug: locations-get
+  description: Retrieves a list of locations for the user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
     Shot 2017-03-16 at 11.10.43 PM.png
   humanURL: https://developers.google.com/glass/
@@ -52,13 +110,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locations-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locations-get-openapi.md
-- name: Google Glass APIs
-  x-api-slug: google-glass-apis
-  description: interacts-with-glass-users-via-the-timeline-
+- name: Google Mirror - Get Locations
+  x-api-slug: locations-get
+  description: Retrieves a list of locations for the user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
     Shot 2017-03-16 at 11.10.43 PM.png
   humanURL: https://developers.google.com/glass/
@@ -68,25 +122,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locations-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locations-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locationsid-get-openapi.md
-- name: Google Glass APIs
-  x-api-slug: google-glass-apis
-  description: Glass is fundamentally different than existing mobile platforms in
-    both design and use. Follow these principles when building Glassware to give users
-    the best experience.
+- name: Google Mirror - Get Locations
+  x-api-slug: locations-get
+  description: Retrieves a list of locations for the user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen
     Shot 2017-03-16 at 11.10.43 PM.png
   humanURL: https://developers.google.com/glass/
   baseURL: ://www.googleapis.com//mirror/v1
-  tags: Locations
+  tags: Wearables, Glasses, Google APIs, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/locations-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://google.genomics.api.gallery.streamdata.io

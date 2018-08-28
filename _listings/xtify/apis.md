@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/534-xtify.
 x-kinRank: "9"
 x-alexaRank: "613"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/xtify/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Xtify
-  x-api-slug: xtify
-  description: For more than a century IBM has been dedicated to every clients success
-    and to creating innovations that matter for the world
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/534-xtify.jpg
-  humanURL: http://developer.xtify.com/dashboard.action
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/xtify/openapi.md
+apis: []
 x-common:
 - type: x-blog
   url: http://blog.xtify.com

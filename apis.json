@@ -1,437 +1,1553 @@
 {
-	"name": "Coord",
-	"x-slug": "coord",
-	"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-	"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-	"x-kinRank": "7",
-	"x-alexaRank": "1035226",
-	"tags": "Locations",
-	"created": "2018-08-23",
-	"modified": "2018-08-23",
-	"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/apis.md",
+	"name": "Streadata.io API Gallery - Locations",
+	"description": "This is a repository of locations APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/locations.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-28",
+	"url": "http://locations.streamdata.gallery/apis.json",
 	"specificationVersion": "0.14",
 	"apis": [
 		{
-			"name": "Coord Bike Share API",
-			"x-api-slug": "coord-bike-share-api",
-			"description": "the-bike-share-api-is-a-comprehensive-api-that-provides-information-about-bike-sharesystems-including-available-bikes-and-prices-for-an-example-of-how-to-use-the-bike-share-api-see-the-a-hrefhttpscoord-coquickstartbikeshare-target-blankbike-share-guidea--examplesearch-for-a-bikecurl-g-httpsapi-coord-cov1bikelocationlatitude40-73935542longitude73-99931783radius-km0-1access-keyyour-api-keythe-api-methods-allow-you-to-search-for-available-bikes-and-get-quotes-on-bike-rentalsas-well-as-get-detailed-information-about-bike-share-systems-and-bike-share-locations-bike-share-systems-have-one-or-more-locations--since-bikes-in-a-bike-share-system-may-be-in-adock-or-individually-parked-a-bike-location-can-refer-to-either-a-dock-or-a-single-separatelyparked-bike--therefore-a-search-for-bike-locations-is-really-a-search-for-rideable-bikes-bikes-that-are-currently-inuse-or-otherwise-not-ready-for-rental-are-not-searchable-throughthis-api-the-simplest-method-to-call-is-locationreference0findbikesbylocation-with-a-targetlatitude-and-longitude-and-a-search-radius--this-will-return-all-available-locations-withinthat-radius-and-information-about-each-location-calling-quotereference0getquote-will-return-all-quotes-for-allsystems-or-if-provided-with-specific-system-ids-quotes-for-just-the-specified-systems-calls-to-systemsystem-idreference0getbikesystem-orlocationsystem-idlocation-idreference0getbikelocation-are-helpful-toget-more-information-about-individual-systems-or-locations-respectively-calling-systemreference0findbikesystemsbylocation-with-a-target-latitude-and-longitudeand-a-search-radius-will-return-all-systems-within-that-radius-and-information-about-eachsystem--quotes-and-passesquotes-are-the-cost-and-details-of-renting-a-single-bike-from-a-system--they-consist-of-aset-of-pass-types-where-each-type-defines-a-buyable-pass-for-a-system--a-passrepresents-the-right-to-rent-bikes-from-a-single-system-for-a-certain-length-of-time-or-acertain-number-of-rides--for-instance-you-could-see-a-single-ride-pass-a-single-day-passa-30day-pass-or-an-annual-pass-passes-also-come-with-usage-fees-that-represent-the-cost-of-riding-a-bike-for-a-certainlength-of-time-within-a-given-rental--to-model-systems-that-charge-solely-by-the-length-ofeach-ride-with-no-upfront-charge-we-return-a-single-0-pass-type-representing-the-systemspricing-in-general-with-charge-by-time-set-to-true--finally-we-have-information-about-thetax-rate-this-pass-could-be-subject-to-here-is-an-example-3day-pass-that-costs-24-00-where-rides-over-30-minutes-are-billed-at-5-per15-minutes---id-2--system-id-citibike--max-days-3--charge-by-time-false--cost-----currency-usd----amount-2400----usage-fees-----cost-------currency-usd------amount-500--------prorated-false----start-time-seconds-1800----fee-increment-seconds-900----tax-regions-----name-new-york-city----tax-rate-0-08875-------name-jersey-city----tax-rate-0-07--here-is-an-example-7-95-singleride-pass-with-usage-fees-and-tax-details-omitted--id-1--system-id-citibike--max-rides-1--charge-by-time-false--cost-----currency-usd----amount-795----usage-fees------------tax-regions----------and-heres-an-example-from-a-pay-as-you-go-system-that-charges-2-for-30-minutes-and-7-cents-aminute-thereafter--as-you-can-see-usage-fees-are-cumulative-they-all-get-charged-togetheras-a-single-ride-increases-in-length-and-passes-each-of-their-start-time-seconds-values---id-3--system-id-jumpdc--charge-by-time-true--usage-fees-----cost-------currency-usd------amount-200--------prorated-false----start-time-seconds-0-------cost-------currency-usd------amount-7--------prorated-false----start-time-seconds-1800----fee-increment-seconds-60----tax-regions----------",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/bike",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Bike Share API",
-			"x-api-slug": "coord-bike-share-api",
-			"description": "the-bike-share-api-is-a-comprehensive-api-that-provides-information-about-bike-sharesystems-including-available-bikes-and-prices-for-an-example-of-how-to-use-the-bike-share-api-see-the-a-hrefhttpscoord-coquickstartbikeshare-target-blankbike-share-guidea--examplesearch-for-a-bikecurl-g-httpsapi-coord-cov1bikelocationlatitude40-73935542longitude73-99931783radius-km0-1access-keyyour-api-keythe-api-methods-allow-you-to-search-for-available-bikes-and-get-quotes-on-bike-rentalsas-well-as-get-detailed-information-about-bike-share-systems-and-bike-share-locations-bike-share-systems-have-one-or-more-locations--since-bikes-in-a-bike-share-system-may-be-in-adock-or-individually-parked-a-bike-location-can-refer-to-either-a-dock-or-a-single-separatelyparked-bike--therefore-a-search-for-bike-locations-is-really-a-search-for-rideable-bikes-bikes-that-are-currently-inuse-or-otherwise-not-ready-for-rental-are-not-searchable-throughthis-api-the-simplest-method-to-call-is-locationreference0findbikesbylocation-with-a-targetlatitude-and-longitude-and-a-search-radius--this-will-return-all-available-locations-withinthat-radius-and-information-about-each-location-calling-quotereference0getquote-will-return-all-quotes-for-allsystems-or-if-provided-with-specific-system-ids-quotes-for-just-the-specified-systems-calls-to-systemsystem-idreference0getbikesystem-orlocationsystem-idlocation-idreference0getbikelocation-are-helpful-toget-more-information-about-individual-systems-or-locations-respectively-calling-systemreference0findbikesystemsbylocation-with-a-target-latitude-and-longitudeand-a-search-radius-will-return-all-systems-within-that-radius-and-information-about-eachsystem--quotes-and-passesquotes-are-the-cost-and-details-of-renting-a-single-bike-from-a-system--they-consist-of-aset-of-pass-types-where-each-type-defines-a-buyable-pass-for-a-system--a-passrepresents-the-right-to-rent-bikes-from-a-single-system-for-a-certain-length-of-time-or-acertain-number-of-rides--for-instance-you-could-see-a-single-ride-pass-a-single-day-passa-30day-pass-or-an-annual-pass-passes-also-come-with-usage-fees-that-represent-the-cost-of-riding-a-bike-for-a-certainlength-of-time-within-a-given-rental--to-model-systems-that-charge-solely-by-the-length-ofeach-ride-with-no-upfront-charge-we-return-a-single-0-pass-type-representing-the-systemspricing-in-general-with-charge-by-time-set-to-true--finally-we-have-information-about-thetax-rate-this-pass-could-be-subject-to-here-is-an-example-3day-pass-that-costs-24-00-where-rides-over-30-minutes-are-billed-at-5-per15-minutes---id-2--system-id-citibike--max-days-3--charge-by-time-false--cost-----currency-usd----amount-2400----usage-fees-----cost-------currency-usd------amount-500--------prorated-false----start-time-seconds-1800----fee-increment-seconds-900----tax-regions-----name-new-york-city----tax-rate-0-08875-------name-jersey-city----tax-rate-0-07--here-is-an-example-7-95-singleride-pass-with-usage-fees-and-tax-details-omitted--id-1--system-id-citibike--max-rides-1--charge-by-time-false--cost-----currency-usd----amount-795----usage-fees------------tax-regions----------and-heres-an-example-from-a-pay-as-you-go-system-that-charges-2-for-30-minutes-and-7-cents-aminute-thereafter--as-you-can-see-usage-fees-are-cumulative-they-all-get-charged-togetheras-a-single-ride-increases-in-length-and-passes-each-of-their-start-time-seconds-values---id-3--system-id-jumpdc--charge-by-time-true--usage-fees-----cost-------currency-usd------amount-200--------prorated-false----start-time-seconds-0-------cost-------currency-usd------amount-7--------prorated-false----start-time-seconds-1800----fee-increment-seconds-60----tax-regions----------",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/bike",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationsystem-idlocation-id-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationsystem-idlocation-id-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Bike Share API",
-			"x-api-slug": "coord-bike-share-api",
-			"description": "the-bike-share-api-is-a-comprehensive-api-that-provides-information-about-bike-sharesystems-including-available-bikes-and-prices-for-an-example-of-how-to-use-the-bike-share-api-see-the-a-hrefhttpscoord-coquickstartbikeshare-target-blankbike-share-guidea--examplesearch-for-a-bikecurl-g-httpsapi-coord-cov1bikelocationlatitude40-73935542longitude73-99931783radius-km0-1access-keyyour-api-keythe-api-methods-allow-you-to-search-for-available-bikes-and-get-quotes-on-bike-rentalsas-well-as-get-detailed-information-about-bike-share-systems-and-bike-share-locations-bike-share-systems-have-one-or-more-locations--since-bikes-in-a-bike-share-system-may-be-in-adock-or-individually-parked-a-bike-location-can-refer-to-either-a-dock-or-a-single-separatelyparked-bike--therefore-a-search-for-bike-locations-is-really-a-search-for-rideable-bikes-bikes-that-are-currently-inuse-or-otherwise-not-ready-for-rental-are-not-searchable-throughthis-api-the-simplest-method-to-call-is-locationreference0findbikesbylocation-with-a-targetlatitude-and-longitude-and-a-search-radius--this-will-return-all-available-locations-withinthat-radius-and-information-about-each-location-calling-quotereference0getquote-will-return-all-quotes-for-allsystems-or-if-provided-with-specific-system-ids-quotes-for-just-the-specified-systems-calls-to-systemsystem-idreference0getbikesystem-orlocationsystem-idlocation-idreference0getbikelocation-are-helpful-toget-more-information-about-individual-systems-or-locations-respectively-calling-systemreference0findbikesystemsbylocation-with-a-target-latitude-and-longitudeand-a-search-radius-will-return-all-systems-within-that-radius-and-information-about-eachsystem--quotes-and-passesquotes-are-the-cost-and-details-of-renting-a-single-bike-from-a-system--they-consist-of-aset-of-pass-types-where-each-type-defines-a-buyable-pass-for-a-system--a-passrepresents-the-right-to-rent-bikes-from-a-single-system-for-a-certain-length-of-time-or-acertain-number-of-rides--for-instance-you-could-see-a-single-ride-pass-a-single-day-passa-30day-pass-or-an-annual-pass-passes-also-come-with-usage-fees-that-represent-the-cost-of-riding-a-bike-for-a-certainlength-of-time-within-a-given-rental--to-model-systems-that-charge-solely-by-the-length-ofeach-ride-with-no-upfront-charge-we-return-a-single-0-pass-type-representing-the-systemspricing-in-general-with-charge-by-time-set-to-true--finally-we-have-information-about-thetax-rate-this-pass-could-be-subject-to-here-is-an-example-3day-pass-that-costs-24-00-where-rides-over-30-minutes-are-billed-at-5-per15-minutes---id-2--system-id-citibike--max-days-3--charge-by-time-false--cost-----currency-usd----amount-2400----usage-fees-----cost-------currency-usd------amount-500--------prorated-false----start-time-seconds-1800----fee-increment-seconds-900----tax-regions-----name-new-york-city----tax-rate-0-08875-------name-jersey-city----tax-rate-0-07--here-is-an-example-7-95-singleride-pass-with-usage-fees-and-tax-details-omitted--id-1--system-id-citibike--max-rides-1--charge-by-time-false--cost-----currency-usd----amount-795----usage-fees------------tax-regions----------and-heres-an-example-from-a-pay-as-you-go-system-that-charges-2-for-30-minutes-and-7-cents-aminute-thereafter--as-you-can-see-usage-fees-are-cumulative-they-all-get-charged-togetheras-a-single-ride-increases-in-length-and-passes-each-of-their-start-time-seconds-values---id-3--system-id-jumpdc--charge-by-time-true--usage-fees-----cost-------currency-usd------amount-200--------prorated-false----start-time-seconds-0-------cost-------currency-usd------amount-7--------prorated-false----start-time-seconds-1800----fee-increment-seconds-60----tax-regions----------",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/bike",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationsystem-idlocation-id-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationsystem-idlocation-id-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationsystem-idlocation-id-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationsystem-idlocation-id-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Bike Share API",
-			"x-api-slug": "coord-bike-share-api",
-			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/bike",
+			"name": "Urban Airship",
+			"x-api-slug": "urban-airship",
+			"description": "A market-leading mobile app engagement, mobile analytics, mobile data integration and mobile wallet marketing solution.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/75-urban-airship.jpg",
+			"humanURL": "http://urbanairship.com/",
+			"baseURL": "https://go.urbanairship.com//api/",
 			"tags": "Locations",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/urban-airship/openapi.md"
 				}
 			]
 		},
 		{
-			"name": "Coord Curb Search API",
-			"x-api-slug": "coord-curb-search-api",
-			"description": "the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/curbs",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Curb Search API",
-			"x-api-slug": "coord-curb-search-api",
-			"description": "the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/curbs",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Curb Search API",
-			"x-api-slug": "coord-curb-search-api",
-			"description": "the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/curbs",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Curb Search API",
-			"x-api-slug": "coord-curb-search-api",
-			"description": "the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/curbs",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationall-rules-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/bylocationtime-rules-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Curb Search API",
-			"x-api-slug": "coord-curb-search-api",
-			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/curbs",
+			"name": "Factual",
+			"x-api-slug": "factual",
+			"description": "Factual is pioneering how the world uses data to power mobile marketing, digital consumer products, mobile applications and real world analytics.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/139-factual.jpg",
+			"humanURL": "http://www.factual.com/",
+			"baseURL": "https://api.v3.factual.com//",
 			"tags": "Locations",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/factual/openapi.md"
 				}
 			]
 		},
 		{
-			"name": "Coord Multimodal Routing API",
-			"x-api-slug": "coord-multimodal-routing-api",
-			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/routing",
+			"name": "Reverb",
+			"x-api-slug": "reverb",
+			"description": "Reverb&#8217;s mission is to connect people with meaningful content.Reverb was created to find and connect the rich associations between words, ideas, content, and people. Through our products, we enhance broader knowledge around favorite topics by surfacing interesting information readers might not uncover on their own. We make tools for content understanding at every level from the single word on up. Wordnik: Get a full view of any word you???re interested in, with definitions, example sentences, related words, tweets from Twitter, pictures from Flickr, and much more.Reverb for Publishers: Reverb for Publishers brings relevant content to web audiences and surfaces additional content for publishers.Reverb for Developers: Reverb is committed to the open-source community and is proudly contributing infrastructure software to power applications and enterprises both small and gigantic. Our involvement with the Wordnik API, Scalatra, Swagger and Atmosphere is detailed on our site.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/145_logo.png",
+			"humanURL": "https://helloreverb.com/app",
+			"baseURL": "https://api.reverb.com//api",
 			"tags": "Locations",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/reverb/openapi.md"
 				}
 			]
 		},
 		{
-			"name": "Coord Parking Access API",
-			"x-api-slug": "coord-parking-access-api",
-			"description": "the-parking-access-api-allows-you-to-authorize-one-of-your-end-users-to-park-at-a-supportedparking-location-by-means-of-creating-a-new-parkingsession-for-your-user-at-the-location-for-a-list-of-supported-locations-seea-hrefhttpscoord-codocssearchparking-target-blankthe-parking-search-apia-you-may-only-call-the-accessparking-api-using-parkinglocation-ids-returned-from-the-searchapi-for-locations-where-online-access-type-is-set-to-something-other-than-not-available-all-other-ids-will-be-rejected--parking-creating-a-sessionto-allow-a-user-to-park-at-a-given-lot-or-garage-you-create-a-session-for-that-user-atthe-location-you-can-create-a-new-session-by-callingpost-location-idsessionreference0createandretrievesessionscreateanewsessionwhich-will-return-a-new-session-that-either-is-already-started-has-an-end-time-set-orcontains-any-information-necessary-to-display-to-your-end-user-to-start-the-session-forexample-a-barcode-that-must-be-scanned-in-at-the-location-to-authorize-access--apicontrolled-sessionssessions-that-come-back-with-a-start-time-already-set-are-apicontrolled-meaning-thatthe-location-itself-has-no-way-of-telling-when-your-user-enters-or-leaves-but-insteaddepends-on-you-to-do-this-through-the-api--for-these-sessions-you-must-eventually-callput-location-idsessionsession-idendreference0endingsessionsendapreviouslystartedsessionto-end-the-session-at-which-point-billing-info-will-be-attached-and-returned-in-the-response-typically-you-would-provide-a-way-for-your-end-user-to-tell-you-that-they-are-leaving-theparking-lot-and-then-call-this--note-that-if-you-fail-to-call-this-method-you-risk-accruingthe-maximum-charge-possible-for-the-given-location--sitecontrolled-sessionsat-locations-that-have-a-means-of-telling-when-users-enter-and-leave-like-human-attendants-ora-barcode-scanner-the-session-end-time-and-billing-information-will-be-set-only-afterthe-user-ends-their-session-at-the-location-e-g--scans-out-with-a-barcode-or-checks-out-withan-attendant--in-such-cases-you-may-want-to-pollget-location-idsessionsession-idreference0retrieveanexistingsessionretrieveanexistingsessionuntil-an-end-time-exists-in-the-response--this-is-useful-to-provide-a-summarynotification-toyour-user-after-checkout-and-for-your-own-records-note-that-parkingsession-objects-last-forever--you-can-always-callget-location-idsessionsession-idreference0retrieveanexistingsessionretrieveanexistingsessionfor-information-on-a-session-that-you-created--maximum-stayssome-apicontrolled-and-sitecontrolled-sessions-may-be-subject-to-a-maximum-duration-whichmeans-that-after-a-set-amount-of-time-the-session-will-automatically-be-assigned-an-end-timeand-be-billed-for-usage-up-to-that-time--though-you-can-generally-avoid-this-by-callinga-hrefhttpscoord-codocssearchparking-target-blankthe-parking-search-apiabeforehand-to-determine-if-your-users-expected-parking-time-will-be-valid-at-a-locationsince-that-method-only-returns-locations-that-can-accept-parking-for-a-given-start-time-andduration-pair-your-user-might-still-stay-beyond-their-original-expected-duration-and-hit-amaximum-stay-time-you-can-poll-get-location-idsessionsession-idreference0retrieveanexistingsessionretrieveanexistingsession-todetermine-if-a-session-has-automatically-closed-and-notify-your-user-that-this-has-happened-if-this-happens-your-user-has-the-following-options---for-apicontrolled-sessions-your-user-should-leave-the-location-immediately-to-avoid-some--kind-of-enforcement-action-car-booting-towing-stickering-etc--note-that-you-will-not--need-to-explicitly-call--put-location-idsessionsession-idendreference0endingsessionsendapreviouslystartedsession-since-the--session-is-already-ended----for-sitecontrolled-sessions-your-user-may-or-may-not-be-able-to-check-out-using-the--redemption-info-provided-in-the-session--if-checkout-fails-gate-arm-does-not-go-up-your--user-may-have-to-resort-to-local-onsite-help-speaking-with-an-attendant-calling-posted--telephone-numbers-or-using-onsite-intercoms-for-assistance----finding-sessions--in-addition-to-querying-for-the-status-of-a-single-session-you-can-also-get-all-of-the--sessions-for-a-given-user-by-calling---get-sessionreference0retrieveauserssessionsretrieveauserssessions--this-will--return-both-the-currently-open-session-if-it-exists-and-all-closed-sessions---to-get-all-of-a-users-sessions-at-a-given-location-you-can-call--get-location-idsessionreference0createandretrievesessionsretrievealocationssessions-",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/access\/parking",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-idsession-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-idsession-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Parking Access API",
-			"x-api-slug": "coord-parking-access-api",
-			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/access\/parking",
+			"name": "Adobe",
+			"x-api-slug": "adobe",
+			"description": "Adobe is changing the world through digital experiences. We help our customers create, deliver and optimize content and applications.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/151-adobe.jpg",
+			"humanURL": "https://adobe.com",
+			"baseURL": "https:///",
 			"tags": "Locations",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/adobe/openapi.md"
 				}
 			]
 		},
 		{
-			"name": "Coord Parking Search API",
-			"x-api-slug": "coord-parking-search-api",
-			"description": "the-parking-search-api-is-a-readonly-service-to-answer-questionsabout-where-and-when-a-person-can-park-in-lots-and-garages--for-onstreet-parkinguse-the-curbs-api-finding-parking-locationsa-place-where-you-can-park-is-called-a-location--this-is-usually-either-a-surface-parkinglot-or-a-parking-garage--to-find-parking-locations-in-a-given-area-use-thelocationreference0getalistoflocations-request--this-will-return-an-object-for-each-open--location-in-that-area-ordered-by-distance-when-we-have-live-parking-availability-for-a-location-we-will-also-fill-inavailability-probability-for-it--this-represents-the-probability-that-there-will-be-at-leastthreshold-spaces-available-at-the-location--we-find-availability-probability-a-prettygreat-way-to-reason-about-parking-locations-which-may-have-uncertainty-around-theiravailability-both-at-the-current-time-and-in-the-future-when-someone-may-be-arriving-aftera-trip-getting-data-on-a-single-locationuse-locationreference0getasinglelocations-requests-to-get-the-same-information-aboutjust-one-location-accessing-a-lotyou-can-allow-your-mobile-users-to-check-into-and-out-of-select-locationsusing-the-parking-access-api--parking-rates-select-locations-will-have-a-rates-field-set-with-a-list-of-rates-which-can-be-displayed-toyour-end-users-for-a-rough-idea-on-the-price-of-parking-all-locations-will-include-a-total-price-if--parking-start-time-and-duration-m-are-setappropriately-",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/parking",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Parking Search API",
-			"x-api-slug": "coord-parking-search-api",
-			"description": "the-parking-search-api-is-a-readonly-service-to-answer-questionsabout-where-and-when-a-person-can-park-in-lots-and-garages--for-onstreet-parkinguse-the-curbs-api-finding-parking-locationsa-place-where-you-can-park-is-called-a-location--this-is-usually-either-a-surface-parkinglot-or-a-parking-garage--to-find-parking-locations-in-a-given-area-use-thelocationreference0getalistoflocations-request--this-will-return-an-object-for-each-open--location-in-that-area-ordered-by-distance-when-we-have-live-parking-availability-for-a-location-we-will-also-fill-inavailability-probability-for-it--this-represents-the-probability-that-there-will-be-at-leastthreshold-spaces-available-at-the-location--we-find-availability-probability-a-prettygreat-way-to-reason-about-parking-locations-which-may-have-uncertainty-around-theiravailability-both-at-the-current-time-and-in-the-future-when-someone-may-be-arriving-aftera-trip-getting-data-on-a-single-locationuse-locationreference0getasinglelocations-requests-to-get-the-same-information-aboutjust-one-location-accessing-a-lotyou-can-allow-your-mobile-users-to-check-into-and-out-of-select-locationsusing-the-parking-access-api--parking-rates-select-locations-will-have-a-rates-field-set-with-a-list-of-rates-which-can-be-displayed-toyour-end-users-for-a-rough-idea-on-the-price-of-parking-all-locations-will-include-a-total-price-if--parking-start-time-and-duration-m-are-setappropriately-",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/parking",
-			"tags": "Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API",
-			"properties": [
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/location-get-openapi.md"
-				},
-				{
-					"type": "x-postman-collection",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationid-get-postman.md"
-				},
-				{
-					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/locationid-get-openapi.md"
-				}
-			]
-		},
-		{
-			"name": "Coord Parking Search API",
-			"x-api-slug": "coord-parking-search-api",
-			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/parking",
+			"name": "Yahoo",
+			"x-api-slug": "yahoo",
+			"description": "News, email and search are just the beginning. Discover more every day. Find your yodel.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/201-yahoo.jpg",
+			"humanURL": "http://www.yahoo.com",
+			"baseURL": "https://weather.yahooapis.com//",
 			"tags": "Locations",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/yahoo/openapi.md"
 				}
 			]
 		},
 		{
-			"name": "Coord Tolls API",
-			"x-api-slug": "coord-tolls-api",
-			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/search\/tolling",
+			"name": "Foursquare",
+			"x-api-slug": "foursquare",
+			"description": "Foursquare helps you find the perfect places to go with friends. Discover the best food, nightlife, and entertainment in your area.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg",
+			"humanURL": "http://blog.foursquare.com",
+			"baseURL": "https:///",
 			"tags": "Locations",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/foursquare/openapi.md"
 				}
 			]
 		},
 		{
-			"name": "Coord Users API",
-			"x-api-slug": "coord-users-api",
-			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
-			"image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/coord-logo.png",
-			"humanURL": "https:\/\/coord.co",
-			"baseURL": "https:\/\/api.coord.co\/\/v1\/users",
+			"name": "FullContact",
+			"x-api-slug": "fullcontact",
+			"description": "Build a clearer picture of your customers in minutes with our data-focused APIs. Manage your personal or teams contacts with our contact apps.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/205-fullcontact.jpg",
+			"humanURL": "http://fullcontact.com",
+			"baseURL": "https://api.fullcontact.com//",
 			"tags": "Locations",
 			"properties": [
 				{
 					"type": "x-openapi-spec",
-					"url": "https:\/\/raw.githubusercontent.com\/streamdata-gallery-topics\/locations\/master\/_listings\/coord\/openapi.md"
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Retailigence Corp.",
+			"x-api-slug": "retailigence-corp-",
+			"description": "Powering location-based marketing. Designed for retailers, brands, agencies, and developers.   (Acquired by @ShopAdvisorInc)",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/246-retailigence-corp-.jpg",
+			"humanURL": "http://www.retailigence.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/retailigence-corp-/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AtlasCT",
+			"x-api-slug": "atlasct",
+			"description": "AtlasCT is a global leader in maps and location-based services (LBS) technologies for mobile and web.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/353-atlasct.jpg",
+			"humanURL": "http://www.atlasct.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/atlasct/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Data8 Ltd",
+			"x-api-slug": "data8-ltd",
+			"description": "We believe that clean accurate data is the key to every successful business and this has been our philosophy since 2005. This philosophy has enabled us to become the leading total data quality solutions provider by simplifying and automating data management processes, so customers can completely trust their data.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/d8logo_trans.png",
+			"humanURL": "http://www.data-8.co.uk",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/data8-ltd/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "MapQuest",
+			"x-api-slug": "mapquest",
+			"description": "Official MapQuest website, find driving directions, maps, live traffic updates and road conditions.  Find nearby businesses, restaurants and hotels. Explore!",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/365-mapquest.jpg",
+			"humanURL": "http://mapquest.com",
+			"baseURL": "https://www.mapquestapi.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/mapquest/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Service Objects",
+			"x-api-slug": "service-objects",
+			"description": "With our suite of data verification APIs for phone, email, address and more, you can keep your businesss database clean, accurate, and up to date.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/371-service-objects.jpg",
+			"humanURL": "http://www.serviceobjects.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/service-objects/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "StrikeIron",
+			"x-api-slug": "strikeiron",
+			"description": "StrikeIron is the leader in Data-as-a-Service (DaaS), delivering data quality and communications solutions via our cloud platform IronCloud. We provide address verification, email verification, phone validation, phone append, SMS text messaging, and sales tax solutions to customers in a variety of markets. Our solutions are delivered as Web services that can be easily integrated into any application or system. Additionally, our solutions are pre-integrated into leading platforms like: Salesforce.com, Magento, Informatica, Oracle CRM On-Demand, and more.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/372-informatica.jpg",
+			"humanURL": "http://www.informatica.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/strikeiron/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "SmartyStreets",
+			"x-api-slug": "smartystreets",
+			"description": "Address Verification tools for USPS & International Addresses. Verify addresses with our easy-to-use list processing tools, APIs with 100% uptime, and more.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/433-smartystreets.jpg",
+			"humanURL": "http://www.smartystreets.com/Products/LiveAddress-API/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/smartystreets/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Placecast",
+			"x-api-slug": "placecast",
+			"description": "Discover the difference of carrier-validation in your programmatic mobile advertising. Ericsson Emodos Ad Stack lets advertisers use existing demand platforms and reach audiences in an efficient, privacy-compliant manner.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/459-placecast.jpg",
+			"humanURL": "http://placecast.net",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placecast/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "SmartyStreets",
+			"x-api-slug": "smartystreets",
+			"description": "Address Verification tools for USPS & International Addresses. Verify addresses with our easy-to-use list processing tools, APIs with 100% uptime, and more.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/464-smartystreets.jpg",
+			"humanURL": "http://www.smartystreets.com/Products/LiveAddress-API/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/smartystreets/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "shizzow",
+			"x-api-slug": "shizzow",
+			"description": "",
+			"image": "",
+			"humanURL": "http://dev.shizzow.com/api-v0-documentation-beta/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shizzow/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Site24x7",
+			"x-api-slug": "site24x7",
+			"description": "Site24x7 offers both free & paid website monitoring services. Monitor websites remotely and receive instant email/sms alerts if your website becomes unavailable. View uptime & performance graphs of your website monitors.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/481-site24x7.jpg",
+			"humanURL": "https://www.site24x7.com/",
+			"baseURL": "://www.site24x7.com./",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Location Labs",
+			"x-api-slug": "location-labs",
+			"description": "Location Labs by @avast_antivirus. Global pioneer, mobile security for humans. Cracked the code on mobile monetization, 1 million+ monthly paying subscribers.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/516-location-labs.jpg",
+			"humanURL": "http://www.locationlabs.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/location-labs/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Xtify",
+			"x-api-slug": "xtify",
+			"description": "For more than a century IBM has been dedicated to every clients success and to creating innovations that matter for the world",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/534-xtify.jpg",
+			"humanURL": "http://developer.xtify.com/dashboard.action",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/xtify/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "ParkWhiz",
+			"x-api-slug": "parkwhiz",
+			"description": "Use ParkWhiz to book parking spaces in cities like Chicago & New York, as well as airport parking, stadium & event parking, or daily & monthly parking.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/633-parkwhiz.jpg",
+			"humanURL": "http://www.parkwhiz.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/parkwhiz/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Postmark",
+			"x-api-slug": "postmark",
+			"description": "Trusted by thousands of developers, Postmark is a fast and reliable transactional email service. Send with Postmark to ensure your transactional emails get to the inbox on time, every time.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg",
+			"humanURL": "http://postmarkapp.com",
+			"baseURL": "https://api.postmarkapp.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/postmark/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Sprint Dev Program",
+			"x-api-slug": "sprint-dev-program",
+			"description": "Shop for cell phones & wireless calling plans from Sprint. Switch to Sprint today and find great deals on unlimited data plans for the whole family.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/658-sprint-dev-program.jpg",
+			"humanURL": "http://developer.sprint.com/dynamicContent/sprintservices/devtools/6",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/sprint-dev-program/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Verizon | VDC  ",
+			"x-api-slug": "verizon--vdc--",
+			"description": "Explore Verizons full selection small and medium business solutions including FiOS, high speed internet, phone, and TV service.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/668-verizon-|-vdc--.jpg",
+			"humanURL": "http://developer.verizon.com/content/vdc/en/verizon-tools-apis/verizon_apis/navbuilder-inside-sdk/verizon-toolsandapis-NBI-tech-resources/verizon-nbi-vznavigator-api.html",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/verizon--vdc--/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "WeoGeo Status",
+			"x-api-slug": "weogeo-status",
+			"description": "Positioning-centric information is changing the way people, businesses and governments work throughout the world. By applying Trimbles advanced positioning solutions, productivity increases and safety improvements are being realized.    Though best kn...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/674-weogeo-status.jpg",
+			"humanURL": "http://www.weogeo.com/developer_doc/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/weogeo-status/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "WikiLocation",
+			"x-api-slug": "wikilocation",
+			"description": "",
+			"image": "",
+			"humanURL": "http://wikilocation.org/documentation/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/wikilocation/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Team EveryTrail",
+			"x-api-slug": "team-everytrail",
+			"description": "Search 50,000 trails with detailed reviews, photos and maps curated by millions of hikers, campers, and nature lovers like you.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/778-team-everytrail.jpg",
+			"humanURL": "http://www.everytrail.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/team-everytrail/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "GIS Cloud",
+			"x-api-slug": "gis-cloud",
+			"description": "GIS Cloud is a collaborative mapping solution for the entire workflow of your organization. It works online and on-premisses.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/802-gis-cloud.jpg",
+			"humanURL": "http://www.giscloud.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gis-cloud/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "OpenRouteService",
+			"x-api-slug": "openrouteservice",
+			"description": "OpenStreetMap is the free wiki world map.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/882-openrouteservice.jpg",
+			"humanURL": "http://wiki.openstreetmap.org/wiki/OpenRouteService#ORS_.22API.22",
+			"baseURL": "https://cv.ap.org//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/openrouteservice/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "PlaceIQ",
+			"x-api-slug": "placeiq",
+			"description": "PlaceIQ is a leading data and technology company that helps businesses leverage location-based insights to connect with and understand audiences.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/894-placeiq.jpg",
+			"humanURL": "http://www.placeiq.com/product/inputs-outputs/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placeiq/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "GSMA OneAPI Location",
+			"x-api-slug": "gsma-oneapi-location",
+			"description": "Follow us on @GSMA",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1014-gsma-oneapi-location.jpg",
+			"humanURL": "http://gsma.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gsma-oneapi-location/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Swiftype",
+			"x-api-slug": "swiftype",
+			"description": "Swiftype is a cloud-based search platform that provides all the tools you need to create fantastic search experiences.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1173-swiftype.jpg",
+			"humanURL": "http://swiftype.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/swiftype/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "WallaBee Devs",
+			"x-api-slug": "wallabee-devs",
+			"description": "WallaBee is the ultimate collectibles game for your iPhone.The aim of the game is to complete sets by collecting items in a variety of ways. Each item and set is uniquely numbered so you&#8217;ll need to be quick if you want to beat your friends to the lowest numbers.Players &#8216;forage&#8217; at real world locations to find over 400 uniquely designed items to add to their collections, sometimes finding a real world version of it&#8217;s virtual counterpart through a number of partnerships. Players can find items at places, buy items from store using the in games currency &#8216;honeycombs&#8217;, create items by mixing other items together, trade items with friends or drop and swap at meetups.WallaBee is the first game to support Apple&#8217;s Passbook, and can incorporate scannable passes into partner items that players can redeem at participating locations. In June 2012, WallaBee was selected as &#8216;The Best European Gaming Startup&#8217; as part of the Startup 2.0 contest at Nonick 2012. Currently on iOS and coming soon to Windows Phone 8.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1213_logo.png",
+			"humanURL": "http://wallab.ee/developers/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/wallabee-devs/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Philly Address Live",
+			"x-api-slug": "philly-address-live",
+			"description": "",
+			"image": "",
+			"humanURL": "http://api.phillyaddress.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/philly-address-live/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "BlazeMeter",
+			"x-api-slug": "blazemeter",
+			"description": "BlazeMeter platform for load and performance testing enables dev and QA teams to run scalable and continuous testing for website, mobile, api and software",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1297-blazemeter.jpg",
+			"humanURL": "http://blazemeter.com/",
+			"baseURL": "https://a.blazemeter.com//api/v4",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "IEDA Data",
+			"x-api-slug": "ieda-data",
+			"description": "Interdisciplinary Earth Data Alliance - data services for observational solid Earth data from the Ocean, Earth, and Polar Sciences",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1432-ieda-data.jpg",
+			"humanURL": "http://www.iedadata.org",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ieda-data/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "OpenSignal",
+			"x-api-slug": "opensignal",
+			"description": "The OpenSignal app helps avoid the everyday pain of poor connectivity. It???s a signal-toolkit that shows you how to get a better connection instantly, find nearby free Wifi hotspots and view signal maps so that you know which network offers the best cov...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1458-opensignal.jpg",
+			"humanURL": "http://opensignal.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/opensignal/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Envestnet",
+			"x-api-slug": "envestnet",
+			"description": "Build and transform financial apps and services with access to financial data through our APIs and digital solutions for banks, developers, and innovators.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg",
+			"humanURL": "http://www.yodlee.com/",
+			"baseURL": "https://api.crunchbase.com//v/3",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "University of Southern California",
+			"x-api-slug": "university-of-southern-california",
+			"description": "The University of Southern California is one of the worlds leading private research universities, established in 1880. An anchor institution in Los Angeles, a global center for arts, technology and international trade, USC enrolls more international s...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1740-university-of-southern-california.jpg",
+			"humanURL": "http://usc.edu",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/university-of-southern-california/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Glympse",
+			"x-api-slug": "glympse",
+			"description": "Click here to download --> http://www.glympse.com/get_glympse  Official Support Website --> http://glympse.zendesk.com  Official App Page --> https://apps.facebook.com/glympse/  Twitter--> @Glympse http://twitter.com/Glympse",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1837-glympse.jpg",
+			"humanURL": "https://developer.glympse.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/glympse/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Bynd",
+			"x-api-slug": "bynd",
+			"description": "Bynd is a customizable system of web and mobile apps that engages customers with great design, increases revenues and distributes your brand.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2064-bynd.jpg",
+			"humanURL": "http://byndlabs.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bynd/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Square",
+			"x-api-slug": "square",
+			"description": "Square helps millions of sellers run their business- from secure credit card processing to point of sale solutions. Get paid faster with Square and sign up today!",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg",
+			"humanURL": "http://square.com",
+			"baseURL": "https://connect.squareup.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "OpenCage",
+			"x-api-slug": "opencage",
+			"description": "An easy-to-use forward and reverse geocoding API. Worldwide coverage. Affordable, predictable pricing. Open data.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2956-opencage.jpg",
+			"humanURL": "http://opencagedata.com",
+			"baseURL": "https://api.opencagedata.com/v1/",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/opencage/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Reddit",
+			"x-api-slug": "reddit",
+			"description": "Reddit is a community of millions of users engaging in the creation of content and the sharing of conversation across tens of thousands of topics.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg",
+			"humanURL": "http://www.reddit.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/reddit/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Meetup",
+			"x-api-slug": "meetup",
+			"description": "Find Meetups so you can do more of what matters to you. Or create your own group and meet people near you who share your interests.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/6564-meetup.jpg",
+			"humanURL": "http://meetup.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/meetup/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Geocodio",
+			"x-api-slug": "geocodio",
+			"description": "Hassle-free geocoding. Convert addresses into latitude/longitude via API or spreadsheet upload. Add Congressional districts, timezones, and more.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/9098-geocodio.jpg",
+			"humanURL": "http://geocod.io/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/geocodio/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Locaid",
+			"x-api-slug": "locaid",
+			"description": "LocationSmart provides Cloud Location Services with a trusted enterprise mobility platform to optimize efficiencies, track assets and verify transactions.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/10198-locaid.jpg",
+			"humanURL": "http://www.loc-aid.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/locaid/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Taxamo",
+			"x-api-slug": "taxamo",
+			"description": "We make global digital VAT/GST compliance possible. #DigitalTax #DigiTax #TaxTrends",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg",
+			"humanURL": "https://www.taxamo.com/",
+			"baseURL": "https://api.taxamo.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Shopify",
+			"x-api-slug": "shopify",
+			"description": "Shopify is a commerce platform that allows anyone to easily sell online at a retail location and everywhere in between. It offers a professional online storefront, a payment solution to accept credit cards, and the Shopify POS application to power retail sales.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png",
+			"humanURL": "https://www.shopify.com/",
+			"baseURL": "https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "HERE",
+			"x-api-slug": "here",
+			"description": "HERE Technologies enables people, enterprises and cities around the world to harness the power of location and create innovative solutions that make our lives safer and more efficient. We transform information from devices, vehicles, infrastructure and...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20089-here-maps.jpg",
+			"humanURL": "https://developer.here.com",
+			"baseURL": "https://weather.cit.api.here.com//weather/1.0",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "CARTO",
+			"x-api-slug": "carto",
+			"description": "CARTO Turns Your Location Data Into Business Outcomes.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/22414-carto.jpg",
+			"humanURL": "http://carto.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/carto/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AWS S3",
+			"x-api-slug": "aws-s3",
+			"description": "Amazon Simple Storage Service (Amazon S3) is object storage with a simple web service interface to store and retrieve any amount of data from anywhere on the web. It is designed to deliver 99.999999999% durability, and scale past trillions of objects worldwide.Customers use S3 as a bulk repository, or data lake, for analytics; backup &amp; recovery; disaster recovery; and serverless computing. Many cloud-native applications even use S3 as primary storage.Its simple to move large volumes of data into or out of S3 with Amazonscloud data migrationoptions. Once data is stored in Amazon S3, it can be automatically tiered into lower cost, longer-termcloud storageclasses like S3 Standard - Infrequent Access and Amazon Glacier for archiving.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png",
+			"humanURL": "https://aws.amazon.com/s3/",
+			"baseURL": "https:////",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-s3/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AWS Elastic Beanstalk",
+			"x-api-slug": "aws-elastic-beanstalk",
+			"description": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java,.NET, PHP, Node.js, Python, Ruby, Go, andDockeron familiar servers such as Apache, Nginx, Passenger, andIIS.You can simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring. At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time.There is no additional charge for Elastic Beanstalk - you pay only for the AWS resources needed to store and run your applications.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AWSElasticBeanstalk.png",
+			"humanURL": "https://aws.amazon.com/elasticbeanstalk/",
+			"baseURL": ":///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-elastic-beanstalk/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AWS Direct Connect",
+			"x-api-slug": "aws-direct-connect",
+			"description": "AWS Direct Connect makes it easy to establish a dedicated network connection from your premises to AWS. Using AWS Direct Connect, you can establish private connectivity between AWS and your datacenter, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based connections.AWS Direct Connect lets you establish a dedicated network connection between your network and one of the AWS Direct Connect locations. Using industry standard 802.1q VLANs, this dedicated connection can be partitioned into multiple virtual interfaces. This allows you to use the same connection to access public resources such as objects stored in Amazon S3 using public IP address space, and private resources such as Amazon EC2 instances running within anAmazon Virtual Private Cloud (VPC)using private IP space, while maintaining network separation between the public and private environments. Virtual interfaces can be reconfigured at any time to meet your changing needs.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AWSDirectConnect.png",
+			"humanURL": "https://aws.amazon.com/directconnect/",
+			"baseURL": ":///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AWS Route 53",
+			"x-api-slug": "aws-route-53",
+			"description": "Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other. Amazon Route 53 is fully compliant with IPv6 as well.Amazon Route 53 effectively connects user requests to infrastructure running in AWS &ndash; such as Amazon EC2 instances, Elastic Load Balancing load balancers, or Amazon S3 buckets &ndash; and can also be used to route users to infrastructure outside of AWS. You can use Amazon Route 53 to configure DNS health checks to route traffic to healthy endpoints or to independently monitor the health of your application and its endpoints. Amazon Route 53 Traffic Flow makes it easy for you to manage traffic globally through a variety of routing types, including Latency Based Routing, Geo DNS, and Weighted Round Robin&mdash;all of which can be combined with DNS Failover in order to enable a variety of low-latency, fault-tolerant architectures. Using Amazon Route 53 Traffic Flow&rsquo;s simple visual editor, you can easily manage how your end-users are routed to your application&rsquo;s endpoints&mdash;whether in a single AWS region or distributed around the globe. Amazon Route 53 also offers Domain Name Registration &ndash; you can purchase and manage domain names such as example.com and Amazon Route 53 will automatically configure DNS settings for your domains.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png",
+			"humanURL": "https://aws.amazon.com/route53/",
+			"baseURL": ":///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-route-53/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Google Cloud Functions",
+			"x-api-slug": "google-cloud-functions",
+			"description": "Cloud computing has made possible fully serverless models of computing where logic can be spun up on-demand in response to events originating from anywhere. Construct applications from bite-sized business logic billed to the nearest 100 milliseconds, only while your code is running. Serve users from zero to planet-scale, all without managing any infrastructure.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Cloud-Functions.png",
+			"humanURL": "https://cloud.google.com/functions/",
+			"baseURL": "://cloudfunctions.googleapis.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Google Cloud Key Management Service",
+			"x-api-slug": "google-cloud-key-management-service",
+			"description": "Cloud KMS is a cloud-hosted key management service that lets you manage encryption for your cloud services the same way you do on-premises. You can generate, use, rotate and destroy AES256 encryption keys. Cloud KMS is integrated with IAM and Cloud Audit Logging so that you can manage permissions on individual keys, and monitor how these are used. Use Cloud KMS to protect secrets and other sensitive data which you need to store in Google Cloud Platform.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kms-lead.png",
+			"humanURL": "https://cloud.google.com/kms/",
+			"baseURL": "://cloudkms.googleapis.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Google Glass",
+			"x-api-slug": "google-glass",
+			"description": "Glass is fundamentally different than existing mobile platforms in both design and use. Follow these principles when building Glassware to give users the best experience.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Screen Shot 2017-03-16 at 11.10.43 PM.png",
+			"humanURL": "https://developers.google.com/glass/",
+			"baseURL": "://www.googleapis.com//mirror/v1",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Azure Batch",
+			"x-api-slug": "azure-batch",
+			"description": "Batch processing began with mainframe computers and punch cards. Today, it still plays a central role in business, engineering, science, and other areas that require running lots of automated tasks&mdash;processing bills and payroll, calculating portfolio risk, designing new products, rendering animated films, testing software, searching for energy, predicting the weather, and finding new cures for disease. Previously, few people had access to the computing power for these scenarios. With Azure Batch, that power is available to you when you need it, without any capital investment.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-batch-100x-scale.png",
+			"humanURL": "https://azure.microsoft.com/en-us/services/batch/",
+			"baseURL": "://management.azure.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-batch/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Azure HDInsight",
+			"x-api-slug": "azure-hdinsight",
+			"description": "Azure HDInsight is a Hadoop-based service that brings an Apache Hadoop solution to the cloud. Gain the full value of big data with a cloud-based data platform that manages data of any type and size.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-hdinsights-open-source-analytics.png",
+			"humanURL": "https://azure.microsoft.com/en-us/services/hdinsight/",
+			"baseURL": "://management.azure.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Azure Storage",
+			"x-api-slug": "azure-storage",
+			"description": "Azure Storage offers non-relational data storage including Blob Storage, Table Storage, Queue Storage, and Files.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-storage.png",
+			"humanURL": "https://azure.microsoft.com/en-us/services/storage/",
+			"baseURL": "://management.azure.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "TransitFeeds",
+			"x-api-slug": "transitfeeds",
+			"description": "The best source of open official public transit data. Maintained by @qzervaas + others",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26209-rta-service-alerts.jpg",
+			"humanURL": "https://transitfeeds.com",
+			"baseURL": "https://api.transitfeeds.com//v1",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/transitfeeds/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Amadeus",
+			"x-api-slug": "amadeus",
+			"description": "Amadeus travel technology helps businesses connect to the global travel ecosystem, manage operations more effectively and serve travellers better than ever",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg",
+			"humanURL": "https://amadeus.com",
+			"baseURL": "https://api.sandbox.amadeus.com//v1.2",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/amadeus/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Spireon",
+			"x-api-slug": "spireon",
+			"description": "GPS Vehicle Tracking - As North America???s leading connected vehicle intelligence company with nearly 4 million active subscribers, Spireon provides businesses and consumers with powerful insights to track, manage and protect their most valuable mobile ...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28279-api-spireon-com.jpg",
+			"humanURL": "https://api.spireon.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/spireon/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Avaza",
+			"x-api-slug": "avaza",
+			"description": "Avaza is a beautiful online software suite with modules for Project Management, Timesheets, Expenses &amp; Invoicing. Access from anywhere, with any device. Avaza is the leading all-in-one software for running client focused businesses. Avaza allows businesses of all sizes to more easily and effectively manage team projects, time tracking, expense reporting, quoting &amp; invoicing. It can be accessed simply via a web browser from anywhere in the world on any device.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28373-avaza.jpg",
+			"humanURL": "https://www.avaza.com",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/avaza/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Lufthansa",
+			"x-api-slug": "lufthansa",
+			"description": "Book your flights to Germany, Italy, UK or France online at attractive low fares. Fly via Frankfurt, Munich or Zurich - Lufthansa United States of America",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-partner.jpg",
+			"humanURL": "http://lufthansa.com",
+			"baseURL": "https://api.lufthansa.com//v1",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "OrgHunter",
+			"x-api-slug": "orghunter",
+			"description": "OrgHunter.com is the number one destination for online charity and donor matching services. Every charity deserves the opportunity to be discovered regardless of size or financial status.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28476-org-hunter.jpg",
+			"humanURL": "http://orghunter.com",
+			"baseURL": "https://data.orghunter.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/orghunter/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Public Transport Victoria Timetable",
+			"x-api-slug": "public-transport-victoria-timetable",
+			"description": "The PTV Timetable API provides direct access to Public Transport Victoria&rsquo;s public transport timetable data. The API returns scheduled timetable, route and stop data for all metropolitan and regional train, tram and bus services in Victoria, including Night Network(Night Train and Night Tram data are included in metropolitan train and tram services data, respectively, whereas Night Bus is a separate route type). The API also returns real-time data for metropolitan train, tram and bus services (where this data is made available to PTV), as well as disruption information, stop facility information, and access to myki ticket outlet data.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/public-transport-victoria.png",
+			"humanURL": "https://www.ptv.vic.gov.au/about-ptv/data-and-reports/datasets/ptv-timetable-api/",
+			"baseURL": "https://timetableapi.ptv.vic.gov.au//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/public-transport-victoria-timetable/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "BC Geographical Names",
+			"x-api-slug": "bc-geographical-names",
+			"description": "Geographical names are more than labels on maps and road signs. They can reveal patterns of settlement, exploration and migration, and mirror outside influences to our history - aspects of the heritage and promise of an area that might otherwise be overlooked or forgotten by visitors and later generations.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/british-columbia.png",
+			"humanURL": "https://apps.gov.bc.ca/pub/bcgnws/",
+			"baseURL": "https://apps.gov.bc.ca//pub/geomark",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-geographical-names/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "BC Route Planner",
+			"x-api-slug": "bc-route-planner",
+			"description": "The BC Route Planner is a REST web service that offers vehicle route plans that are based on the BC Digital Road Atlas (DRA). The BC Route Planner computes the shortest or fastest route between start and end points and returns the route, distance, time, and directions.",
+			"image": "",
+			"humanURL": "https://catalogue.data.gov.bc.ca/dataset/bc-route-planner",
+			"baseURL": "https://router.api.gov.bc.ca//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-route-planner/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "iGeolise",
+			"x-api-slug": "igeolise",
+			"description": "The TravelTime API helps users find locations by journey time rather than using &lsquo;as the crow flies&rsquo; distance. Time-based searching gives users more opportunities for personalisation and delivers a more relevant search.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28682-docs-traveltimeplatform-com.jpg",
+			"humanURL": "https://www.traveltimeplatform.com/",
+			"baseURL": "https:///",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/igeolise/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "OnSched",
+			"x-api-slug": "onsched",
+			"description": "Build secure and scalable custom apps for Online Booking. Our flexible API provides many options for availability and booking. OnSched is an API first booking software that allows you to bring your design to life by creating your own booking flow. Using our robust API you can customize the interaction between your consumers and vendors while we do all the leg work behind the scenes. Want to offer online booking to your vendors? Ask about our white labelling solutions and rebrand our software as your own.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/onsched-logo.png",
+			"humanURL": "http://www.onsched.com",
+			"baseURL": "https://api.onsched.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/onsched/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "ClimaCell",
+			"x-api-slug": "climacell",
+			"description": "ClimaCell provides the most accurate weather data in the world by integrating proprietary data extracted from wireless networks and other new sensing technologies with data from traditional sensors. With 90% correlation to ground truth (vs. 50% using radar), it&rsquo;s the best you can get for your enterprise.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28707-climacell.jpg",
+			"humanURL": "https://www.climacell.co",
+			"baseURL": "https://api2.climacell.co//v2",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Predix",
+			"x-api-slug": "predix",
+			"description": "Predix (IoT PaaS) helps you develop apps that connect people with industrial machines through analytics and data for better business outcomes.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png",
+			"humanURL": "https://www.predix.io",
+			"baseURL": "https:////v1",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "NxtPort",
+			"x-api-slug": "nxtport",
+			"description": "NxtPort opens the gates to the Port of the future. This project is a milestone in the digitalization of logistics and cargo.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg",
+			"humanURL": "https://www.nxtport.eu",
+			"baseURL": "https://api-sb.nxtport.eu//PortCallPlus/v1",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "RingCentral",
+			"x-api-slug": "ringcentral",
+			"description": "RingCentral, Inc. (NYSE: RNG) is a global provider of cloud enterprise unified communications and collaboration solutions. More flexible and cost-effective than legacy on-premise systems, RingCentral empowers today&rsquo;s mobile and distributed workforces to be connected anywhere and on any device through voice, video, team messaging, collaboration, SMS, conferencing, online meetings, contact center, and fax. RingCentral provides an open platform that integrates with today&rsquo;s leading business apps while giving customers the flexibility to customize their own workflows.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg",
+			"humanURL": "http://www.ringcentral.com",
+			"baseURL": "https://platform.ringcentral.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "EVRYTHNG",
+			"x-api-slug": "evrythng",
+			"description": "EVRYTHNG is the market leading internet of things platform for consumer product brands. Now individual product items can tell their stories to your business and your consumers throughout their lifecycle.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28871-evrythng-com.jpg",
+			"humanURL": "https://evrythng.com",
+			"baseURL": "https://example.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/evrythng/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Vinli",
+			"x-api-slug": "vinli",
+			"description": "Vinli - The easiest, most advanced connected-car system in the world. Vinli is a platform for easily and quickly building connected car apps. Apps get vehicle data through Vinli services.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-vin-li.jpg",
+			"humanURL": "http://vinli.com",
+			"baseURL": "https://events.vin.li//api/v1",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Plentymarkets",
+			"x-api-slug": "plentymarkets",
+			"description": "plentymarkets is an all-in-one e-commerce ERP solution, which combines a comprehensive stock management system with a versatile shop system and effortless multichannel sales. Thanks to comprehensive functions and interfaces that include all steps of the e-commerce value chain, you can use the cloud based software to completely automate all of your e-business processes as well as your companys own individual processes.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/plentymarkets.png",
+			"humanURL": "http://www.plentymarkets.co.uk",
+			"baseURL": "https://example.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/plentymarkets/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Dezrez",
+			"x-api-slug": "dezrez",
+			"description": "Cloud based estate agent software , sales & letting agent software, estate agent website design and property management software - Dezrez  Services",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28888-www-dezrez-com.jpg",
+			"humanURL": "https://www.dezrez.com",
+			"baseURL": "https://api.dezrez.com//",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/dezrez/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Coord",
+			"x-api-slug": "coord",
+			"description": "Coord is a mobility company that creates seamless mobility and self-driving experiences today through deep integrations. The company offers bike-share API, Curbs API, Tolls API, Routing API and etc.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png",
+			"humanURL": "https://coord.co",
+			"baseURL": "https://api.coord.co//v1/users",
+			"tags": "Locations",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md"
 				}
 			]
 		}
 	],
-	"x-common": [
-		{
-			"type": "x-blog",
-			"url": "https:\/\/medium.com\/coord"
-		},
-		{
-			"type": "x-blog-rss",
-			"url": "https:\/\/medium.com\/feed\/coord"
-		},
-		{
-			"type": "x-openapi",
-			"url": "https:\/\/jsapi.apiary.io\/apis\/coordprodsearchtolls.source"
-		},
-		{
-			"type": "x-api-gallery",
-			"url": "http:\/\/convertapi.api.gallery.streamdata.io"
-		},
-		{
-			"type": "x-api-stack",
-			"url": "http:\/\/coord.stack.network"
-		},
-		{
-			"type": "x-developer",
-			"url": "https:\/\/coord.co\/docs\/"
-		},
-		{
-			"type": "x-pricing",
-			"url": "https:\/\/coord.co\/#pricing"
-		},
-		{
-			"type": "x-twitter",
-			"url": "https:\/\/twitter.com\/coordcity"
-		},
-		{
-			"type": "x-website",
-			"url": "https:\/\/coord.co"
-		}
-	],
+	"tags": "Locations",
 	"include": [
-	],
-	"maintainers": [
 		{
-			"FN": "Kin Lane",
-			"x-twitter": "apievangelist",
-			"email": "info@apievangelist.com"
+			"name": "Urban Airship",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/urban-airship/apis.yaml"
+		},
+		{
+			"name": "Factual",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/factual/apis.yaml"
+		},
+		{
+			"name": "Reverb",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/reverb/apis.yaml"
+		},
+		{
+			"name": "Adobe",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/adobe/apis.yaml"
+		},
+		{
+			"name": "Yahoo",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/yahoo/apis.yaml"
+		},
+		{
+			"name": "Foursquare",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/foursquare/apis.yaml"
+		},
+		{
+			"name": "FullContact",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/fullcontact/apis.yaml"
+		},
+		{
+			"name": "Retailigence Corp.",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/retailigence-corp-/apis.yaml"
+		},
+		{
+			"name": "AtlasCT",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/atlasct/apis.yaml"
+		},
+		{
+			"name": "Data8 Ltd",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/data8-ltd/apis.yaml"
+		},
+		{
+			"name": "MapQuest",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/mapquest/apis.yaml"
+		},
+		{
+			"name": "Service Objects",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/service-objects/apis.yaml"
+		},
+		{
+			"name": "StrikeIron",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/strikeiron/apis.yaml"
+		},
+		{
+			"name": "SmartyStreets",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/smartystreets/apis.yaml"
+		},
+		{
+			"name": "Placecast",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placecast/apis.yaml"
+		},
+		{
+			"name": "SmartyStreets",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/smartystreets/apis.yaml"
+		},
+		{
+			"name": "shizzow",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shizzow/apis.yaml"
+		},
+		{
+			"name": "Site24x7",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/site24x7/apis.yaml"
+		},
+		{
+			"name": "Location Labs",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/location-labs/apis.yaml"
+		},
+		{
+			"name": "Xtify",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/xtify/apis.yaml"
+		},
+		{
+			"name": "ParkWhiz",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/parkwhiz/apis.yaml"
+		},
+		{
+			"name": "Postmark",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/postmark/apis.yaml"
+		},
+		{
+			"name": "Sprint Dev Program",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/sprint-dev-program/apis.yaml"
+		},
+		{
+			"name": "Verizon | VDC  ",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/verizon--vdc--/apis.yaml"
+		},
+		{
+			"name": "WeoGeo Status",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/weogeo-status/apis.yaml"
+		},
+		{
+			"name": "WikiLocation",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/wikilocation/apis.yaml"
+		},
+		{
+			"name": "Team EveryTrail",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/team-everytrail/apis.yaml"
+		},
+		{
+			"name": "GIS Cloud",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gis-cloud/apis.yaml"
+		},
+		{
+			"name": "OpenRouteService",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/openrouteservice/apis.yaml"
+		},
+		{
+			"name": "PlaceIQ",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placeiq/apis.yaml"
+		},
+		{
+			"name": "GSMA OneAPI Location",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gsma-oneapi-location/apis.yaml"
+		},
+		{
+			"name": "Swiftype",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/swiftype/apis.yaml"
+		},
+		{
+			"name": "WallaBee Devs",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/wallabee-devs/apis.yaml"
+		},
+		{
+			"name": "Philly Address Live",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/philly-address-live/apis.yaml"
+		},
+		{
+			"name": "BlazeMeter",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/apis.yaml"
+		},
+		{
+			"name": "IEDA Data",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ieda-data/apis.yaml"
+		},
+		{
+			"name": "OpenSignal",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/opensignal/apis.yaml"
+		},
+		{
+			"name": "Envestnet",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/apis.yaml"
+		},
+		{
+			"name": "University of Southern California",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/university-of-southern-california/apis.yaml"
+		},
+		{
+			"name": "Glympse",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/glympse/apis.yaml"
+		},
+		{
+			"name": "Bynd",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bynd/apis.yaml"
+		},
+		{
+			"name": "Square",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/square/apis.yaml"
+		},
+		{
+			"name": "OpenCage",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/opencage/apis.yaml"
+		},
+		{
+			"name": "Reddit",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/reddit/apis.yaml"
+		},
+		{
+			"name": "Meetup",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/meetup/apis.yaml"
+		},
+		{
+			"name": "Geocodio",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/geocodio/apis.yaml"
+		},
+		{
+			"name": "Locaid",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/locaid/apis.yaml"
+		},
+		{
+			"name": "Taxamo",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apis.yaml"
+		},
+		{
+			"name": "Shopify",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/shopify/apis.yaml"
+		},
+		{
+			"name": "HERE",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/here/apis.yaml"
+		},
+		{
+			"name": "CARTO",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/carto/apis.yaml"
+		},
+		{
+			"name": "AWS S3",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-s3/apis.yaml"
+		},
+		{
+			"name": "AWS Elastic Beanstalk",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-elastic-beanstalk/apis.yaml"
+		},
+		{
+			"name": "AWS Direct Connect",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-direct-connect/apis.yaml"
+		},
+		{
+			"name": "AWS Route 53",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/aws-route-53/apis.yaml"
+		},
+		{
+			"name": "Google Cloud Functions",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/apis.yaml"
+		},
+		{
+			"name": "Google Cloud Key Management Service",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-key-management-service/apis.yaml"
+		},
+		{
+			"name": "Google Glass",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-glass/apis.yaml"
+		},
+		{
+			"name": "Azure Batch",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-batch/apis.yaml"
+		},
+		{
+			"name": "Azure HDInsight",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/apis.yaml"
+		},
+		{
+			"name": "Azure Storage",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-storage/apis.yaml"
+		},
+		{
+			"name": "TransitFeeds",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/transitfeeds/apis.yaml"
+		},
+		{
+			"name": "Amadeus",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/amadeus/apis.yaml"
+		},
+		{
+			"name": "Spireon",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/spireon/apis.yaml"
+		},
+		{
+			"name": "Avaza",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/avaza/apis.yaml"
+		},
+		{
+			"name": "Lufthansa",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/apis.yaml"
+		},
+		{
+			"name": "OrgHunter",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/orghunter/apis.yaml"
+		},
+		{
+			"name": "Public Transport Victoria Timetable",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/public-transport-victoria-timetable/apis.yaml"
+		},
+		{
+			"name": "BC Geographical Names",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-geographical-names/apis.yaml"
+		},
+		{
+			"name": "BC Route Planner",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-route-planner/apis.yaml"
+		},
+		{
+			"name": "iGeolise",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/igeolise/apis.yaml"
+		},
+		{
+			"name": "OnSched",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/onsched/apis.yaml"
+		},
+		{
+			"name": "ClimaCell",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/climacell/apis.yaml"
+		},
+		{
+			"name": "Predix",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/apis.yaml"
+		},
+		{
+			"name": "NxtPort",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/nxtport/apis.yaml"
+		},
+		{
+			"name": "RingCentral",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/apis.yaml"
+		},
+		{
+			"name": "EVRYTHNG",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/evrythng/apis.yaml"
+		},
+		{
+			"name": "Vinli",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/apis.yaml"
+		},
+		{
+			"name": "Plentymarkets",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/plentymarkets/apis.yaml"
+		},
+		{
+			"name": "Dezrez",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/dezrez/apis.yaml"
+		},
+		{
+			"name": "Coord",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/apis.yaml"
 		}
 	]
 }

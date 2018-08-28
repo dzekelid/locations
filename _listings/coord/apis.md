@@ -8,14 +8,81 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "1035226"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Coord Bike Share API
-  x-api-slug: coord-bike-share-api
-  description: the-bike-share-api-is-a-comprehensive-api-that-provides-information-about-bike-sharesystems-including-available-bikes-and-prices-for-an-example-of-how-to-use-the-bike-share-api-see-the-a-hrefhttpscoord-coquickstartbikeshare-target-blankbike-share-guidea--examplesearch-for-a-bikecurl-g-httpsapi-coord-cov1bikelocationlatitude40-73935542longitude73-99931783radius-km0-1access-keyyour-api-keythe-api-methods-allow-you-to-search-for-available-bikes-and-get-quotes-on-bike-rentalsas-well-as-get-detailed-information-about-bike-share-systems-and-bike-share-locations-bike-share-systems-have-one-or-more-locations--since-bikes-in-a-bike-share-system-may-be-in-adock-or-individually-parked-a-bike-location-can-refer-to-either-a-dock-or-a-single-separatelyparked-bike--therefore-a-search-for-bike-locations-is-really-a-search-for-rideable-bikes-bikes-that-are-currently-inuse-or-otherwise-not-ready-for-rental-are-not-searchable-throughthis-api-the-simplest-method-to-call-is-locationreference0findbikesbylocation-with-a-targetlatitude-and-longitude-and-a-search-radius--this-will-return-all-available-locations-withinthat-radius-and-information-about-each-location-calling-quotereference0getquote-will-return-all-quotes-for-allsystems-or-if-provided-with-specific-system-ids-quotes-for-just-the-specified-systems-calls-to-systemsystem-idreference0getbikesystem-orlocationsystem-idlocation-idreference0getbikelocation-are-helpful-toget-more-information-about-individual-systems-or-locations-respectively-calling-systemreference0findbikesystemsbylocation-with-a-target-latitude-and-longitudeand-a-search-radius-will-return-all-systems-within-that-radius-and-information-about-eachsystem--quotes-and-passesquotes-are-the-cost-and-details-of-renting-a-single-bike-from-a-system--they-consist-of-aset-of-pass-types-where-each-type-defines-a-buyable-pass-for-a-system--a-passrepresents-the-right-to-rent-bikes-from-a-single-system-for-a-certain-length-of-time-or-acertain-number-of-rides--for-instance-you-could-see-a-single-ride-pass-a-single-day-passa-30day-pass-or-an-annual-pass-passes-also-come-with-usage-fees-that-represent-the-cost-of-riding-a-bike-for-a-certainlength-of-time-within-a-given-rental--to-model-systems-that-charge-solely-by-the-length-ofeach-ride-with-no-upfront-charge-we-return-a-single-0-pass-type-representing-the-systemspricing-in-general-with-charge-by-time-set-to-true--finally-we-have-information-about-thetax-rate-this-pass-could-be-subject-to-here-is-an-example-3day-pass-that-costs-24-00-where-rides-over-30-minutes-are-billed-at-5-per15-minutes---id-2--system-id-citibike--max-days-3--charge-by-time-false--cost-----currency-usd----amount-2400----usage-fees-----cost-------currency-usd------amount-500--------prorated-false----start-time-seconds-1800----fee-increment-seconds-900----tax-regions-----name-new-york-city----tax-rate-0-08875-------name-jersey-city----tax-rate-0-07--here-is-an-example-7-95-singleride-pass-with-usage-fees-and-tax-details-omitted--id-1--system-id-citibike--max-rides-1--charge-by-time-false--cost-----currency-usd----amount-795----usage-fees------------tax-regions----------and-heres-an-example-from-a-pay-as-you-go-system-that-charges-2-for-30-minutes-and-7-cents-aminute-thereafter--as-you-can-see-usage-fees-are-cumulative-they-all-get-charged-togetheras-a-single-ride-increases-in-length-and-passes-each-of-their-start-time-seconds-values---id-3--system-id-jumpdc--charge-by-time-true--usage-fees-----cost-------currency-usd------amount-200--------prorated-false----start-time-seconds-0-------cost-------currency-usd------amount-7--------prorated-false----start-time-seconds-1800----fee-increment-seconds-60----tax-regions----------
+- name: Bike Share API - Get bike locations in the requested search area, as a GeoJSON
+    FeatureCollection.
+  x-api-slug: location-get
+  description: |-
+    Get a list of locations given the input parameters. Specify a search area by radius around
+    a latitude and longitude, as well as any filter for specific systems. Each location will
+    be a GeoJSON Feature, and aggregated into a GeoJSON FeatureCollection.
+
+    ### Example
+
+    #### Request:
+    `curl -G "https://api.coord.co/v1/bike/location?latitude=40.742868&longitude=-73.989186&radius_km=0.25&access_key="`
+
+    #### Response:
+    ```
+    {
+      "features": [
+        {
+          "geometry": {
+            "coordinates": [
+              -73.98918628692627,
+              40.74286877312112
+            ],
+            "type": "Point"
+          },
+          "id": "CitiBike-3641",
+          "properties": {
+            "is_renting": true,
+            "is_returning": true,
+            "last_reported": "2018-05-17T15:39:24.000Z",
+            "lat": 40.74286877312112,
+            "location_id": "3641",
+            "location_type": "bike_station_dock",
+            "lon": -73.98918628692627,
+            "name": "Broadway & W 25 St",
+            "num_bikes_available": 53,
+            "num_docks_available": 1,
+            "region_id": "71",
+            "system_id": "CitiBike"
+          },
+          "type": "Feature"
+        },
+        {
+          "geometry": {
+            "coordinates": [
+              -73.99144871,
+              40.74395411
+            ],
+            "type": "Point"
+          },
+          "id": "CitiBike-466",
+          "properties": {
+            "is_renting": true,
+            "is_returning": true,
+            "last_reported": "2018-05-17T15:32:40.000Z",
+            "lat": 40.74395411,
+            "location_id": "466",
+            "location_type": "bike_station_dock",
+            "lon": -73.99144871,
+            "name": "W 25 St & 6 Ave",
+            "num_bikes_available": 35,
+            "region_id": "71",
+            "system_id": "CitiBike"
+          },
+          "type": "Feature"
+        }
+      ],
+      "type": "FeatureCollection"
+    }
+    ```
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/bike
@@ -25,57 +92,261 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-openapi.md
-- name: Coord Bike Share API
-  x-api-slug: coord-bike-share-api
-  description: the-bike-share-api-is-a-comprehensive-api-that-provides-information-about-bike-sharesystems-including-available-bikes-and-prices-for-an-example-of-how-to-use-the-bike-share-api-see-the-a-hrefhttpscoord-coquickstartbikeshare-target-blankbike-share-guidea--examplesearch-for-a-bikecurl-g-httpsapi-coord-cov1bikelocationlatitude40-73935542longitude73-99931783radius-km0-1access-keyyour-api-keythe-api-methods-allow-you-to-search-for-available-bikes-and-get-quotes-on-bike-rentalsas-well-as-get-detailed-information-about-bike-share-systems-and-bike-share-locations-bike-share-systems-have-one-or-more-locations--since-bikes-in-a-bike-share-system-may-be-in-adock-or-individually-parked-a-bike-location-can-refer-to-either-a-dock-or-a-single-separatelyparked-bike--therefore-a-search-for-bike-locations-is-really-a-search-for-rideable-bikes-bikes-that-are-currently-inuse-or-otherwise-not-ready-for-rental-are-not-searchable-throughthis-api-the-simplest-method-to-call-is-locationreference0findbikesbylocation-with-a-targetlatitude-and-longitude-and-a-search-radius--this-will-return-all-available-locations-withinthat-radius-and-information-about-each-location-calling-quotereference0getquote-will-return-all-quotes-for-allsystems-or-if-provided-with-specific-system-ids-quotes-for-just-the-specified-systems-calls-to-systemsystem-idreference0getbikesystem-orlocationsystem-idlocation-idreference0getbikelocation-are-helpful-toget-more-information-about-individual-systems-or-locations-respectively-calling-systemreference0findbikesystemsbylocation-with-a-target-latitude-and-longitudeand-a-search-radius-will-return-all-systems-within-that-radius-and-information-about-eachsystem--quotes-and-passesquotes-are-the-cost-and-details-of-renting-a-single-bike-from-a-system--they-consist-of-aset-of-pass-types-where-each-type-defines-a-buyable-pass-for-a-system--a-passrepresents-the-right-to-rent-bikes-from-a-single-system-for-a-certain-length-of-time-or-acertain-number-of-rides--for-instance-you-could-see-a-single-ride-pass-a-single-day-passa-30day-pass-or-an-annual-pass-passes-also-come-with-usage-fees-that-represent-the-cost-of-riding-a-bike-for-a-certainlength-of-time-within-a-given-rental--to-model-systems-that-charge-solely-by-the-length-ofeach-ride-with-no-upfront-charge-we-return-a-single-0-pass-type-representing-the-systemspricing-in-general-with-charge-by-time-set-to-true--finally-we-have-information-about-thetax-rate-this-pass-could-be-subject-to-here-is-an-example-3day-pass-that-costs-24-00-where-rides-over-30-minutes-are-billed-at-5-per15-minutes---id-2--system-id-citibike--max-days-3--charge-by-time-false--cost-----currency-usd----amount-2400----usage-fees-----cost-------currency-usd------amount-500--------prorated-false----start-time-seconds-1800----fee-increment-seconds-900----tax-regions-----name-new-york-city----tax-rate-0-08875-------name-jersey-city----tax-rate-0-07--here-is-an-example-7-95-singleride-pass-with-usage-fees-and-tax-details-omitted--id-1--system-id-citibike--max-rides-1--charge-by-time-false--cost-----currency-usd----amount-795----usage-fees------------tax-regions----------and-heres-an-example-from-a-pay-as-you-go-system-that-charges-2-for-30-minutes-and-7-cents-aminute-thereafter--as-you-can-see-usage-fees-are-cumulative-they-all-get-charged-togetheras-a-single-ride-increases-in-length-and-passes-each-of-their-start-time-seconds-values---id-3--system-id-jumpdc--charge-by-time-true--usage-fees-----cost-------currency-usd------amount-200--------prorated-false----start-time-seconds-0-------cost-------currency-usd------amount-7--------prorated-false----start-time-seconds-1800----fee-increment-seconds-60----tax-regions----------
+- name: Bike Share API - Get detailed information on a bike location, as a GeoJSON
+    Feature.
+  x-api-slug: locationsystem-idlocation-id-get
+  description: |-
+    A bike location may be a single bike station (which can have multiple docked bikes) or a
+    single dockless bike itself. All working docks are returned, but only free and rentable
+    dockless bikes are returned.
+
+    ### Example
+
+    #### Request:
+    `curl -G "https://api.coord.co/v1/bike/location/CitiBike/482?access_key="`
+
+    #### Response:
+    ```
+    {
+      "geometry": {
+        "coordinates": [
+          -73.99931783,
+          40.73935542
+        ],
+        "type": "Point"
+      },
+      "id": "CitiBike-482",
+      "properties": {
+        "is_renting": true,
+        "is_returning": true,
+        "last_reported": "2018-05-17T15:41:06.000Z",
+        "lat": 40.73935542,
+        "location_id": "482",
+        "location_type": "bike_station_dock",
+        "lon": -73.99931783,
+        "name": "W 15 St & 7 Ave",
+        "num_bikes_available": 19,
+        "num_docks_available": 19,
+        "region_id": "71",
+        "system_id": "CitiBike"
+      },
+      "type": "Feature"
+    }
+    ```
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/bike
   tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-openapi.md
-  - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-openapi.md
-- name: Coord Bike Share API
-  x-api-slug: coord-bike-share-api
-  description: the-bike-share-api-is-a-comprehensive-api-that-provides-information-about-bike-sharesystems-including-available-bikes-and-prices-for-an-example-of-how-to-use-the-bike-share-api-see-the-a-hrefhttpscoord-coquickstartbikeshare-target-blankbike-share-guidea--examplesearch-for-a-bikecurl-g-httpsapi-coord-cov1bikelocationlatitude40-73935542longitude73-99931783radius-km0-1access-keyyour-api-keythe-api-methods-allow-you-to-search-for-available-bikes-and-get-quotes-on-bike-rentalsas-well-as-get-detailed-information-about-bike-share-systems-and-bike-share-locations-bike-share-systems-have-one-or-more-locations--since-bikes-in-a-bike-share-system-may-be-in-adock-or-individually-parked-a-bike-location-can-refer-to-either-a-dock-or-a-single-separatelyparked-bike--therefore-a-search-for-bike-locations-is-really-a-search-for-rideable-bikes-bikes-that-are-currently-inuse-or-otherwise-not-ready-for-rental-are-not-searchable-throughthis-api-the-simplest-method-to-call-is-locationreference0findbikesbylocation-with-a-targetlatitude-and-longitude-and-a-search-radius--this-will-return-all-available-locations-withinthat-radius-and-information-about-each-location-calling-quotereference0getquote-will-return-all-quotes-for-allsystems-or-if-provided-with-specific-system-ids-quotes-for-just-the-specified-systems-calls-to-systemsystem-idreference0getbikesystem-orlocationsystem-idlocation-idreference0getbikelocation-are-helpful-toget-more-information-about-individual-systems-or-locations-respectively-calling-systemreference0findbikesystemsbylocation-with-a-target-latitude-and-longitudeand-a-search-radius-will-return-all-systems-within-that-radius-and-information-about-eachsystem--quotes-and-passesquotes-are-the-cost-and-details-of-renting-a-single-bike-from-a-system--they-consist-of-aset-of-pass-types-where-each-type-defines-a-buyable-pass-for-a-system--a-passrepresents-the-right-to-rent-bikes-from-a-single-system-for-a-certain-length-of-time-or-acertain-number-of-rides--for-instance-you-could-see-a-single-ride-pass-a-single-day-passa-30day-pass-or-an-annual-pass-passes-also-come-with-usage-fees-that-represent-the-cost-of-riding-a-bike-for-a-certainlength-of-time-within-a-given-rental--to-model-systems-that-charge-solely-by-the-length-ofeach-ride-with-no-upfront-charge-we-return-a-single-0-pass-type-representing-the-systemspricing-in-general-with-charge-by-time-set-to-true--finally-we-have-information-about-thetax-rate-this-pass-could-be-subject-to-here-is-an-example-3day-pass-that-costs-24-00-where-rides-over-30-minutes-are-billed-at-5-per15-minutes---id-2--system-id-citibike--max-days-3--charge-by-time-false--cost-----currency-usd----amount-2400----usage-fees-----cost-------currency-usd------amount-500--------prorated-false----start-time-seconds-1800----fee-increment-seconds-900----tax-regions-----name-new-york-city----tax-rate-0-08875-------name-jersey-city----tax-rate-0-07--here-is-an-example-7-95-singleride-pass-with-usage-fees-and-tax-details-omitted--id-1--system-id-citibike--max-rides-1--charge-by-time-false--cost-----currency-usd----amount-795----usage-fees------------tax-regions----------and-heres-an-example-from-a-pay-as-you-go-system-that-charges-2-for-30-minutes-and-7-cents-aminute-thereafter--as-you-can-see-usage-fees-are-cumulative-they-all-get-charged-togetheras-a-single-ride-increases-in-length-and-passes-each-of-their-start-time-seconds-values---id-3--system-id-jumpdc--charge-by-time-true--usage-fees-----cost-------currency-usd------amount-200--------prorated-false----start-time-seconds-0-------cost-------currency-usd------amount-7--------prorated-false----start-time-seconds-1800----fee-increment-seconds-60----tax-regions----------
+- name: Bike Share API - Get detailed information on a bike location, as a GeoJSON
+    Feature.
+  x-api-slug: locationsystem-idlocation-id-get
+  description: |-
+    A bike location may be a single bike station (which can have multiple docked bikes) or a
+    single dockless bike itself. All working docks are returned, but only free and rentable
+    dockless bikes are returned.
+
+    ### Example
+
+    #### Request:
+    `curl -G "https://api.coord.co/v1/bike/location/CitiBike/482?access_key="`
+
+    #### Response:
+    ```
+    {
+      "geometry": {
+        "coordinates": [
+          -73.99931783,
+          40.73935542
+        ],
+        "type": "Point"
+      },
+      "id": "CitiBike-482",
+      "properties": {
+        "is_renting": true,
+        "is_returning": true,
+        "last_reported": "2018-05-17T15:41:06.000Z",
+        "lat": 40.73935542,
+        "location_id": "482",
+        "location_type": "bike_station_dock",
+        "lon": -73.99931783,
+        "name": "W 15 St & 7 Ave",
+        "num_bikes_available": 19,
+        "num_docks_available": 19,
+        "region_id": "71",
+        "system_id": "CitiBike"
+      },
+      "type": "Feature"
+    }
+    ```
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/bike
   tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-openapi.md
-  - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-openapi.md
-- name: Coord Bike Share API
-  x-api-slug: coord-bike-share-api
-  description: Coord is a mobility company that creates seamless mobility and self-driving
-    experiences today through deep integrations. The company offers bike-share API,
-    Curbs API, Tolls API, Routing API and etc.
+- name: Bike Share API - Get detailed information on a bike location, as a GeoJSON
+    Feature.
+  x-api-slug: locationsystem-idlocation-id-get
+  description: |-
+    A bike location may be a single bike station (which can have multiple docked bikes) or a
+    single dockless bike itself. All working docks are returned, but only free and rentable
+    dockless bikes are returned.
+
+    ### Example
+
+    #### Request:
+    `curl -G "https://api.coord.co/v1/bike/location/CitiBike/482?access_key="`
+
+    #### Response:
+    ```
+    {
+      "geometry": {
+        "coordinates": [
+          -73.99931783,
+          40.73935542
+        ],
+        "type": "Point"
+      },
+      "id": "CitiBike-482",
+      "properties": {
+        "is_renting": true,
+        "is_returning": true,
+        "last_reported": "2018-05-17T15:41:06.000Z",
+        "lat": 40.73935542,
+        "location_id": "482",
+        "location_type": "bike_station_dock",
+        "lon": -73.99931783,
+        "name": "W 15 St & 7 Ave",
+        "num_bikes_available": 19,
+        "num_docks_available": 19,
+        "region_id": "71",
+        "system_id": "CitiBike"
+      },
+      "type": "Feature"
+    }
+    ```
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/bike
-  tags: Locations
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md
-- name: Coord Curb Search API
-  x-api-slug: coord-curb-search-api
-  description: the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-openapi.md
+- name: Bike Share API - Get detailed information on a bike location, as a GeoJSON
+    Feature.
+  x-api-slug: locationsystem-idlocation-id-get
+  description: |-
+    A bike location may be a single bike station (which can have multiple docked bikes) or a
+    single dockless bike itself. All working docks are returned, but only free and rentable
+    dockless bikes are returned.
+
+    ### Example
+
+    #### Request:
+    `curl -G "https://api.coord.co/v1/bike/location/CitiBike/482?access_key="`
+
+    #### Response:
+    ```
+    {
+      "geometry": {
+        "coordinates": [
+          -73.99931783,
+          40.73935542
+        ],
+        "type": "Point"
+      },
+      "id": "CitiBike-482",
+      "properties": {
+        "is_renting": true,
+        "is_returning": true,
+        "last_reported": "2018-05-17T15:41:06.000Z",
+        "lat": 40.73935542,
+        "location_id": "482",
+        "location_type": "bike_station_dock",
+        "lon": -73.99931783,
+        "name": "W 15 St & 7 Ave",
+        "num_bikes_available": 19,
+        "num_docks_available": 19,
+        "region_id": "71",
+        "system_id": "CitiBike"
+      },
+      "type": "Feature"
+    }
+    ```
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/bike
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-openapi.md
+- name: Bike Share API - Get detailed information on a bike location, as a GeoJSON
+    Feature.
+  x-api-slug: locationsystem-idlocation-id-get
+  description: |-
+    A bike location may be a single bike station (which can have multiple docked bikes) or a
+    single dockless bike itself. All working docks are returned, but only free and rentable
+    dockless bikes are returned.
+
+    ### Example
+
+    #### Request:
+    `curl -G "https://api.coord.co/v1/bike/location/CitiBike/482?access_key="`
+
+    #### Response:
+    ```
+    {
+      "geometry": {
+        "coordinates": [
+          -73.99931783,
+          40.73935542
+        ],
+        "type": "Point"
+      },
+      "id": "CitiBike-482",
+      "properties": {
+        "is_renting": true,
+        "is_returning": true,
+        "last_reported": "2018-05-17T15:41:06.000Z",
+        "lat": 40.73935542,
+        "location_id": "482",
+        "location_type": "bike_station_dock",
+        "lon": -73.99931783,
+        "name": "W 15 St & 7 Ave",
+        "num_bikes_available": 19,
+        "num_docks_available": 19,
+        "region_id": "71",
+        "system_id": "CitiBike"
+      },
+      "type": "Feature"
+    }
+    ```
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/bike
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationsystem-idlocation-id-get-openapi.md
+- name: Curb Search API - Find the rules for curbs near a location.
+  x-api-slug: bylocationall-rules-get
+  description: |-
+    Find all of the curbs within a given radius of a particular point, and return all of their
+    rules across all times of day, days of the week, times of year, etc.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/search/curbs
@@ -85,9 +356,26 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-openapi.md
-- name: Coord Curb Search API
-  x-api-slug: coord-curb-search-api
-  description: the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection
+- name: Curb Search API - Find the rules for curbs near a location at a certain time.
+  x-api-slug: bylocationtime-rules-get
+  description: |-
+    Find the rules for a given curb at a given time and on a given day. You can also use this
+    to find all of the places that it is possible to perform a given action (for instance, find
+    all the loading zones, or everywhere with two-hour parking).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/search/curbs
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
+- name: Curb Search API - Find the rules for curbs near a location.
+  x-api-slug: bylocationall-rules-get
+  description: |-
+    Find all of the curbs within a given radius of a particular point, and return all of their
+    rules across all times of day, days of the week, times of year, etc.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/search/curbs
@@ -97,13 +385,71 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-openapi.md
+- name: Curb Search API - Find the rules for curbs near a location at a certain time.
+  x-api-slug: bylocationtime-rules-get
+  description: |-
+    Find the rules for a given curb at a given time and on a given day. You can also use this
+    to find all of the places that it is possible to perform a given action (for instance, find
+    all the loading zones, or everywhere with two-hour parking).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/search/curbs
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
-- name: Coord Curb Search API
-  x-api-slug: coord-curb-search-api
-  description: the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection
+- name: Curb Search API - Find the rules for curbs near a location at a certain time.
+  x-api-slug: bylocationtime-rules-get
+  description: |-
+    Find the rules for a given curb at a given time and on a given day. You can also use this
+    to find all of the places that it is possible to perform a given action (for instance, find
+    all the loading zones, or everywhere with two-hour parking).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/search/curbs
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
+- name: Curb Search API - Find the rules for curbs near a location at a certain time.
+  x-api-slug: bylocationtime-rules-get
+  description: |-
+    Find the rules for a given curb at a given time and on a given day. You can also use this
+    to find all of the places that it is possible to perform a given action (for instance, find
+    all the loading zones, or everywhere with two-hour parking).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/search/curbs
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
+- name: Curb Search API - Find the rules for curbs near a location at a certain time.
+  x-api-slug: bylocationtime-rules-get
+  description: |-
+    Find the rules for a given curb at a given time and on a given day. You can also use this
+    to find all of the places that it is possible to perform a given action (for instance, find
+    all the loading zones, or everywhere with two-hour parking).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/search/curbs
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
+- name: Curb Search API - Find the rules for curbs near a location.
+  x-api-slug: bylocationall-rules-get
+  description: |-
+    Find all of the curbs within a given radius of a particular point, and return all of their
+    rules across all times of day, days of the week, times of year, etc.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/search/curbs
@@ -113,17 +459,11 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-openapi.md
-- name: Coord Curb Search API
-  x-api-slug: coord-curb-search-api
-  description: the-curb-search-api-is-a-readonly-service-to-describe-what-you-can-do-on-a-curb-a-curb-is-defined-as-one-side-of-one-roadway-so-every-street-has-at-least-twocurbs-those-with-medians-could-have-four-say-to-see-the-curb-search-api-in-action-and-examine-example-requests-and-responses-check-outour-a-hrefhttpscoord-coexplorer-target-blankcurb-explorer-toola-which-is-builtentirely-on-this-apicurbs-geometries-are-positioned-along-the-edge-of-the-roadway-meaning-that-curbs-meet-atthe-corners-of-intersections--curbs-will-never-cross-over-each-other--in-general-curbs-startand-end-at-intersections-though-behavior-at-t-intersections-alleys-pedestrian-pathsand-other-crossings-will-vary-by-city--how-we-model-curb-rulesevery-segment-of-a-curb-has-at-any-given-time-a-primary-use-andpermitted-uses--the-primary-use-is-what-the-regulator-has-defined-as-the-desired-use-of-thecurb-at-that-time--the-permitted-uses-comprise-everything-that-is-allowed-including-the-primaryuse-if-any--we-distinguish-these-so-that-we-can-tell-apart-areas-signed-say-passenger-loadingzone-from-those-signed-no-standing-which-may-also-allow-passenger-pickup-and-dropoff-a-segment-of-curb-can-also-have-a-vehicle-type--in-this-case-only-vehicles-of-this-type-areallowed-to-perform-the-permitted-uses-on-this-segment-though-other-vehicles-mayhave-a-smaller-list-of-permitted-uses-for-instance-an-area-signed-commercial-vehicle-loading-only-all-others-no-stopping-would-have---a-vehicle-type-of-commercial---a-primary-use-of-load-goods---a-permitted-use-of-load-passengers---no-uses-in-other-vehicles-permitted-on-the-other-hand-an-area-signed-truck-parking-all-others-no-standing-might-have---a-vehicle-type-of-truck---a-primary-use-of-park---permitted-uses-of-load-goods-and-load-passengers---load-passengers-in-other-vehicles-permitted--uses-and-vehicle-typesthe-different-uses-are---park-leave-a-vehicle-somewhere-for-a-period-of-time----load-goods-load-and-unload-goods-from-a-vehicle--the-vehicle-may-be-left-unattended-for-a----few-minutes-during-this-process----load-passengers-load-and-unload-passengers-from-a-vehicle--the-vehicle-may-not-be-left----unattended-during-passenger-loading----none-if-a-segment-has-no-primary-use-e-g--it-is-signed-no-parking-its-primary----use-will-be-specified-as-none--it-can-still-have-permitted-uses-for-instance----in-most-cities-drivers-are-still-allowed-to-load-and-unload-passengers-in-no-parking----areas-the-different-vehicle-types-are---all-if-a-segment-of-curb-has-a-vehicle-type-of-all-this-means-that-all-kinds-of----vehicles-including-private-cars-can-engage-in-its-permitted-uses----taxi-any-forhire-passenger-vehicle--this-includes-medallion-taxis-livery-companies-and----ridesharing-companies-like-lyft-and-uber----commercial-a-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-commercial-vehicles-must-have-commercial-license-plates----truck-a-large-vehicle-used-for-transporting-goods-commercially--the-exact-definition----varies-by-city-but-usually-trucks-have-three-or-more-axles-in-addition-to-meeting-the----requirements-of-a-commercial-vehicle----motorcycle-a-twowheeled-motorized-vehicle--this-includes-fullsized-motorcycles-as----well-as-mopeds--geometry-and-directionevery-curb-has-a-specific-direction-and-thus-a-start-and-an-end--regardless-of-the-direction-oftravel-all-curbs-are-oriented-to-the-right-of-their-respective-streets--this-means-that-if-youwalk-from-the-start-of-the-curb-to-the-end-the-street-will-be-on-your-lefthand-side-the-wholetime-each-segment-has-distances-in-meters-defining-their-linear-position-along-the-curb--these-aremeasured-from-the-start-of-the-curb--note-that-if-you-restrict-the-segments-you-return-usingquery-parameters-you-may-not-get-a-given-curbs-complete-geometry--but-querying-with-norestrictions-will-always-return-all-the-segments-on-a-curb--when-you-do-this-the-segments-willalways-be-connected-in-both-geometry-and-distance-every-subsequent-segment-will-start-atexactly-the-point-the-last-one-ended-and-its-distance-start-meters-will-be-the-lastsegments-distance-end-meters--this-allows-you-to-reconstruct-a-linear-view-of-any-curb-andto-know-what-the-regulations-are-at-every-point--temporary-rulesin-some-cities-we-have-data-about-temporary-changes-to-parking-regulations--these-can-be-due-toconstruction-events-or-other-activities-that-use-the-road--we-take-these-temporary-regulationsinto-account-as-soon-as-we-find-out-about-them-but-not-all-regulations-arrive-at-the-same-timeso-its-always-possible-for-future-temporary-regulations-to-change--temporary-regulations-thatare-in-the-past-will-never-change-in-time-rules-requests-you-dont-have-to-do-anything-special-for-temporary-regulations-weuse-them-automatically-to-compute-the-regulations-that-apply-at-the-requested-time--forall-rules-requests-you-can-use-the-temp-rules-window-start-and-temp-rules-window-endparameters-to-control-the-timedate-range-of-the-rules-we-return--we-will-return-any-temporaryrule-that-takes-effect-at-any-time-within-this-window-even-if-it-is-on-the-edge-for-instancea-rule-that-starts-before-temp-rules-window-start-and-ends-within-the-window-will-bereturned-temporary-rules-override-all-other-rules-on-their-segment-for-their-specified-time-period--getting-rules-at-a-particular-timethe-simplest-methods-to-call-arebyboundstime-rulesreference0allrulesforcurbswithinaboundingboxataparticulartimebylocationtime-rulesreference0rulesatapointintimeforcurbsnearalocation-andbycurbidtime-rulesreference0rulesatapointintimeforasinglecurb-all-three-of-these-methods-take-a-particular-starting-time-and-tell-you-how-long-if-at-allyou-can-perform-any-given-use-at-each-segment-of-curb-starting-at-this-time-and-how-much-itwill-cost--in-all-cases-the-response-data-has-the-same-format-a-geojson-featurecollectionwhere-each-feature-is-a-curb-segment-with-its-own-usage-information--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqtime-rulestime20180612t1100000400access-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------each-feature-contains-the-geography-of-just-the-portion-of-the-curb-that-it-applies-to-------geometry---------coordinates-----------73-9775270524428-40-75197120090719----------73-9773964310734-40-751917110446385----------------type-linestring------------properties---------metadata------------the-id-of-this-curb-note-that-all-features-that-are-on-the-same-curb-have-the-same-----------curb-id-----------curb-id-bnljojewndmznq-----------distance-start-meters-and-distance-end-meters-represent-the-distance-from-the-----------beginning-of-the-curb-that-this-feature-startsends-at-----------distance-end-meters-18-653505116785006----------distance-start-meters-6-1-----------additional-metadata-about-this-curb-----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-the-curb-for-the-purposes-designated-below-is-free---------price-price-per-hour-amount-0-currency-usd---------the-rules-for-this-curb-feature-are-specified-by-a-sign---------reasons-sign--------uses------------the-only-permitted-use-for-this-part-of-the-curb-is-loadingunloading-passengers-----------permitted-------------use-load-passengers-vehicle-type-all-------------------------------there-is-no-primary-use-this-means-that-this-is-signed-as-no-standing-rather-than-----------as-a-specific-passenger-loading-zone-----------use-none----------vehicle-type-all--------------------type-feature--------------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------using-this-curb-costs-3-dollars-and-50-cents-per-hour---------price-price-per-hour-amount-350-currency-usd---------this-curbs-rules-are-specified-by-signs-and-parking-meter-data---------reasons-sign-meter--------uses------------this-curb-allows-parking-for-commercial-vehicles-and-loading-goodspassengers-for-----------any-vehicle-commercial-or-otherwise--note-that-in-all-cases-the-use-ends-at------------2pm-3-hours-after-the-requested-time--it-turns-out-that-this-is-because-the-curb-----------is-signed-for-threehour-parking-but-this-could-have-meant-that-there-was-e-g------------a-no-stopping-regulation-that-takes-effect-at-2pm-----------permitted---------------------------end-time-20180612t140000-0000400--------------use-load-goods--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-load-passengers--------------vehicle-type-all--------------------------------------end-time-20180612t140000-0000400--------------use-park--------------vehicle-type-commercial---------------------------------the-primary-use-case-for-this-portion-of-the-curb-is-commercial-vehicle-parking-----------until-4pm-----------primary-until-20180612t160000-0000400----------use-park----------vehicle-type-commercial--------------------type-feature--------------geometry---------coordinates-----------73-97624207098005-40-75143628919809----------73-97617870763244-40-751409856030875----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-135-8443128858502----------distance-start-meters-129-7443128858502----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------because-this-feature-is-too-close-to-the-intersection-it-doesnt-permit-any-uses---------price-null--------reasons-intersection--------uses-----------permitted-null----------use-none----------vehicle-type-all--------------------type-feature--------type-featurecollection-getting-all-rules-if-you-want-to-analyze-all-of-a-curbs-rules-across-time-you-can-callbyboundsall-rulesreference0allrulesforcurbswithinaboundingboxbylocationall-rulesreference0allrulesforcurbsnearalocation-andbycurbidall-rulesreference0allrulesforasinglecurb-these-methods-give-you-comprehensive-information-for-the-relevant-curbs-but-require-you-to-domore-work-to-figure-out-what-a-given-vehicle-can-do-at-a-given-time--these-methods-return-a-geojsonfeaturecollection-where-each-feature-is-a-curb-segment-with-its-own-usage-information-but-withdifferent-properties-than-the-methods-that-take-a-time-parameter--sample-requestcurl-g-httpsapi-coord-cov1searchcurbsbycurbbnljojewndmznqall-rulesaccess-keyyour-api-key-sample-response--features----------some-features-omitted-for-brevity------------note-that-geometry-and-metadata-are-structured-the-same-in-all-rules-and-time-rules-------requests-------geometry---------coordinates-----------73-9773964310734-40-751917110446385----------73-97715562215994-40-75181739119557----------73-97689946982429-40-75171053502362-----------73-97624207098005-40-75143628919809----------------type-linestring------------properties---------metadata-----------curb-id-bnljojewndmznq----------distance-end-meters-129-7443128858502----------distance-start-meters-18-653505116785006----------end-street-name-lexington-avenue----------side-of-street-sw----------start-street-name-east-42-street----------street-name-east-42-street----------time-zone-americanew-york-----------------every-feature-can-have-multiple-rules-that-apply-at-different-times--there-is-always---------exactly-one-rule-that-applies-at-any-one-time---------rules------------rule-1-passenger-loading-only-from-7am10am-and-4pm7pm-monsat------------------------other-vehicles-permitted-describes-what-vehicles-not-matching-vehicle-type-can-------------do-when-this-rule-applies--it-is-empty-when-vehicle-type-is-all-as-it-is-for-------------this-rule-------------other-vehicles-permitted-------------permitted-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-none------------reasons-sign------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1000----------------time-of-day-start-0700--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1900----------------time-of-day-start-1600--------------------------------------vehicle-type-all---------------------rule-2-3hour-pay-parking-for-commercial-vehicles-from-10am4pm-monsat------------------------any-vehicle-can-stay-here-at-most-three-hours-------------max-duration-h-3-------------this-rule-has-vehicle-type-of-commercial-so-other-vehicles-permitted-------------describes-what-noncommercial-vehicles-can-do-while-permitted-describes-what-------------commercial-vehicles-can-do-------------other-vehicles-permitted-load-goods-load-passengers------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-350-currency-usd-------------the-primary-use-is-parking-------------primary-park------------reasons-sign-meter------------times-------------------------------days-1-2-3-4-5-6----------------time-of-day-end-1600----------------time-of-day-start-1000---------------------------------------the-primary-vehicle-type-is-commercial-------------vehicle-type-commercial---------------------rule-3-free-parking-all-day-sunday-before-7am-after-7pm-----------------------other-vehicles-permitted-------------permitted-park-load-goods-load-passengers------------price-price-per-hour-amount-0-currency-usd------------primary-park-------------reasons-is-null-because-free-parking-is-the-default-regulation-in-the-absence-of-------------any-other-information-------------reasons-null--------------times-------------------------------days-0----------------time-of-day-end-2400----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-0700----------------time-of-day-start-0000--------------------------------------------days-1-2-3-4-5-6----------------time-of-day-end-2400----------------time-of-day-start-1900--------------------------------------vehicle-type-all---------------------------no-temporary-rules-in-effect-for-the-coming-week-for-this-curb-segment---------temporary-rules-null------------type-feature--------type-featurecollection
+- name: Curb Search API - Find the rules for curbs near a location.
+  x-api-slug: bylocationall-rules-get
+  description: |-
+    Find all of the curbs within a given radius of a particular point, and return all of their
+    rules across all times of day, days of the week, times of year, etc.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/search/curbs
@@ -133,45 +473,42 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
+- name: Curb Search API - Find the rules for curbs near a location.
+  x-api-slug: bylocationall-rules-get
+  description: |-
+    Find all of the curbs within a given radius of a particular point, and return all of their
+    rules across all times of day, days of the week, times of year, etc.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
+  humanURL: https://coord.co
+  baseURL: https://api.coord.co//v1/search/curbs
+  tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationall-rules-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/bylocationtime-rules-get-openapi.md
-- name: Coord Curb Search API
-  x-api-slug: coord-curb-search-api
-  description: Coord is a mobility company that creates seamless mobility and self-driving
-    experiences today through deep integrations. The company offers bike-share API,
-    Curbs API, Tolls API, Routing API and etc.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
-  humanURL: https://coord.co
-  baseURL: https://api.coord.co//v1/search/curbs
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md
-- name: Coord Multimodal Routing API
-  x-api-slug: coord-multimodal-routing-api
-  description: Coord is a mobility company that creates seamless mobility and self-driving
-    experiences today through deep integrations. The company offers bike-share API,
-    Curbs API, Tolls API, Routing API and etc.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
-  humanURL: https://coord.co
-  baseURL: https://api.coord.co//v1/routing
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md
-- name: Coord Parking Access API
-  x-api-slug: coord-parking-access-api
-  description: the-parking-access-api-allows-you-to-authorize-one-of-your-end-users-to-park-at-a-supportedparking-location-by-means-of-creating-a-new-parkingsession-for-your-user-at-the-location-for-a-list-of-supported-locations-seea-hrefhttpscoord-codocssearchparking-target-blankthe-parking-search-apia-you-may-only-call-the-accessparking-api-using-parkinglocation-ids-returned-from-the-searchapi-for-locations-where-online-access-type-is-set-to-something-other-than-not-available-all-other-ids-will-be-rejected--parking-creating-a-sessionto-allow-a-user-to-park-at-a-given-lot-or-garage-you-create-a-session-for-that-user-atthe-location-you-can-create-a-new-session-by-callingpost-location-idsessionreference0createandretrievesessionscreateanewsessionwhich-will-return-a-new-session-that-either-is-already-started-has-an-end-time-set-orcontains-any-information-necessary-to-display-to-your-end-user-to-start-the-session-forexample-a-barcode-that-must-be-scanned-in-at-the-location-to-authorize-access--apicontrolled-sessionssessions-that-come-back-with-a-start-time-already-set-are-apicontrolled-meaning-thatthe-location-itself-has-no-way-of-telling-when-your-user-enters-or-leaves-but-insteaddepends-on-you-to-do-this-through-the-api--for-these-sessions-you-must-eventually-callput-location-idsessionsession-idendreference0endingsessionsendapreviouslystartedsessionto-end-the-session-at-which-point-billing-info-will-be-attached-and-returned-in-the-response-typically-you-would-provide-a-way-for-your-end-user-to-tell-you-that-they-are-leaving-theparking-lot-and-then-call-this--note-that-if-you-fail-to-call-this-method-you-risk-accruingthe-maximum-charge-possible-for-the-given-location--sitecontrolled-sessionsat-locations-that-have-a-means-of-telling-when-users-enter-and-leave-like-human-attendants-ora-barcode-scanner-the-session-end-time-and-billing-information-will-be-set-only-afterthe-user-ends-their-session-at-the-location-e-g--scans-out-with-a-barcode-or-checks-out-withan-attendant--in-such-cases-you-may-want-to-pollget-location-idsessionsession-idreference0retrieveanexistingsessionretrieveanexistingsessionuntil-an-end-time-exists-in-the-response--this-is-useful-to-provide-a-summarynotification-toyour-user-after-checkout-and-for-your-own-records-note-that-parkingsession-objects-last-forever--you-can-always-callget-location-idsessionsession-idreference0retrieveanexistingsessionretrieveanexistingsessionfor-information-on-a-session-that-you-created--maximum-stayssome-apicontrolled-and-sitecontrolled-sessions-may-be-subject-to-a-maximum-duration-whichmeans-that-after-a-set-amount-of-time-the-session-will-automatically-be-assigned-an-end-timeand-be-billed-for-usage-up-to-that-time--though-you-can-generally-avoid-this-by-callinga-hrefhttpscoord-codocssearchparking-target-blankthe-parking-search-apiabeforehand-to-determine-if-your-users-expected-parking-time-will-be-valid-at-a-locationsince-that-method-only-returns-locations-that-can-accept-parking-for-a-given-start-time-andduration-pair-your-user-might-still-stay-beyond-their-original-expected-duration-and-hit-amaximum-stay-time-you-can-poll-get-location-idsessionsession-idreference0retrieveanexistingsessionretrieveanexistingsession-todetermine-if-a-session-has-automatically-closed-and-notify-your-user-that-this-has-happened-if-this-happens-your-user-has-the-following-options---for-apicontrolled-sessions-your-user-should-leave-the-location-immediately-to-avoid-some--kind-of-enforcement-action-car-booting-towing-stickering-etc--note-that-you-will-not--need-to-explicitly-call--put-location-idsessionsession-idendreference0endingsessionsendapreviouslystartedsession-since-the--session-is-already-ended----for-sitecontrolled-sessions-your-user-may-or-may-not-be-able-to-check-out-using-the--redemption-info-provided-in-the-session--if-checkout-fails-gate-arm-does-not-go-up-your--user-may-have-to-resort-to-local-onsite-help-speaking-with-an-attendant-calling-posted--telephone-numbers-or-using-onsite-intercoms-for-assistance----finding-sessions--in-addition-to-querying-for-the-status-of-a-single-session-you-can-also-get-all-of-the--sessions-for-a-given-user-by-calling---get-sessionreference0retrieveauserssessionsretrieveauserssessions--this-will--return-both-the-currently-open-session-if-it-exists-and-all-closed-sessions---to-get-all-of-a-users-sessions-at-a-given-location-you-can-call--get-location-idsessionreference0createandretrievesessionsretrievealocationssessions-
+- name: Parking Access API - Retrieve a location's sessions
+  x-api-slug: location-idsession-get
+  description: |-
+    Retrieve information about all existing sessions at a location.
+
+    On success, the response will be a list of existing sessions. At most one will still be
+    active:
+    ```
+      [
+        {
+          "id":1,
+          "start_time":"2018-04-12T00:14:20.292Z",
+          "end_time":"2018-04-12T04:10:13.456Z",
+          "user_id":"00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "id":2,
+          "start_time":"2018-04-12T00:14:20.292Z",
+          "user_id":"00000000-0000-0000-0000-000000000000"
+        }
+      ]
+    ```
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/access/parking
@@ -181,21 +518,12 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-idsession-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-idsession-get-openapi.md
-- name: Coord Parking Access API
-  x-api-slug: coord-parking-access-api
-  description: Coord is a mobility company that creates seamless mobility and self-driving
-    experiences today through deep integrations. The company offers bike-share API,
-    Curbs API, Tolls API, Routing API and etc.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
-  humanURL: https://coord.co
-  baseURL: https://api.coord.co//v1/access/parking
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md
-- name: Coord Parking Search API
-  x-api-slug: coord-parking-search-api
-  description: the-parking-search-api-is-a-readonly-service-to-answer-questionsabout-where-and-when-a-person-can-park-in-lots-and-garages--for-onstreet-parkinguse-the-curbs-api-finding-parking-locationsa-place-where-you-can-park-is-called-a-location--this-is-usually-either-a-surface-parkinglot-or-a-parking-garage--to-find-parking-locations-in-a-given-area-use-thelocationreference0getalistoflocations-request--this-will-return-an-object-for-each-open--location-in-that-area-ordered-by-distance-when-we-have-live-parking-availability-for-a-location-we-will-also-fill-inavailability-probability-for-it--this-represents-the-probability-that-there-will-be-at-leastthreshold-spaces-available-at-the-location--we-find-availability-probability-a-prettygreat-way-to-reason-about-parking-locations-which-may-have-uncertainty-around-theiravailability-both-at-the-current-time-and-in-the-future-when-someone-may-be-arriving-aftera-trip-getting-data-on-a-single-locationuse-locationreference0getasinglelocations-requests-to-get-the-same-information-aboutjust-one-location-accessing-a-lotyou-can-allow-your-mobile-users-to-check-into-and-out-of-select-locationsusing-the-parking-access-api--parking-rates-select-locations-will-have-a-rates-field-set-with-a-list-of-rates-which-can-be-displayed-toyour-end-users-for-a-rough-idea-on-the-price-of-parking-all-locations-will-include-a-total-price-if--parking-start-time-and-duration-m-are-setappropriately-
+- name: Parking Search API - Get a list of off-street parking locations.
+  x-api-slug: location-get
+  description: |-
+    Find all of the locations within a given are and return their pricing information and
+    (when present) availability. If the `duration_m` parameter is set, total cost for a stay
+    of that duration will also be returned.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/search/parking
@@ -205,58 +533,21 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-openapi.md
-- name: Coord Parking Search API
-  x-api-slug: coord-parking-search-api
-  description: the-parking-search-api-is-a-readonly-service-to-answer-questionsabout-where-and-when-a-person-can-park-in-lots-and-garages--for-onstreet-parkinguse-the-curbs-api-finding-parking-locationsa-place-where-you-can-park-is-called-a-location--this-is-usually-either-a-surface-parkinglot-or-a-parking-garage--to-find-parking-locations-in-a-given-area-use-thelocationreference0getalistoflocations-request--this-will-return-an-object-for-each-open--location-in-that-area-ordered-by-distance-when-we-have-live-parking-availability-for-a-location-we-will-also-fill-inavailability-probability-for-it--this-represents-the-probability-that-there-will-be-at-leastthreshold-spaces-available-at-the-location--we-find-availability-probability-a-prettygreat-way-to-reason-about-parking-locations-which-may-have-uncertainty-around-theiravailability-both-at-the-current-time-and-in-the-future-when-someone-may-be-arriving-aftera-trip-getting-data-on-a-single-locationuse-locationreference0getasinglelocations-requests-to-get-the-same-information-aboutjust-one-location-accessing-a-lotyou-can-allow-your-mobile-users-to-check-into-and-out-of-select-locationsusing-the-parking-access-api--parking-rates-select-locations-will-have-a-rates-field-set-with-a-list-of-rates-which-can-be-displayed-toyour-end-users-for-a-rough-idea-on-the-price-of-parking-all-locations-will-include-a-total-price-if--parking-start-time-and-duration-m-are-setappropriately-
+- name: Parking Search API - Get a list of off-street parking locations.
+  x-api-slug: locationid-get
+  description: |-
+    Find a single locations within a given are and return their pricing information and
+    (when present) availability. If the `duration_m` parameter is set, total cost for a stay
+    of that duration will also be returned.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
   humanURL: https://coord.co
   baseURL: https://api.coord.co//v1/search/parking
   tags: Parking, Tolls, Bikes, Routes, General Data, Relative Data, Service API
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/location-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/locationid-get-openapi.md
-- name: Coord Parking Search API
-  x-api-slug: coord-parking-search-api
-  description: Coord is a mobility company that creates seamless mobility and self-driving
-    experiences today through deep integrations. The company offers bike-share API,
-    Curbs API, Tolls API, Routing API and etc.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
-  humanURL: https://coord.co
-  baseURL: https://api.coord.co//v1/search/parking
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md
-- name: Coord Tolls API
-  x-api-slug: coord-tolls-api
-  description: Coord is a mobility company that creates seamless mobility and self-driving
-    experiences today through deep integrations. The company offers bike-share API,
-    Curbs API, Tolls API, Routing API and etc.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
-  humanURL: https://coord.co
-  baseURL: https://api.coord.co//v1/search/tolling
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md
-- name: Coord Users API
-  x-api-slug: coord-users-api
-  description: Coord is a mobility company that creates seamless mobility and self-driving
-    experiences today through deep integrations. The company offers bike-share API,
-    Curbs API, Tolls API, Routing API and etc.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/coord-logo.png
-  humanURL: https://coord.co
-  baseURL: https://api.coord.co//v1/users
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/coord/openapi.md
 x-common:
 - type: x-blog
   url: https://medium.com/coord

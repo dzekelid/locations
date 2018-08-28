@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/894-placei
 x-kinRank: "7"
 x-alexaRank: "1009921"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placeiq/apis.md
 specificationVersion: "0.14"
-apis:
-- name: PlaceIQ
-  x-api-slug: placeiq
-  description: PlaceIQ is a leading data and technology company that helps businesses
-    leverage location-based insights to connect with and understand audiences.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/894-placeiq.jpg
-  humanURL: http://www.placeiq.com/product/inputs-outputs/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/placeiq/openapi.md
+apis: []
 x-common:
 - type: x-website
   url: http://www.placeiq.com/product/inputs-outputs/

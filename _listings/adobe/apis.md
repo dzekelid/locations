@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/151-adobe.
 x-kinRank: "9"
 x-alexaRank: "82"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/adobe/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Adobe
-  x-api-slug: adobe
-  description: Adobe is changing the world through digital experiences. We help our
-    customers create, deliver and optimize content and applications.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/151-adobe.jpg
-  humanURL: https://adobe.com
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/adobe/openapi.md
+apis: []
 x-common:
 - type: x-website
   url: https://adobe.com

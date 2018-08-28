@@ -6,21 +6,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/22414-cart
 x-kinRank: "7"
 x-alexaRank: "65644"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/carto/apis.md
 specificationVersion: "0.14"
-apis:
-- name: CARTO
-  x-api-slug: carto
-  description: CARTO Turns Your Location Data Into Business Outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/22414-carto.jpg
-  humanURL: http://carto.com
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/carto/openapi.md
+apis: []
 x-common:
 - type: x-curated-source
   url: https://carto.com/blog/new-privacy-features-for-visualizations/

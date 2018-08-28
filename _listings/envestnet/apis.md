@@ -7,14 +7,14 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodle
 x-kinRank: "8"
 x-alexaRank: "84912"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Crunch Base
-  x-api-slug: crunch-base
-  description: the-crunchbase-api-is-a-relatively-straightforward-rest-service-that-allows-developers-to-access-data-in-the-business-graph-
+- name: Crunch Base - Get Locations
+  x-api-slug: locations-get
+  description: Get Locations
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg
   humanURL: http://www.yodlee.com/
   baseURL: https://api.crunchbase.com//v/3
@@ -25,17 +25,6 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/locations-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/locations-get-openapi.md
-- name: Crunch Base
-  x-api-slug: crunch-base
-  description: Build and transform financial apps and services with access to financial
-    data through our APIs and digital solutions for banks, developers, and innovators.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg
-  humanURL: http://www.yodlee.com/
-  baseURL: https://api.crunchbase.com//v/3
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/envestnet/openapi.md
 x-common:
 - type: x-api-gallery
   url: http://entertainment.express.api.gallery.streamdata.io

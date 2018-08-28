@@ -8,6 +8,7 @@ info:
     Returns the latest location entry for the given asset. The timestamp and location data for the
     given entry is included in the response.
   version: 1.0.0
+host: time-series-service-doc.grc-apps.svc.ice.ge.com
 basePath: /
 schemes:
 - http

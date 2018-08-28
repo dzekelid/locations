@@ -9,25 +9,11 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/data8-ltd/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Data8 Ltd
-  x-api-slug: data8-ltd
-  description: We believe that clean accurate data is the key to every successful
-    business and this has been our philosophy since 2005. This philosophy has enabled
-    us to become the leading total data quality solutions provider by simplifying
-    and automating data management processes, so customers can completely trust their
-    data.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/d8logo_trans.png
-  humanURL: http://www.data-8.co.uk
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/data8-ltd/openapi.md
+apis: []
 x-common:
 - type: x-twitter
   url: https://twitter.com/data8ltd

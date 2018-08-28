@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Postmark
 x-complete: 1
@@ -14,4 +13,32 @@ produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /stats/outbound/clicks/location:
+    get:
+      summary: Get Stats Outbound Clicks Location
+      description: Get stats outbound clicks location.
+      operationId: getStatsOutboundClicksLocation
+      x-api-path-slug: statsoutboundclickslocation-get
+      parameters:
+      - in: query
+        name: fromdate
+        description: Filter stats starting from the date specified
+      - in: query
+        name: tag
+        description: Filter by tag
+      - in: query
+        name: todate
+        description: Filter stats up to the date specified
+      - in: header
+        name: X-Postmark-Server-Token
+        description: The token associated with the Server on which this request will
+          operate
+      responses:
+        200:
+          description: OK
+      tags:
+      - Stats
+      - Outbound
+      - Clicks
+      - Location

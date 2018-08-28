@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: FullContact
 x-complete: 1
@@ -45,4 +44,3 @@ paths:
       tags:
       - Address
       - Locations
----

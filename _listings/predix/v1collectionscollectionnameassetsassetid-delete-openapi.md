@@ -7,6 +7,7 @@ info:
   description: Delete the asset specified by the collection name. Any location data
     associated with the asset are also deleted.
   version: 1.0.0
+host: time-series-service-doc.grc-apps.svc.ice.ge.com
 basePath: /
 schemes:
 - http

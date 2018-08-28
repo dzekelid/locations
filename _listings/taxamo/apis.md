@@ -7,177 +7,207 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxa
 x-kinRank: "8"
 x-alexaRank: "795977"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Taxamo
-  x-api-slug: taxamo
-  description: taxamos-elegant-suite-of-apis-and-comprehensive-reporting-dashboard-enables-digital-merchants-to-easily-comply-with-eu-regulatory-requirements-on-tax-calculation-evidence-collection-tax-return-creation-and-data-storage-
+- name: Taxamo - Locate IP Address
+  x-api-slug: apiv1geoip-get
+  description: Locate ip address.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
   tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
-    StreamRank, StreamRank
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-- name: Taxamo
-  x-api-slug: taxamo
-  description: taxamos-elegant-suite-of-apis-and-comprehensive-reporting-dashboard-enables-digital-merchants-to-easily-comply-with-eu-regulatory-requirements-on-tax-calculation-evidence-collection-tax-return-creation-and-data-storage-
+- name: Taxamo - Locate Provided IP Address
+  x-api-slug: apiv1geoipip-get
+  description: Locate provided ip address.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
   tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
-    StreamRank, StreamRank
+    StreamRank, Streams
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
-- name: Taxamo
-  x-api-slug: taxamo
-  description: taxamos-elegant-suite-of-apis-and-comprehensive-reporting-dashboard-enables-digital-merchants-to-easily-comply-with-eu-regulatory-requirements-on-tax-calculation-evidence-collection-tax-return-creation-and-data-storage-
+- name: Taxamo - Calculate Location
+  x-api-slug: apiv1taxlocationcalculate-get
+  description: Calculate location.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
   tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
-    StreamRank, StreamRank
+    StreamRank, Streams
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-- name: Taxamo
-  x-api-slug: taxamo
-  description: taxamos-elegant-suite-of-apis-and-comprehensive-reporting-dashboard-enables-digital-merchants-to-easily-comply-with-eu-regulatory-requirements-on-tax-calculation-evidence-collection-tax-return-creation-and-data-storage-
+- name: Taxamo - Calculate Location
+  x-api-slug: apiv1taxlocationcalculate-get
+  description: Calculate location.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
   tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
-    StreamRank, StreamRank
+    StreamRank, Streams
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-- name: Taxamo
-  x-api-slug: taxamo
-  description: taxamos-elegant-suite-of-apis-and-comprehensive-reporting-dashboard-enables-digital-merchants-to-easily-comply-with-eu-regulatory-requirements-on-tax-calculation-evidence-collection-tax-return-creation-and-data-storage-
+- name: Taxamo - Locate IP Address
+  x-api-slug: apiv1geoip-get
+  description: Locate ip address.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
   tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
-    StreamRank, StreamRank
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-- name: Taxamo
-  x-api-slug: taxamo
-  description: taxamos-elegant-suite-of-apis-and-comprehensive-reporting-dashboard-enables-digital-merchants-to-easily-comply-with-eu-regulatory-requirements-on-tax-calculation-evidence-collection-tax-return-creation-and-data-storage-
+- name: Taxamo - Locate Provided IP Address
+  x-api-slug: apiv1geoipip-get
+  description: Locate provided ip address.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
   tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
-    StreamRank, StreamRank
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-  - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
-- name: Taxamo
-  x-api-slug: taxamo
-  description: taxamos-elegant-suite-of-apis-and-comprehensive-reporting-dashboard-enables-digital-merchants-to-easily-comply-with-eu-regulatory-requirements-on-tax-calculation-evidence-collection-tax-return-creation-and-data-storage-
+- name: Taxamo - Calculate Location
+  x-api-slug: apiv1taxlocationcalculate-get
+  description: Calculate location.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
   tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
-    StreamRank, StreamRank
+    StreamRank, Streams
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
-- name: Taxamo
-  x-api-slug: taxamo
-  description: 'We make global digital VAT/GST compliance possible. #DigitalTax #DigiTax
-    #TaxTrends'
+- name: Taxamo - Locate Provided IP Address
+  x-api-slug: apiv1geoipip-get
+  description: Locate provided ip address.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
   humanURL: https://www.taxamo.com/
   baseURL: https://api.taxamo.com//
-  tags: Locations
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
+- name: Taxamo - Locate Provided IP Address
+  x-api-slug: apiv1geoipip-get
+  description: Locate provided ip address.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
+- name: Taxamo - Locate Provided IP Address
+  x-api-slug: apiv1geoipip-get
+  description: Locate provided ip address.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoipip-get-openapi.md
+- name: Taxamo - Locate IP Address
+  x-api-slug: apiv1geoip-get
+  description: Locate ip address.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
+- name: Taxamo - Locate IP Address
+  x-api-slug: apiv1geoip-get
+  description: Locate ip address.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
+- name: Taxamo - Locate IP Address
+  x-api-slug: apiv1geoip-get
+  description: Locate ip address.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1geoip-get-openapi.md
+- name: Taxamo - Calculate Location
+  x-api-slug: apiv1taxlocationcalculate-get
+  description: Calculate location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
+- name: Taxamo - Calculate Location
+  x-api-slug: apiv1taxlocationcalculate-get
+  description: Calculate location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
+- name: Taxamo - Calculate Location
+  x-api-slug: apiv1taxlocationcalculate-get
+  description: Calculate location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/taxamo/apiv1taxlocationcalculate-get-openapi.md
 x-common:
 - type: x-website
   url: https://www.taxamo.com/

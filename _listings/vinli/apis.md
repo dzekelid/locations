@@ -8,14 +8,14 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-
 x-kinRank: "7"
 x-alexaRank: "2170360"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Vinli
-  x-api-slug: vinli
-  description: todo-add-description
+- name: Vinli - Locations Request
+  x-api-slug: devices62976d30b6dc40f18422ccc367572101locations-get
+  description: Locations request.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-vin-li.jpg
   humanURL: http://vinli.com
   baseURL: https://events.vin.li//api/v1
@@ -25,18 +25,6 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/devices62976d30b6dc40f18422ccc367572101locations-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/devices62976d30b6dc40f18422ccc367572101locations-get-openapi.md
-- name: Vinli
-  x-api-slug: vinli
-  description: Vinli - The easiest, most advanced connected-car system in the world.
-    Vinli is a platform for easily and quickly building connected car apps. Apps get
-    vehicle data through Vinli services.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-vin-li.jpg
-  humanURL: http://vinli.com
-  baseURL: https://events.vin.li//api/v1
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/vinli/openapi.md
 x-common:
 - type: x-blog-rss
   url: https://blog.vin.li/rss/

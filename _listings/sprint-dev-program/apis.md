@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/658-sprint
 x-kinRank: "7"
 x-alexaRank: "2480"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/sprint-dev-program/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Sprint Dev Program
-  x-api-slug: sprint-dev-program
-  description: Shop for cell phones & wireless calling plans from Sprint. Switch to
-    Sprint today and find great deals on unlimited data plans for the whole family.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/658-sprint-dev-program.jpg
-  humanURL: http://developer.sprint.com/dynamicContent/sprintservices/devtools/6
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/sprint-dev-program/openapi.md
+apis: []
 x-common:
 - type: x-website
   url: http://developer.sprint.com/dynamicContent/sprintservices/devtools/6

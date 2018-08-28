@@ -6,21 +6,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1014-gsma-
 x-kinRank: "7"
 x-alexaRank: "59096"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gsma-oneapi-location/apis.md
 specificationVersion: "0.14"
-apis:
-- name: GSMA OneAPI Location
-  x-api-slug: gsma-oneapi-location
-  description: Follow us on @GSMA
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1014-gsma-oneapi-location.jpg
-  humanURL: http://gsma.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gsma-oneapi-location/openapi.md
+apis: []
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/gsma

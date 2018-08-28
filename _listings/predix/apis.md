@@ -7,113 +7,33 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "264121"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Predix Access Control
-  x-api-slug: predix-access-control
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://predix-acs.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Analytics Catalog
-  x-api-slug: predix-analytics-catalog
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Analytics Framework
-  x-api-slug: predix-analytics-framework
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Analytics Runtime
-  x-api-slug: predix-analytics-runtime
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix AppHub ARCS
-  x-api-slug: predix-apphub-arcs
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://predix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io//api
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Assets
-  x-api-slug: predix-assets
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix BlockChain
-  x-api-slug: predix-blockchain
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Blockchain Data Integrity
-  x-api-slug: predix-blockchain-data-integrity
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://bcdi-proxy-service.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Data Services
-  x-api-slug: predix-data-services
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://time-series-service-doc.grc-apps.svc.ice.ge.com//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+- name: Dynamic Mapping - Add an asset location into a collection.
+  x-api-slug: v1collectionscollectionnameassetsassetid-put
+  description: |-
+    Insert a location entry into the named collection for the given asset identifier and timestamp. In addition to
+    adding the new asset location, the request also controls the retention of the location history that is
+    stored for the given asset in the given collection.
+
+      - If the mandatory property retain_history is set to false then all existing location history for the
+      given asset is removed before the new location is added.
+
+      - If the retain_history property is set to true and the optional property purge_history_before is not set
+      then the new location is added to the existing set of locations for the given asset.
+
+      - If retain_history is set to true and the optional property purge_history_before is set then any existing
+      locations for the given asset that have a timestamp that is older than the supplied purge_history_before
+      timestamp are first deleted. Next the new location is added to the set of locations that remain.
+
+      - If the set of location entries for the given asset (after any possible removals) contains a location entry
+       with the same timestamp as the new location then the location of that entry is updated rather than a new
+       location entry being added.
+
+      - Note the new entry is always added or used to update an existing entry.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
@@ -121,51 +41,68 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+- name: Dynamic Mapping - Delete an asset and its location data
+  x-api-slug: v1collectionscollectionnameassetsassetid-delete
+  description: Delete the asset specified by the collection name. Any location data
+    associated with the asset are also deleted.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
   tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
   properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+- name: Dynamic Mapping - Return the latest location data for an asset
+  x-api-slug: v1collectionscollectionnameassetsassetid-get
+  description: |-
+    Returns the latest location entry for the given asset. The timestamp and location data for the
+    given entry is included in the response.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
   tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
   properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+- name: Dynamic Mapping - Return locations for an asset by query condition for given
+    customer id and collection name.
+  x-api-slug: v1collectionscollectionnameassetsassetidquery-post
+  description: |-
+    Returns the locations for an asset by three types of query for a given customer id and collection name.
+    The returned locations are in descending order of time.
+    Three types of query:
+    1. type=latest: The latest n locations will be returned.
+    2. type=timeperiod: Locations within a time period will be returned.
+    3. type=bbox: Locations within a time period and a spatial bounding box will be returned.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
   tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
   properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetidquery-post-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+- name: Dynamic Mapping - Add an asset location into a collection.
+  x-api-slug: v1collectionscollectionnameassetsassetid-put
+  description: |-
+    Insert a location entry into the named collection for the given asset identifier and timestamp. In addition to
+    adding the new asset location, the request also controls the retention of the location history that is
+    stored for the given asset in the given collection.
+
+      - If the mandatory property retain_history is set to false then all existing location history for the
+      given asset is removed before the new location is added.
+
+      - If the retain_history property is set to true and the optional property purge_history_before is not set
+      then the new location is added to the existing set of locations for the given asset.
+
+      - If retain_history is set to true and the optional property purge_history_before is set then any existing
+      locations for the given asset that have a timestamp that is older than the supplied purge_history_before
+      timestamp are first deleted. Next the new location is added to the set of locations that remain.
+
+      - If the set of location entries for the given asset (after any possible removals) contains a location entry
+       with the same timestamp as the new location then the location of that entry is updated rather than a new
+       location entry being added.
+
+      - Note the new entry is always added or used to update an existing entry.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
@@ -173,17 +110,137 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
+- name: Dynamic Mapping - Delete an asset and its location data
+  x-api-slug: v1collectionscollectionnameassetsassetid-delete
+  description: Delete the asset specified by the collection name. Any location data
+    associated with the asset are also deleted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
+- name: Dynamic Mapping - Return the latest location data for an asset
+  x-api-slug: v1collectionscollectionnameassetsassetid-get
+  description: |-
+    Returns the latest location entry for the given asset. The timestamp and location data for the
+    given entry is included in the response.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
+- name: Dynamic Mapping - Return locations for an asset by query condition for given
+    customer id and collection name.
+  x-api-slug: v1collectionscollectionnameassetsassetidquery-post
+  description: |-
+    Returns the locations for an asset by three types of query for a given customer id and collection name.
+    The returned locations are in descending order of time.
+    Three types of query:
+    1. type=latest: The latest n locations will be returned.
+    2. type=timeperiod: Locations within a time period will be returned.
+    3. type=bbox: Locations within a time period and a spatial bounding box will be returned.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetidquery-post-openapi.md
+- name: Dynamic Mapping - Return the latest location data for an asset
+  x-api-slug: v1collectionscollectionnameassetsassetid-get
+  description: |-
+    Returns the latest location entry for the given asset. The timestamp and location data for the
+    given entry is included in the response.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
+- name: Dynamic Mapping - Return the latest location data for an asset
+  x-api-slug: v1collectionscollectionnameassetsassetid-get
+  description: |-
+    Returns the latest location entry for the given asset. The timestamp and location data for the
+    given entry is included in the response.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
+- name: Dynamic Mapping - Return the latest location data for an asset
+  x-api-slug: v1collectionscollectionnameassetsassetid-get
+  description: |-
+    Returns the latest location entry for the given asset. The timestamp and location data for the
+    given entry is included in the response.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
+- name: Dynamic Mapping - Delete an asset and its location data
+  x-api-slug: v1collectionscollectionnameassetsassetid-delete
+  description: Delete the asset specified by the collection name. Any location data
+    associated with the asset are also deleted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
+- name: Dynamic Mapping - Delete an asset and its location data
+  x-api-slug: v1collectionscollectionnameassetsassetid-delete
+  description: Delete the asset specified by the collection name. Any location data
+    associated with the asset are also deleted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
+- name: Dynamic Mapping - Delete an asset and its location data
+  x-api-slug: v1collectionscollectionnameassetsassetid-delete
+  description: Delete the asset specified by the collection name. Any location data
+    associated with the asset are also deleted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
+- name: Dynamic Mapping - Add an asset location into a collection.
+  x-api-slug: v1collectionscollectionnameassetsassetid-put
+  description: |-
+    Insert a location entry into the named collection for the given asset identifier and timestamp. In addition to
+    adding the new asset location, the request also controls the retention of the location history that is
+    stored for the given asset in the given collection.
+
+      - If the mandatory property retain_history is set to false then all existing location history for the
+      given asset is removed before the new location is added.
+
+      - If the retain_history property is set to true and the optional property purge_history_before is not set
+      then the new location is added to the existing set of locations for the given asset.
+
+      - If retain_history is set to true and the optional property purge_history_before is set then any existing
+      locations for the given asset that have a timestamp that is older than the supplied purge_history_before
+      timestamp are first deleted. Next the new location is added to the set of locations that remain.
+
+      - If the set of location entries for the given asset (after any possible removals) contains a location entry
+       with the same timestamp as the new location then the location of that entry is updated rather than a new
+       location entry being added.
+
+      - Note the new entry is always added or used to update an existing entry.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
@@ -191,19 +248,28 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetidquery-post-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+- name: Dynamic Mapping - Add an asset location into a collection.
+  x-api-slug: v1collectionscollectionnameassetsassetid-put
+  description: |-
+    Insert a location entry into the named collection for the given asset identifier and timestamp. In addition to
+    adding the new asset location, the request also controls the retention of the location history that is
+    stored for the given asset in the given collection.
+
+      - If the mandatory property retain_history is set to false then all existing location history for the
+      given asset is removed before the new location is added.
+
+      - If the retain_history property is set to true and the optional property purge_history_before is not set
+      then the new location is added to the existing set of locations for the given asset.
+
+      - If retain_history is set to true and the optional property purge_history_before is set then any existing
+      locations for the given asset that have a timestamp that is older than the supplied purge_history_before
+      timestamp are first deleted. Next the new location is added to the set of locations that remain.
+
+      - If the set of location entries for the given asset (after any possible removals) contains a location entry
+       with the same timestamp as the new location then the location of that entry is updated rather than a new
+       location entry being added.
+
+      - Note the new entry is always added or used to update an existing entry.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
@@ -211,21 +277,28 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetidquery-post-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: dynamic-mapping-services-for-geospatial-data-management-and-viewing
+- name: Dynamic Mapping - Add an asset location into a collection.
+  x-api-slug: v1collectionscollectionnameassetsassetid-put
+  description: |-
+    Insert a location entry into the named collection for the given asset identifier and timestamp. In addition to
+    adding the new asset location, the request also controls the retention of the location history that is
+    stored for the given asset in the given collection.
+
+      - If the mandatory property retain_history is set to false then all existing location history for the
+      given asset is removed before the new location is added.
+
+      - If the retain_history property is set to true and the optional property purge_history_before is not set
+      then the new location is added to the existing set of locations for the given asset.
+
+      - If retain_history is set to true and the optional property purge_history_before is set then any existing
+      locations for the given asset that have a timestamp that is older than the supplied purge_history_before
+      timestamp are first deleted. Next the new location is added to the set of locations that remain.
+
+      - If the set of location entries for the given asset (after any possible removals) contains a location entry
+       with the same timestamp as the new location then the location of that entry is updated rather than a new
+       location entry being added.
+
+      - Note the new entry is always added or used to update an existing entry.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
@@ -233,163 +306,23 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetidquery-post-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-put-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-delete-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetid-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetidquery-post-openapi.md
-- name: Predix Dynamic Mapping
-  x-api-slug: predix-dynamic-mapping
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
+- name: Dynamic Mapping - Return locations for an asset by query condition for given
+    customer id and collection name.
+  x-api-slug: v1collectionscollectionnameassetsassetidquery-post
+  description: |-
+    Returns the locations for an asset by three types of query for a given customer id and collection name.
+    The returned locations are in descending order of time.
+    Three types of query:
+    1. type=latest: The latest n locations will be returned.
+    2. type=timeperiod: Locations within a time period will be returned.
+    3. type=bbox: Locations within a time period and a spatial bounding box will be returned.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
   humanURL: https://www.predix.io
   baseURL: https:////
-  tags: Locations
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Dynamic Time Warping
-  x-api-slug: predix-dynamic-time-warping
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////v1
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Enterprise Connect
-  x-api-slug: predix-enterprise-connect
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://ec-predix-service-osaka.run.aws-usw02-pr.ice.predix.io//v1
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Event Audit Trail
-  x-api-slug: predix-event-audit-trail
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://event-audit-trail.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Fingerprint of Things Object Tagging Service
-  x-api-slug: predix-fingerprint-of-things-object-tagging-service
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://fingerprint-of-things-ga1-dast.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Insights
-  x-api-slug: predix-insights
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://insights-api.data-services.predix.io//api/v1
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Intelligent Mapping
-  x-api-slug: predix-intelligent-mapping
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Notification Service
-  x-api-slug: predix-notification-service
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://ev-notification-service.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Nurego
-  x-api-slug: predix-nurego
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://api.nurego.com//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix SAS ESP Predix Service
-  x-api-slug: predix-sas-esp-predix-service
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://sas-proxy.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Tenant Management
-  x-api-slug: predix-tenant-management
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://predix-tms.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix ThetaRay Predix Service
-  x-api-slug: predix-thetaray-predix-service
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https://thetaray-anomaly-service.run.aws-usw02-pr.ice.predix.io//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
-- name: Predix Views
-  x-api-slug: predix-views
-  description: Predix (IoT PaaS) helps you develop apps that connect people with industrial
-    machines through analytics and data for better business outcomes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
-  humanURL: https://www.predix.io
-  baseURL: https:////v1
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/predix/v1collectionscollectionnameassetsassetidquery-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://predicthq.api.gallery.streamdata.io

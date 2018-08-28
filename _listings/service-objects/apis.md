@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/371-servic
 x-kinRank: "7"
 x-alexaRank: "938014"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/service-objects/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Service Objects
-  x-api-slug: service-objects
-  description: With our suite of data verification APIs for phone, email, address
-    and more, you can keep your businesss database clean, accurate, and up to date.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/371-service-objects.jpg
-  humanURL: http://www.serviceobjects.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/service-objects/openapi.md
+apis: []
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/service-objects

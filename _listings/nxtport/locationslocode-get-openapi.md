@@ -15,6 +15,40 @@ produces:
 consumes:
 - application/json
 paths:
+  /api/v1/locations:
+    get:
+      summary: List
+      description: List all Locations with their details. Locations have a type, name
+        and the ISRS Locode.
+      operationId: getApiV1Locations
+      x-api-path-slug: apiv1locations-get
+      parameters:
+      - in: query
+        name: api_token
+        description: authentication token of user making the request
+      responses:
+        200:
+          description: OK
+      tags:
+      - List
+    post:
+      summary: Create
+      description: Create a new Location
+      operationId: postApiV1Locations
+      x-api-path-slug: apiv1locations-post
+      parameters:
+      - in: query
+        name: api_token
+        description: authentication token of user making the request
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Create
   /locations:
     get:
       summary: Get Locations

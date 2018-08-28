@@ -7,14 +7,14 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1297-blaze
 x-kinRank: "8"
 x-alexaRank: "69236"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Blazemeter
-  x-api-slug: blazemeter
-  description: live-api-documentation
+- name: Blazemeter API Explorer - Get User Locations
+  x-api-slug: userlocations-get
+  description: Get user locations.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1297-blazemeter.jpg
   humanURL: http://blazemeter.com/
   baseURL: https://a.blazemeter.com//api/v4
@@ -23,17 +23,6 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/userlocations-get-openapi.md
-- name: Blazemeter
-  x-api-slug: blazemeter
-  description: BlazeMeter platform for load and performance testing enables dev and
-    QA teams to run scalable and continuous testing for website, mobile, api and software
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1297-blazemeter.jpg
-  humanURL: http://blazemeter.com/
-  baseURL: https://a.blazemeter.com//api/v4
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/blazemeter/openapi.md
 x-common:
 - type: x-api-gallery
   url: http://bitly.api.gallery.streamdata.io

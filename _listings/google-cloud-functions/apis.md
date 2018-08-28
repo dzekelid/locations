@@ -10,14 +10,14 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Cloud Functions API
-  x-api-slug: google-cloud-functions-api
-  description: api-for-managing-lightweight-userprovided-functions-executed-in-response-to-events-
+- name: Google Cloud Functions - Get Location
+  x-api-slug: v1name-get
+  description: Get information about a location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Cloud-Functions.png
   humanURL: https://cloud.google.com/functions/
   baseURL: ://cloudfunctions.googleapis.com//
@@ -28,9 +28,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-openapi.md
-- name: Google Cloud Functions API
-  x-api-slug: google-cloud-functions-api
-  description: api-for-managing-lightweight-userprovided-functions-executed-in-response-to-events-
+- name: Google Cloud Functions - Get Location
+  x-api-slug: v1name-get
+  description: Get information about a location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Cloud-Functions.png
   humanURL: https://cloud.google.com/functions/
   baseURL: ://cloudfunctions.googleapis.com//
@@ -41,24 +41,45 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-openapi.md
+- name: Google Cloud Functions - Get Location
+  x-api-slug: v1name-get
+  description: Get information about a location.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Cloud-Functions.png
+  humanURL: https://cloud.google.com/functions/
+  baseURL: ://cloudfunctions.googleapis.com//
+  tags: Serverless, Google APIs, Stack Network, API Service Provider, API Provider,
+    Deployments, Profiles, Relative Data, Service API
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-openapi.md
-- name: Google Cloud Functions API
-  x-api-slug: google-cloud-functions-api
-  description: Cloud computing has made possible fully serverless models of computing
-    where logic can be spun up on-demand in response to events originating from anywhere.
-    Construct applications from bite-sized business logic billed to the nearest 100
-    milliseconds, only while your code is running. Serve users from zero to planet-scale,
-    all without managing any infrastructure.
+- name: Google Cloud Functions - Get Location
+  x-api-slug: v1name-get
+  description: Get information about a location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Cloud-Functions.png
   humanURL: https://cloud.google.com/functions/
   baseURL: ://cloudfunctions.googleapis.com//
-  tags: Locations
+  tags: Serverless, Google APIs, Stack Network, API Service Provider, API Provider,
+    Deployments, Profiles, Relative Data, Service API
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-openapi.md
+- name: Google Cloud Functions - Get Location
+  x-api-slug: v1name-get
+  description: Get information about a location.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Cloud-Functions.png
+  humanURL: https://cloud.google.com/functions/
+  baseURL: ://cloudfunctions.googleapis.com//
+  tags: Serverless, Google APIs, Stack Network, API Service Provider, API Provider,
+    Deployments, Profiles, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/google-cloud-functions/v1name-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://google.cloud.dns.api.gallery.streamdata.io

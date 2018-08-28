@@ -9,24 +9,11 @@ image: ""
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-route-planner/apis.md
 specificationVersion: "0.14"
-apis:
-- name: BC Route Planner
-  x-api-slug: bc-route-planner
-  description: The BC Route Planner is a REST web service that offers vehicle route
-    plans that are based on the BC Digital Road Atlas (DRA). The BC Route Planner
-    computes the shortest or fastest route between start and end points and returns
-    the route, distance, time, and directions.
-  image: ""
-  humanURL: https://catalogue.data.gov.bc.ca/dataset/bc-route-planner
-  baseURL: https://router.api.gov.bc.ca//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/bc-route-planner/openapi.md
+apis: []
 x-common:
 - type: x-api-gallery
   url: http://bc.laws.api.gallery.streamdata.io

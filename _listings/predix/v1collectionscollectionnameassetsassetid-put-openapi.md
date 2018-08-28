@@ -25,6 +25,7 @@ info:
 
       - Note the new entry is always added or used to update an existing entry.
   version: 1.0.0
+host: time-series-service-doc.grc-apps.svc.ice.ge.com
 basePath: /
 schemes:
 - http

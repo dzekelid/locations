@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1173-swift
 x-kinRank: "7"
 x-alexaRank: "115302"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/swiftype/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Swiftype
-  x-api-slug: swiftype
-  description: Swiftype is a cloud-based search platform that provides all the tools
-    you need to create fantastic search experiences.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1173-swiftype.jpg
-  humanURL: http://swiftype.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/swiftype/openapi.md
+apis: []
 x-common:
 - type: x-website
   url: http://swiftype.com/

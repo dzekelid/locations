@@ -8,14 +8,14 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Azure HDInsight API
-  x-api-slug: azure-hdinsight-api
-  description: the-hdinsight-management-client-
+- name: HDInsightManagementClient - Location Get Capabilities
+  x-api-slug: subscriptionssubscriptionidprovidersmicrosoft-hdinsightlocationslocationcapabilities-get
+  description: Gets the capabilities for the specified location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-hdinsights-open-source-analytics.png
   humanURL: https://azure.microsoft.com/en-us/services/hdinsight/
   baseURL: ://management.azure.com//
@@ -24,9 +24,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/subscriptionssubscriptionidprovidersmicrosoft-hdinsightlocationslocationcapabilities-get-openapi.md
-- name: Azure HDInsight API
-  x-api-slug: azure-hdinsight-api
-  description: the-hdinsight-management-client-
+- name: HDInsightManagementClient - Location Get Capabilities
+  x-api-slug: subscriptionssubscriptionidprovidersmicrosoft-hdinsightlocationslocationcapabilities-get
+  description: Gets the capabilities for the specified location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-hdinsights-open-source-analytics.png
   humanURL: https://azure.microsoft.com/en-us/services/hdinsight/
   baseURL: ://management.azure.com//
@@ -35,20 +35,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/subscriptionssubscriptionidprovidersmicrosoft-hdinsightlocationslocationcapabilities-get-openapi.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/subscriptionssubscriptionidprovidersmicrosoft-hdinsightlocationslocationcapabilities-get-openapi.md
-- name: Azure HDInsight API
-  x-api-slug: azure-hdinsight-api
-  description: Azure HDInsight is a Hadoop-based service that brings an Apache Hadoop
-    solution to the cloud. Gain the full value of big data with a cloud-based data
-    platform that manages data of any type and size.
+- name: HDInsightManagementClient - Location Get Capabilities
+  x-api-slug: subscriptionssubscriptionidprovidersmicrosoft-hdinsightlocationslocationcapabilities-get
+  description: Gets the capabilities for the specified location.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-hdinsights-open-source-analytics.png
   humanURL: https://azure.microsoft.com/en-us/services/hdinsight/
   baseURL: ://management.azure.com//
-  tags: Locations
+  tags: Data, Analysis, Microsoft, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/azure-hdinsight/subscriptionssubscriptionidprovidersmicrosoft-hdinsightlocationslocationcapabilities-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://azure.event.hubs.api.gallery.streamdata.io

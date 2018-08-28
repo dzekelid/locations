@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/633-parkwh
 x-kinRank: "8"
 x-alexaRank: "73705"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/parkwhiz/apis.md
 specificationVersion: "0.14"
-apis:
-- name: ParkWhiz
-  x-api-slug: parkwhiz
-  description: Use ParkWhiz to book parking spaces in cities like Chicago & New York,
-    as well as airport parking, stadium & event parking, or daily & monthly parking.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/633-parkwhiz.jpg
-  humanURL: http://www.parkwhiz.com
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/parkwhiz/openapi.md
+apis: []
 x-common:
 - type: x-base
   url: http://api.parkwhiz.com

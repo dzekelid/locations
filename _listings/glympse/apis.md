@@ -8,23 +8,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1837-glymp
 x-kinRank: "7"
 x-alexaRank: "143734"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/glympse/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Glympse
-  x-api-slug: glympse
-  description: Click here to download --> http://www.glympse.com/get_glympse  Official
-    Support Website --> http://glympse.zendesk.com  Official App Page --> https://apps.facebook.com/glympse/  Twitter-->
-    @Glympse http://twitter.com/Glympse
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1837-glympse.jpg
-  humanURL: https://developer.glympse.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/glympse/openapi.md
+apis: []
 x-common:
 - type: x-blog
   url: https://developer.glympse.com/cms/

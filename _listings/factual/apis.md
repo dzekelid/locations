@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/139-factua
 x-kinRank: "9"
 x-alexaRank: "147251"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/factual/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Factual
-  x-api-slug: factual
-  description: Factual is pioneering how the world uses data to power mobile marketing,
-    digital consumer products, mobile applications and real world analytics.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/139-factual.jpg
-  humanURL: http://www.factual.com/
-  baseURL: https://api.v3.factual.com//
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/factual/openapi.md
+apis: []
 x-common:
 - type: x-website
   url: http://www.factual.com/

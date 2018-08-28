@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/353-atlasc
 x-kinRank: "8"
 x-alexaRank: "11502651"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/atlasct/apis.md
 specificationVersion: "0.14"
-apis:
-- name: AtlasCT
-  x-api-slug: atlasct
-  description: AtlasCT is a global leader in maps and location-based services (LBS)
-    technologies for mobile and web.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/353-atlasct.jpg
-  humanURL: http://www.atlasct.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/atlasct/openapi.md
+apis: []
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/atlasct

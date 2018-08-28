@@ -7,25 +7,14 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-p
 x-kinRank: "7"
 x-alexaRank: "3886"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/apis.md
 specificationVersion: "0.14"
 apis:
-- name: LH Partner
-  x-api-slug: lh-partner
-  description: Book your flights to Germany, Italy, UK or France online at attractive
-    low fares. Fly via Frankfurt, Munich or Zurich - Lufthansa United States of America
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-partner.jpg
-  humanURL: http://lufthansa.com
-  baseURL: https://api.lufthansa.com//v1
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/openapi.md
-- name: LH Public
-  x-api-slug: lh-public
-  description: ""
+- name: LH Public - Lounges
+  x-api-slug: offersloungeslocation-get
+  description: Lounge information
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-partner.jpg
   humanURL: http://lufthansa.com
   baseURL: https://api.lufthansa.com//v1
@@ -35,9 +24,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-openapi.md
-- name: LH Public
-  x-api-slug: lh-public
-  description: ""
+- name: LH Public - Lounges
+  x-api-slug: offersloungeslocation-get
+  description: Lounge information
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-partner.jpg
   humanURL: http://lufthansa.com
   baseURL: https://api.lufthansa.com//v1
@@ -47,21 +36,42 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-openapi.md
+- name: LH Public - Lounges
+  x-api-slug: offersloungeslocation-get
+  description: Lounge information
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-partner.jpg
+  humanURL: http://lufthansa.com
+  baseURL: https://api.lufthansa.com//v1
+  tags: Airlines, API Provider, Profiles, General Data, Relative Data
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-openapi.md
-- name: LH Public
-  x-api-slug: lh-public
-  description: Book your flights to Germany, Italy, UK or France online at attractive
-    low fares. Fly via Frankfurt, Munich or Zurich - Lufthansa United States of America
+- name: LH Public - Lounges
+  x-api-slug: offersloungeslocation-get
+  description: Lounge information
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-partner.jpg
   humanURL: http://lufthansa.com
   baseURL: https://api.lufthansa.com//v1
-  tags: Locations
+  tags: Airlines, API Provider, Profiles, General Data, Relative Data
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-openapi.md
+- name: LH Public - Lounges
+  x-api-slug: offersloungeslocation-get
+  description: Lounge information
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28453-lh-partner.jpg
+  humanURL: http://lufthansa.com
+  baseURL: https://api.lufthansa.com//v1
+  tags: Airlines, API Provider, Profiles, General Data, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/lufthansa/offersloungeslocation-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://lota.data.api.gallery.streamdata.io

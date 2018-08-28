@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/10198-loca
 x-kinRank: "7"
 x-alexaRank: "380389"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/locaid/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Locaid
-  x-api-slug: locaid
-  description: LocationSmart provides Cloud Location Services with a trusted enterprise
-    mobility platform to optimize efficiencies, track assets and verify transactions.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/10198-locaid.jpg
-  humanURL: http://www.loc-aid.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/locaid/openapi.md
+apis: []
 x-common:
 - type: x-blog
   url: http://www.loc-aid.com/blog/

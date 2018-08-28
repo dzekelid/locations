@@ -12,14 +12,17 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-deve
 x-kinRank: "7"
 x-alexaRank: "7180"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/apis.md
 specificationVersion: "0.14"
 apis:
-- name: RingCentral
-  x-api-slug: ringcentral
-  description: this-is-an-interactive-api-explorer-for-the-ringcentral-connect-platform--to-use-this-service-you-will-need-to-have-a-developer-account---links--a-hrefhttpsnetstorage-ringcentral-comdpwapiexplorerrcplatform-basic-ymlv20180514092722-target-blankringcentral-api-specaspannbspnbspopenapi-fka-swagger-formatnbspnbspnbspnbspspana-hrefhttpsgithub-comoaiopenapispecification-target-blanklearn-more-about-openapia
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
   humanURL: http://www.ringcentral.com
   baseURL: https://platform.ringcentral.com//
@@ -30,9 +33,12 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
-- name: RingCentral
-  x-api-slug: ringcentral
-  description: this-is-an-interactive-api-explorer-for-the-ringcentral-connect-platform--to-use-this-service-you-will-need-to-have-a-developer-account---links--a-hrefhttpsnetstorage-ringcentral-comdpwapiexplorerrcplatform-basic-ymlv20180514092722-target-blankringcentral-api-specaspannbspnbspopenapi-fka-swagger-formatnbspnbspnbspnbspspana-hrefhttpsgithub-comoaiopenapispecification-target-blanklearn-more-about-openapia
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
   humanURL: http://www.ringcentral.com
   baseURL: https://platform.ringcentral.com//
@@ -43,27 +49,150 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
-- name: RingCentral
-  x-api-slug: ringcentral
-  description: 'RingCentral, Inc. (NYSE: RNG) is a global provider of cloud enterprise
-    unified communications and collaboration solutions. More flexible and cost-effective
-    than legacy on-premise systems, RingCentral empowers today&rsquo;s mobile and
-    distributed workforces to be connected anywhere and on any device through voice,
-    video, team messaging, collaboration, SMS, conferencing, online meetings, contact
-    center, and fax. RingCentral provides an open platform that integrates with today&rsquo;s
-    leading business apps while giving customers the flexibility to customize their
-    own workflows.'
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
   humanURL: http://www.ringcentral.com
   baseURL: https://platform.ringcentral.com//
-  tags: Locations
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Location List
+  x-api-slug: restapiv1-0dictionarylocation-get
+  description: "Returns all available locations for a certain state.\nUsage Plan Group\nLight\nError
+    Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [orderBy] value is invalid\n\n\n404\nCMN-102\nResource for parameter [location]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/ringcentral/restapiv1-0dictionarylocation-get-openapi.md
 x-common:
 - type: x-blog
   url: https://medium.com/ringcentral-developers

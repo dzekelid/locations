@@ -7,22 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/802-gis-cl
 x-kinRank: "7"
 x-alexaRank: "355913"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gis-cloud/apis.md
 specificationVersion: "0.14"
-apis:
-- name: GIS Cloud
-  x-api-slug: gis-cloud
-  description: GIS Cloud is a collaborative mapping solution for the entire workflow
-    of your organization. It works online and on-premisses.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/802-gis-cloud.jpg
-  humanURL: http://www.giscloud.com/
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/gis-cloud/openapi.md
+apis: []
 x-common:
 - type: x-base
   url: http://api.giscloud.com

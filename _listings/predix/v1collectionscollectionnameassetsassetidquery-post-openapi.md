@@ -13,6 +13,7 @@ info:
     2. type=timeperiod: Locations within a time period will be returned.
     3. type=bbox: Locations within a time period and a spatial bounding box will be returned.
   version: 1.0.0
+host: time-series-service-doc.grc-apps.svc.ice.ge.com
 basePath: /
 schemes:
 - http

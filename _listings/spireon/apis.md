@@ -9,24 +9,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28279-api-
 x-kinRank: "7"
 x-alexaRank: "125571"
 tags: Locations
-created: "2018-08-23"
-modified: "2018-08-23"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/spireon/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Spireon
-  x-api-slug: spireon
-  description: GPS Vehicle Tracking - As North America???s leading connected vehicle
-    intelligence company with nearly 4 million active subscribers, Spireon provides
-    businesses and consumers with powerful insights to track, manage and protect their
-    most valuable mobile ...
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28279-api-spireon-com.jpg
-  humanURL: https://api.spireon.com
-  baseURL: https:///
-  tags: Locations
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/locations/master/_listings/spireon/openapi.md
+apis: []
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/spireon
